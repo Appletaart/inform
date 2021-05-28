@@ -1,0 +1,50 @@
+{{page-title "Index"}}
+{{!-- <AuMainHeader @brandLink="https://www.vlaanderen.be/nl" @homeRoute="index" @appTitle="Data Vlaanderen" >
+</AuMainHeader>
+<div class="au-o-layout"> --}}
+
+{{!-- <div class="au-c-form search">
+<p>
+  <AuLabel for="input-block">Ontdek wat onze vertegenwoordigers voor ons beslissen.</AuLabel>
+  <AuInput id="input-block" @width="block" placeholder="Gemeente" title="kie gemeente" @icon="search"/>
+</p>
+</div> --}}
+{{!-- {{#each @model.provincesData as |province|}}
+    <p>{{province.properties.name_nl}}</p>
+{{/each}}
+{{#each @model.gemeenteData as |gemeente|}}
+    <p>{{gemeente.properties.name_nl}}</p>
+{{/each}} --}}
+
+{{log @model}}
+{{log @model.gemeenteData}}
+{{log @model.provincesData}}
+{{log @model.gemeente}}
+{{outlet}}
+{{!-- <ul class="au-o-region main_nav">
+  <li class="au-c-navigation__item">
+    <AuNavigationLink @linkRoute="besturen">
+      | Samenstelling<br>
+        College van Burgemeester en Schepenen<br>
+        Gemeenteraad
+    </AuNavigationLink>
+  </li>
+  <li class="au-c-navigation__item">
+    <AuNavigationLink @linkRoute="agenda">
+      | Agenda
+    </AuNavigationLink>
+  </li>
+  <li class="au-c-navigation__item">
+    <AuNavigationLink @linkRoute="besluiten">
+      | Besluiten
+    </AuNavigationLink>
+  </li>
+  <li class="au-c-navigation__item">
+    <AuNavigationLink @linkRoute="archieven">
+      | Archief besluiten
+    </AuNavigationLink>
+  </li>
+</ul>     --}}
+<div id="textgraph"></div>
+{{!-- </div> --}}
+

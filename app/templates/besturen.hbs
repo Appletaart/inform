@@ -1,0 +1,10 @@
+{{page-title "Besturen"}}
+{{outlet}}
+<div id="textgraph">
+<LinkTo @route="besturen" @model={{@besturen}}>
+    {{this.model}}
+</LinkTo>
+</div>
+{{log @model.eenBurgemeester}}
+{{log @model.bestuurseenheids}}
+{{log @model.provincesData}}

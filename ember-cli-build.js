@@ -4,8 +4,17 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    sassOptions: {
+      includePaths: [
+        'node_modules/@appuniversum/appuniversum',
+        'node_modules/@appuniversum/ember-appuniversum/app/styles'
+      ]
+    }
   });
+
+  app.import('bower_components/d3/d3.js');
+  app.import('bower_components/d3/topojson.v3.min.js');
+  app.import('vendor/shims/d3.js');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.

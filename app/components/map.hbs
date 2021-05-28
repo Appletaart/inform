@@ -1,0 +1,24 @@
+{{!-- <p class="d3-hello" {{did-insert this.hello}}></p> --}}
+<div class="search">
+<AuLabel for="input-block">Ontdek wat onze vertegenwoordigers voor ons beslissen.</AuLabel>
+<PowerSelect
+  @width="block"
+  title="kie gemeente" 
+  @icon="search"
+  @allowClear={{true}}
+  @disabled={{disabled}}
+  @searchEnabled={{true}}
+  @loadingMessage="Aan het laden..."
+  @noMatchesMessage="Geen resultaten"
+  @searchMessage="Typ om te zoeken"
+  @options={{this.singleselects}}
+  @selected={{this.singleselect}}
+  @onChange={{fn (mut this.singleselect)}}
+  @placeholder="Gemeente" as |singleselect|>
+  {{singleselect}}
+</PowerSelect>
+</div>
+
+<div id="tooltip"></div>
+<div class="bp-map" {{ did-insert  this.initMap }}></div >
+
