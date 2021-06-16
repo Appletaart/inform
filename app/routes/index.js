@@ -1,10 +1,18 @@
 import Route from '@ember/routing/route';
+import { inject as service } from '@ember/service';
 
 export default class IndexRoute extends Route {
+    @service store;
+    @service map; 
+    
     async model() {
-    let response = await fetch('/api/vlaanderen.json');
+    // const {id} = params;
+
+    let response = await fetch('/api/vlaanderens.json');
     let data = await response.json();
-    //  console.log(data);
+    // const data = await this.store.findAll('vlaanderen'/* , {
+    // filter: { objects: 'provinces' }} */)
+    // console.log(data);
     let provincesData = topojson.feature(data, data.objects.provinces).features;
     let gemeenteData = topojson.feature(data, data.objects.municipalities).features;
     let gemeente = [];
@@ -12,10 +20,12 @@ export default class IndexRoute extends Route {
         gemeenteData.forEach(name => {
         let names = name.properties.name_nl;
         gemeente.push(names)
-        //console.log(names);
         });
     
-    return { gemeente, provincesData, gemeenteData };
+    // const getge = gemeente.find(gemeente === id)
+
+     return { gemeente, provincesData, gemeenteData };
     }// end model
-        
+   
+    
 }

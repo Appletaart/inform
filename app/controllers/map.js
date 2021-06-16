@@ -1,14 +1,11 @@
 import Controller from '@ember/controller';
 import { tracked } from '@glimmer/tracking';
 import { computed, action } from '@ember/object';
+import { inject as service } from '@ember/service';
 
 
 export default class MapController extends Controller {
-  
-    @tracked province = this.model.provincesData.properties.name_nl; // set default > set the first one 
-    
-    singleselects = ['Barcelona', 'London', 'New York', 'Porto']
-    singleselect = 'London'
+    @service map // yes
 
     // get nameProvinces(){
     //    // return `/assets/images/beats-solo-${this.color}.png`;

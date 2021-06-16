@@ -2,15 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 
+    Accept:application/sparql-results+json,*/*;q=0.9
+    Content-Type:application/x-www-form-urlencoded
+
+    https://centrale-vindplaats.lblod.info/sparql -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>InformProject</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
     {{content-for "head"}}
+    <!-- to help fetch sparql -->
+    <script src="https://rdf.js.org/comunica-browser/versions/latest/packages/actor-init-sparql/comunica-browser.js"></script>
 
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/inform-project.css">
+    <script src="https://rdf.js.org/comunica-browser/versions/latest/packages/actor-init-sparql/comunica-browser.js"></script>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     {{content-for "head-footer"}}
   </head>

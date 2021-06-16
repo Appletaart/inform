@@ -1,0 +1,24 @@
+{
+	"@context":
+	{
+		"Agent":"http://purl.org/dc/terms/Agent",
+		"Persoon":"http://www.w3.org/ns/person#Person",
+		"Plaats":"http://purl.org/dc/terms/Location",
+		"achternaam":{
+			"@id":"http://xmlns.com/foaf/0.1/familyName",
+			"@type":"http://www.w3.org/2001/XMLSchema#string"
+		},
+		"gebruikteVoornaam":{
+			"@id":"https://data.vlaanderen.be/ns/persoon#gebruikteVoornaam",
+			"@type":"http://www.w3.org/2001/XMLSchema#string"
+		},,
+		"plaats":{
+			"@id":"https://data.vlaanderen.be/ns/persoon#plaats",
+			"@type":"http://purl.org/dc/terms/Location"
+		},
+		"plaatsnaam":{
+			"@id":"http://www.w3.org/2000/01/rdf-schema#label",
+			"@type":"http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+		}
+	}
+}

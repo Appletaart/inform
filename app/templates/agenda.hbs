@@ -1,2 +1,38 @@
 {{page-title "Agenda"}}
+<Searchbar />
+<Map />
+{{!-- template-lint-disable no-log --}}
+{{!-- {{log this.model}} --}}
+{{!-- {{log this.getAgenda}} --}}
+
+{{!-- {{#if this.toggleClick}} --}}
+<div id="agenda" class="au-u-regular">
+<div class="toggle" {{!-- {{on "click" this.toggleClose}} --}}></div>
+<div class="head_cut">
+<span class="au-u-bold"> {{this.getGemeenteAgenda}} </span> | Inwoners : {{this.getPopulation}}<br>
+<hr>
+<span class="au-u-bold">Agenda 2021</span><br>
+<ul class="agendalist">
+{{#each this.getAgenda.groupAgenda as |geplande|}}
+<li>{{geplande.geplande_Date}} {{geplande.geplande_Time}} | {{geplande.location}}</li>
+{{/each}}
+</ul>
+
+<span class="au-u-bold">Agendalist</span><br>
+
+{{#each this.getAgenda.groupAgenda as |geplande|}}
+<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Date}}</span> 
+<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Time}} | {{geplande.location}}</span><br>
+<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="{{log geplande}}{{geplande.bestuursorgaan}} ({{geplande.details_Agenda.length}})">
+{{#each geplande.details_Agenda as | details|}}
+<p><span class="au-u-bold">{{details.title_agenda}}</span> <br> 
+{{details.description.value}} 
+</p>
+
+{{/each}}
+</AuAccordion>
+{{/each}}
+</div>
+</div>
+{{!-- {{/if}} --}}
 {{outlet}}

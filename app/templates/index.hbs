@@ -1,50 +1,35 @@
 {{page-title "Index"}}
-{{!-- <AuMainHeader @brandLink="https://www.vlaanderen.be/nl" @homeRoute="index" @appTitle="Data Vlaanderen" >
-</AuMainHeader>
-<div class="au-o-layout"> --}}
 
-{{!-- <div class="au-c-form search">
-<p>
-  <AuLabel for="input-block">Ontdek wat onze vertegenwoordigers voor ons beslissen.</AuLabel>
-  <AuInput id="input-block" @width="block" placeholder="Gemeente" title="kie gemeente" @icon="search"/>
-</p>
-</div> --}}
-{{!-- {{#each @model.provincesData as |province|}}
-    <p>{{province.properties.name_nl}}</p>
-{{/each}}
-{{#each @model.gemeenteData as |gemeente|}}
-    <p>{{gemeente.properties.name_nl}}</p>
+{{!-- {{log this.model}}
+{{log this.model.gemeenteData}}
+{{log this.model.provincesData}}
+{{log this.model.gemeente}} --}}
+<Searchbar />
+<Map />
+
+<div id="textgraph">
+<div class="toggle"></div>
+<div class="head_cut">
+{{!-- {{#each this.model.provincesData as |province|}}
+<p>{{province.properties.name_nl}}</p>
 {{/each}} --}}
+{{!-- {{#each this.model.gemeenteData as |gemeente|}}
+<p>{{gemeente.properties.name_nl}}</p>
+{{/each}} --}}
+  </div>
+</div>
 
-{{log @model}}
-{{log @model.gemeenteData}}
-{{log @model.provincesData}}
-{{log @model.gemeente}}
-{{outlet}}
-{{!-- <ul class="au-o-region main_nav">
-  <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="besturen">
-      | Samenstelling<br>
-        College van Burgemeester en Schepenen<br>
-        Gemeenteraad
-    </AuNavigationLink>
-  </li>
-  <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="agenda">
-      | Agenda
-    </AuNavigationLink>
-  </li>
-  <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="besluiten">
-      | Besluiten
-    </AuNavigationLink>
-  </li>
-  <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="archieven">
-      | Archief besluiten
-    </AuNavigationLink>
-  </li>
-</ul>     --}}
-<div id="textgraph"></div>
-{{!-- </div> --}}
+{{#if this.toggleClick}}
+<div id="mandataris">
+<div class="toggle" {{!-- {{on "click" this.toggleClose}} --}} ></div>
+<div class="head_cut">
+{{#each this.model.provincesData as |province|}}
+<p>{{province.properties.name_nl}}</p>
+{{/each}}
+{{#each this.model.gemeenteData as |gemeente|}}
+<p>{{gemeente.properties.name_nl}}</p>
+{{/each}}
+  </div>
+</div>
+{{/if}}
 

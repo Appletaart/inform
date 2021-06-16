@@ -1,0 +1,1850 @@
+{
+  "results": {
+    "ordered": true,
+    "distinct": false,
+    "bindings": [
+      {
+        "title": {
+          "value": "1. Goedkeuring notulen gemeenteraad van 25 maart 2021",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "23",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "2",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De notulen van de gemeenteraad van 25 maart 2021 worden goedgekeurd door de raadsleden.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "1. Goedkeuring notulen gemeenteraad van 25 maart 2021",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "23",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "2",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De notulen van de gemeenteraad van 25 maart 2021 worden goedgekeurd door de raadsleden.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "10. Vastlegging tussenkomst gemeente aan het Ocmw",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "24",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeente dient ervoor te zorgen dat het Ocmw zijn financiële verplichtingen kan nakomen. Hiervoor dient het principe van deze jaarlijkse financiële tussenkomst vastgelegd te worden in een overeenkomst tussen de gemeenteraad en de raad voor maatschappelijk welzijn\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "10. Vastlegging tussenkomst gemeente aan het Ocmw",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "24",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeente dient ervoor te zorgen dat het Ocmw zijn financiële verplichtingen kan nakomen. Hiervoor dient het principe van deze jaarlijkse financiële tussenkomst vastgelegd te worden in een overeenkomst tussen de gemeenteraad en de raad voor maatschappelijk welzijn\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "11. Goedkeuring advies over jaarrekening 2020 van de bestuursraad van de Protestantse Kerk Denderleeuw",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "16",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "9",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad verleent een gunstig advies voor de jaarrekening 2020 van de bestuursraad van de protestantse Kerk Denderleeuw.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "11. Goedkeuring advies over jaarrekening 2020 van de bestuursraad van de Protestantse Kerk Denderleeuw",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "16",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "9",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad verleent een gunstig advies voor de jaarrekening 2020 van de bestuursraad van de protestantse Kerk Denderleeuw.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "12. Goedkeuring gratis grondafstand aan gemeente - Kortestraat",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "24",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de gratis grondafstand aan de gemeente in de Kortestraat goed.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "12. Goedkeuring gratis grondafstand aan gemeente - Kortestraat",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "24",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de gratis grondafstand aan de gemeente in de Kortestraat goed.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "13. Goedkeuring rooilijnplan verleggen voetweg 50 Rodestraat-  voorlopige vaststelling",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "24",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad stelt het rooilijnplan voor het verleggen van voetweg 50 Rodestraat voorlopig vast.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "13. Goedkeuring rooilijnplan verleggen voetweg 50 Rodestraat-  voorlopige vaststelling",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "24",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad stelt het rooilijnplan voor het verleggen van voetweg 50 Rodestraat voorlopig vast.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "14. Goedkeuring aanleg wegenis ikv verkaveling Denderlink- P4- zaak van de wegen.",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt het wegtracé zoals voorgesteld in de vergunningsaanvraag van Smarthome voor de verkaveling Denderlink P4, verbindingsweg tussen de G. Gezellestraat en de Fonteinstraat, goed\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "14. Goedkeuring aanleg wegenis ikv verkaveling Denderlink- P4- zaak van de wegen.",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt het wegtracé zoals voorgesteld in de vergunningsaanvraag van Smarthome voor de verkaveling Denderlink P4, verbindingsweg tussen de G. Gezellestraat en de Fonteinstraat, goed\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "15. Goedkeuring aanleg wegenis ikv verkaveling Denderlink P5- zaak van de wegen",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt het wegtracé  voor de aanleg van nieuwe wegenis tussen de Fonteinstraat en het Denderpark ( verkaveling Denderlink P5) goed zoals ingediend door N.V. Smarthome.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "15. Goedkeuring aanleg wegenis ikv verkaveling Denderlink P5- zaak van de wegen",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt het wegtracé  voor de aanleg van nieuwe wegenis tussen de Fonteinstraat en het Denderpark ( verkaveling Denderlink P5) goed zoals ingediend door N.V. Smarthome.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "16. Goedkeuring burgerparticipatie bij toekomstige hernieuwbare energieprojecten",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de burgerparticipatie bij toekomstige hernieuwbare energieprojecten goed.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "16. Goedkeuring burgerparticipatie bij toekomstige hernieuwbare energieprojecten",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de burgerparticipatie bij toekomstige hernieuwbare energieprojecten goed.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "17. Bekrachtiging beslissing schepencollege van 30 maart 2021: het inrichten van 16 lestijden bijkomende omkadering aan de gemeentelijke basisschool voor het wegwerken van leerachterstand opgelopen ten gevolge van COVID-19",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            Aan de gemeentelijke basisschool van Denderleeuw werden 16 lestijden per week bijkomende omkadering toegekend voor het wegwerken van leerachterstand opgelopen ten gevolge van COVID-19. De beslissing van het CBS van 30 maart 2021 houdende het inrichten van deze lestijden dient bekrachtigd te worden door de gemeenteraad.\n\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "17. Bekrachtiging beslissing schepencollege van 30 maart 2021: het inrichten van 16 lestijden bijkomende omkadering aan de gemeentelijke basisschool voor het wegwerken van leerachterstand opgelopen ten gevolge van COVID-19",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            Aan de gemeentelijke basisschool van Denderleeuw werden 16 lestijden per week bijkomende omkadering toegekend voor het wegwerken van leerachterstand opgelopen ten gevolge van COVID-19. De beslissing van het CBS van 30 maart 2021 houdende het inrichten van deze lestijden dient bekrachtigd te worden door de gemeenteraad.\n\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "19. Vragen van raadsleden ter zitting",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De raadsleden stellen hun vragen ter zitting.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "19. Vragen van raadsleden ter zitting",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De raadsleden stellen hun vragen ter zitting.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "2. Bekrachtiging besluit burgemeester Gemeenteraad en Raad voor maatschappelijk welzijn van 29 april 2021 - alternatieve locatie met beperkte zaalcapaciteit ",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad bekrachtigt het besluit van de burgemeester van 8 april 2021 om de gemeenteraad en raad voor maatschappelijk welzijn van 29 april 2021 te laten doorgaan op een alternatieve locatie met beperkte zaalcapaciteit.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "2. Bekrachtiging besluit burgemeester Gemeenteraad en Raad voor maatschappelijk welzijn van 29 april 2021 - alternatieve locatie met beperkte zaalcapaciteit ",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad bekrachtigt het besluit van de burgemeester van 8 april 2021 om de gemeenteraad en raad voor maatschappelijk welzijn van 29 april 2021 te laten doorgaan op een alternatieve locatie met beperkte zaalcapaciteit.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "3. Bekrachtiging besluit burgemeester van 17 maart 2021- Coronamaatregelen",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad bekrachtigt het besluit van de burgemeester van 17 maart 2021 tot het nemen van lokale maatregelen om het coronavirus te bestrijden.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "3. Bekrachtiging besluit burgemeester van 17 maart 2021- Coronamaatregelen",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad bekrachtigt het besluit van de burgemeester van 17 maart 2021 tot het nemen van lokale maatregelen om het coronavirus te bestrijden.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "4. Goedkeuring agenda en bepaling stemgedrag algemene vergadering en buitengewone algemene vergadering Ilva ",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de agenda en bepaling stemgedrag van de algemene en buitengewone algemene vergadering van Ilva goed.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "4. Goedkeuring agenda en bepaling stemgedrag algemene vergadering en buitengewone algemene vergadering Ilva ",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de agenda en bepaling stemgedrag van de algemene en buitengewone algemene vergadering van Ilva goed.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "5. Goedkeuring agenda en bepaling stemgedrag algemene vergadering Zefier",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de agenda en bepaling stemgedrag van de algemene vergadering van Zefier goed.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "5. Goedkeuring agenda en bepaling stemgedrag algemene vergadering Zefier",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de agenda en bepaling stemgedrag van de algemene vergadering van Zefier goed.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "6. Goedkeuring agenda en bepaling stemgedrag IGS Westlede",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de agenda en bepaling stemgedrag voor de algemene vergadering van IGS Westlede goed\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "6. Goedkeuring agenda en bepaling stemgedrag IGS Westlede",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de agenda en bepaling stemgedrag voor de algemene vergadering van IGS Westlede goed\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "7. Goedkeuring agenda en bepaling stemgedrag algemene vergadering Intergem",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de agenda en bepaling stemgedrag van de algemene vergadering van Intergem op 17 juni 2021 goed.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "7. Goedkeuring agenda en bepaling stemgedrag algemene vergadering Intergem",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de agenda en bepaling stemgedrag van de algemene vergadering van Intergem op 17 juni 2021 goed.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "8. Goedkeuring jaarrekening 2020 - OCMW Denderleeuw",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de jaarrekening 2020- OCMW Denderleeuw goed\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "8. Goedkeuring jaarrekening 2020 - OCMW Denderleeuw",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De gemeenteraad keurt de jaarrekening 2020- OCMW Denderleeuw goed\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "9. Vaststelling jaarrekening 2020 - gemeentebestuur Denderleeuw",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De jaarrekening is de neerslag van de geregistreerde uitgaven en inkomsten van het afgelopen jaar, en van de mate waarin er aan vooropgestelde beleidsdoelstellingen is gewerkt.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "9. Vaststelling jaarrekening 2020 - gemeentebestuur Denderleeuw",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "14",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "11",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            De jaarrekening is de neerslag van de geregistreerde uitgaven en inkomsten van het afgelopen jaar, en van de mate waarin er aan vooropgestelde beleidsdoelstellingen is gewerkt.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "TP1. Interpellatie sociale huisvesting (dit punt werd toegevoegd door raadslid Van Cauter) ",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            Interpellatie sociale huisvesting - dit punt werd ingediend door raadslid Van Cauter\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "TP1. Interpellatie sociale huisvesting (dit punt werd toegevoegd door raadslid Van Cauter) ",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            Interpellatie sociale huisvesting - dit punt werd ingediend door raadslid Van Cauter\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "TP2. Fraude-onderzoek sociale huur (dit punt werd toegevoegd door raadslid Van Cauter)",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "15",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "10",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            Fraude-onderzoek sociale huur - dit punt werd toegevoegd door raadslid Van Cauter.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "TP2. Fraude-onderzoek sociale huur (dit punt werd toegevoegd door raadslid Van Cauter)",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "15",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "10",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            Fraude-onderzoek sociale huur - dit punt werd toegevoegd door raadslid Van Cauter.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "TP3. Voorstel om de standgelden voor kermisattracties voor 2021 kwijt te schelden. Dit punt werd ingediend door raadslid Slagmulder.",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "Gemeenteraad Denderleeuw",
+          "type": "literal"
+        },
+        "beschrijving": {
+          "value": "\n                            Raadslid Slagmulder vraagt om de standgelden van kermisattracties voor 2021 kwijt te schelden.\n                        ",
+          "type": "literal"
+        }
+      },
+      {
+        "title": {
+          "value": "TP3. Voorstel om de standgelden voor kermisattracties voor 2021 kwijt te schelden. Dit punt werd ingediend door raadslid Slagmulder.",
+          "type": "literal"
+        },
+        "nbPro": {
+          "value": "25",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbNoVote": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "nbAnti": {
+          "value": "0",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "geplandeStart": {
+          "value": "2021-04-29T18:50:00Z",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "geplandOpenbaar": {
+          "value": "1",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Denderleeuw",
+          "type": "literal"
+        },
+        "bestuurorgaan": {
+          "value": "\n                gemeenteraad Denderleeuw Gemeente\n            ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "beschrijving": {
+          "value": "\n                            Raadslid Slagmulder vraagt om de standgelden van kermisattracties voor 2021 kwijt te schelden.\n                        ",
+          "type": "literal"
+        }
+      }
+    ]
+  },
+  "head": {
+    "vars": [
+      "geplandeStart",
+      "location",
+      "nbPro",
+      "nbAnti",
+      "nbNoVote",
+      "title",
+      "beschrijving",
+      "geplandOpenbaar",
+      "bestuurorgaan",
+      "bestuurseenheidnaam"
+    ],
+    "link": []
+  }
+}

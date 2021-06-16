@@ -1,0 +1,3394 @@
+{
+  "results": {
+    "ordered": true,
+    "distinct": false,
+    "bindings": [
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00230 - Kapmachtiging door ANB – perceel gelegen Duinenstraat 265.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00236 - Voortgangstoets 2020.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00216 - Nieuwmoerse Steenweg 75 - Verbouwen van een woning en het bouwen van een bijgebouw.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00187 - Af te sluiten verbintenissen, geregistreerde inkomende facturen en vorderingen.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00190 - Overeenkomst i.v.m. sociaal tolken en vertalen.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00217 - Willaart 3 - Plaatsen van een bronbemaling.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00233 - Verzaken omgevingsvergunning 2020-KV-035 - Annulering factuur nr. 2020005153.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00191 - Goederen op de openbare weg geplaatst ter uitvoering van vonissen ter uitzetting.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00231 - Kapmachtiging door ANB – perceel gelegen Hertendreef 22.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00195 - NDC 521.12 - Ambtshalve inschrijving.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00204 - Nutswerken Noordheuvel - Boterdijk - Oud-Gooreind.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00203 - Verslag vergadering \"Bouwen van schoolgebouw 't Blokje en 12 appartementen en verbouwen van de Tiendenschuur\".",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00202 - WUUZ001 - Aanleg fietspad Sint-Lenaartseweg deel 1 - Goedkeuring lastvoorwaarden en gunningswijze - Goedkeuren",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00221 - Vaststelling Milieumisdrijf - Bredabaan 945 - Schending boswetgeving en VCRO.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00198 - Openverklaring van een contractuele functie 'administratief medewerker burgerzaken'38/38e, te begeven vanuit de wervingsreserve.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00228 - Bredabaan 1046 - kappen van uitheemse (Amerikaanse) eiken + kappen van sparren.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00199 - Aanstelling administratief medewerker, dienst burgerzaken, onbepaalde duur, 9/38e,  vanaf 1 oktober 2021.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00215 - Gagelweg 52 - Bouwen van een woning.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00214 - Baan 40 - Bouwen van een bijgebouw.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00226 - Dagvaarding voor Hof van Beroep - Zandvenweg 33.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00207 - Ringdreef 1 - Bouwen van een woning met bijgebouw.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00197 - Aanvraag ouderschapsverlof 1/2, technisch beambte groen, voor 1 maand vanaf 1 april 2021.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00232 - Kapmachtiging door ANB – perceel gelegen Hofdreef ZN .",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00224 - Inschrijving in het bevolkingsregister in een zone voor verblijfsrecreatie - Fazantendreef 31.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00206 - OCB. - Verslagen van periodieke controle.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00205 - Proces-verbaal van definitieve oplevering voor het dossier \"Verbindend fietspad Wuustwezel-Gooreind\".",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00194 - Melding landingsterrein paramotor.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00209 - Rozendreef 17 - Bouwen van een woning.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00212 - Bleekvenweg 13 - Bouwen van een woning.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00210 - Morellaan 10 - Rooien van bomen, het slopen van bestaande constructies en het bouwen van een woning.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00229 - Kapmachtiging door ANB – perceel gelegen Koersdreef ZN.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00213 - Baan 40 - Slopen van bestaande constructies en het bouwen van een nieuwe woning.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00186 - Verslag vorige vergadering.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00223 - Attest van verdeling - ter streke \"De Posterij\".",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00211 - Reebokdreef 18 - Bouwen van een woning.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00188 - Bezwaarschrift belasting op tweede verblijven dienstjaar 2020 - 2020/4/1/53.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00196 - Openverklaring 6 studentenjobs.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00219 - Verkoopbaarheidsattest - Verkaveling Bredabaan/Steenbakkerijstraat.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00200 - Aanstelling administratief medewerker, dienst burgerzaken, onbepaalde duur, 29/38e,  vanaf 1 oktober 2021.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00220 - Vaststelling van een niet-naleving van de milieuhygiënewetgeving - Kalmthoutse Steenweg 271.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00193 - Melding landingsterrein paramotor.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00222 - Attest van verdeling - ter streke \"Het Lonven\" - ter streke \"De Wachtelbergen\" - ter streke \"Westdoorn\".",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00237 - Afsprakenkader - SVK Het Sas.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00208 - Pastoor De Witstraat 12 - Bouwen van een woning.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00218 - Lange Mie ZN - Plaatsen van een bronbemaling.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00192 - NDC 504.2 - Dagorde gemeenteraad van 22 februari 2021.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00189 - Belasting op drijfkracht dienstjaar 2020 - rol 3.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00201 - OW 2105 - Verbeteringswerken aan voet- en fietspaden 2021 - Goedkeuring lastvoorwaarden en uit te nodigen firma's - Goedkeuren",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00235 - Fluvius – Earth Hour 27 maart 2021.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00240 - Overeenkomsten coördinatoren sportkampen.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00225 - Inschrijving in het bevolkingsregister in een zone voor verblijfsrecreatie - Fazantendreef 37.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00234 - Subsidies voor de aankoop van een compostbak en plaatsing van energiezuinige verwarming, dak- en muurisolatie  -  Aanvragen. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00227 - Kalmthoutse Steenweg 201 - Aanvraag schrapping als risicogrond.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00239 - Aanvraag afhaalmoment ontbijtmanden 't Kantoor op 14 maart 2021. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00241 - Creditnota factuur KWB Gooreind.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00238 - Wandeltocht door KWB Wuustwezel van 20 maart tot 11 april 2021 in Wuustwezel-Centrum.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-08T13:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00249 - Omgevingsvergunning - Het slopen en herbouwen van een woningbijgebouw; het verder exploiteren en uitbreiden van een varkens- en rundveefokkerij en groenteteeltbedrijf, Boezingestraat 87 te 8920 Langemark-Poelkapelle - Kennisneming",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00225 - Beslissingen algemeen directeur  - Kennisneming",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00233 - Besluit van het college van burgemeester en schepenen houdende politieverordening naar aanleiding van de vinkenzettingen te Langemark-Poelkapelle (Poelkapelle) - speelseizoen 2021 - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00229 - Leveren van sanitaire producten en installatiemateriaal 2021-2022 - gunning - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00230 - Aanpak afhaalpunten (take-away) ikv steunacties verenigingen tijdens Coronacrisis - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00239 - Verslag van de zitting van 8 februari 2021 - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00242 - Omgevingsvergunning - bouwen van een dakkapel - Klerkenstraat 62 - Vergunning",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00254 - Verslag managementteam van 14 januari 2021 - Aktename",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00247 - Nota factuur zonder bestelbon - De Groene Kans - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00251 - Omgevingsvergunning - verbouwen en uitbreiden van een optiekzaak (aangepast ontwerp) - Zonnebekestraat 5 - Vergunning",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00255 - Bepalen van het percentage/ aantal VTE werknemers  met een arbeidsbeperking binnen het lokaal bestuur en vaststellen van de functies die worden gereserveerd voor personen met een arbeidsbeperking  - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00221 - Mogelijkheden AGION-subsidies voor 't Bikschooltje - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00240 - Raamovereenkomst voor het leveren en aanbrengen van markeringen - factuur - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00244 - Nota factuur zonder bestelbon - Stad Ieper Academie - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00256 - Uitbreiding gemeentehuis - Aanbrengen hydrofuge - Ter beslissing",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00220 - Aktename door de gemeentelijk omgevingsambtenaar van meldingen van een ingedeelde inrichtingen of exploitaties - Kennisneming",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00243 - Omgevingsvergunning - bouwen van een poolhouse en aanleggen van een vijver - Gistelhofstraat 20 - Vergunning",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00246 - Omgevingsvergunning - Het bijstellen van de lozingsvoorwaarden bij een RWZI,, Melkerijstraat 1 te 8920 Langemark-Poelkapelle - Kennisneming",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00223 - Damiaanactie tijdens de markt - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00228 - Aanvraag voor het versturen van uitnodigingen (reünie, comité, ...) door dienst Burgerzaken - Ter beslissing",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00237 - Splitsing zonder voorafgaande verkavelingsvergunning - Brugge- en Kattestraat - Ter beslissing",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00241 - Politiezone Arro Ieper : invoering van Arro 2.0 en gevolgen voor de lokale samenwerking  - Kennisneming",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00245 - Bestelbonnen - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00252 - Omgevingsvergunning - Het bouwen van 2 meergezinswoningen met 31 appartementen - Kasteelstraat 28 - Vergunning",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00224 - De ingediende kandidaturen vanaf 05/02/2021 - Aktename",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00248 - Lijst goed te keuren facturen  - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00234 - Begraafplaatsen: vergunning urnenveld - Ter beslissing",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00232 - Omgevingsvergunning - Het herbouwen van een aanbouw  (regularisatie van gewijzigd ontwerp) - Wilgenlaan 3 - Vergunning",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00235 - Toekomst Bikschote - reacties op digitale infosessie 17 december 2020 - Kennisneming",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00250 - Omgevingsvergunning - bouwen van een pergola en aanleggen van een zwembad - Helftweg 6 - Vergunning",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00227 - Toontjesweg - verslag van de werfvergadering van 2 februari 2020 - Kennisneming",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00226 - Uitbreiding gemeentehuis - Deelname aan Dag van de architectuur 17/10/2021 - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00231 - Splitsing zonder voorafgaande verkavelingsvergunning - Boezingestraat 160 - Ter beslissing",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00238 - Toetreding tot VVSG Kennisnetwerk en Extenso  - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00236 - Vragen en antwoord - Aktename",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00222 - Leveren en plaatsen van speeltoestellen - Stopzetting van de plaatsingsprocedure - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_CBS_00253 - Afwatering tuin Klerkenstraat 150 - bepalen standpunt college i.v.m. bijkomende bijdragen - Ter beslissing",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-15T16:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "College van Burgemeester en Schepenen Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_RMW_00013 - Indexering dagprijs centrum voor dagverzorging - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Jaarlijks kan een ouderenvoorziening de prijzen van de verschillende kamer- of opvangtypes indexeren. Hier is geen goedkeuring door het Agentschap Zorg en Gezondheid voor nodig. De voorziening moet de indexering wel eerst meedelen aan Zorg en Gezondheid via het e-loket. De nieuw geïndexeerde prijzen moeten minstens 30 dagen vóór hun toepassing aan het agentschap en de bewoners worden meegedeeld. Hoeveel de prijs dan verhoogd mag worden, hangt af van de index van dat jaar. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_RMW_00012 - Indexering ligdagprijs woonzorgcentrum en centrum voor kortverblijf - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Jaarlijks kan een ouderenvoorziening de prijzen van de verschillende kamer- of opvangtypes indexeren. Hier is geen goedkeuring door het Agentschap zorg en Gezondheid voor nodig. De voorziening moet de indexering wel eerst meedelen aan Zorg en Gezondheid via het e-loket. De nieuw geïndexeerde prijzen moeten minstens 30 dagen vóór hun toepassing aan het agentschap en de bewoners worden meegedeeld. Hoeveel de prijs dan verhoogd mag worden, hangt af van de index van dat jaar. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Raad voor Maatschappelijk Welzijn Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_RMW_00015 - Verslag van de Raad voor Maatschappelijk Welzijn van 25 januari 2021 - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Het verslag van de Raad voor Maatschappelijk Welzijn van 25 januari 2021 wordt ter goedkeuring voorgelegd.Het audioverslag van deze zitting kan u beluisteren op deze link. De raadszitting start om 02:49:40 en eindigt om 03:20:13.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_RMW_00012 - Indexering ligdagprijs woonzorgcentrum en centrum voor kortverblijf - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Jaarlijks kan een ouderenvoorziening de prijzen van de verschillende kamer- of opvangtypes indexeren. Hier is geen goedkeuring door het Agentschap zorg en Gezondheid voor nodig. De voorziening moet de indexering wel eerst meedelen aan Zorg en Gezondheid via het e-loket. De nieuw geïndexeerde prijzen moeten minstens 30 dagen vóór hun toepassing aan het agentschap en de bewoners worden meegedeeld. Hoeveel de prijs dan verhoogd mag worden, hangt af van de index van dat jaar. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_RMW_00013 - Indexering dagprijs centrum voor dagverzorging - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Jaarlijks kan een ouderenvoorziening de prijzen van de verschillende kamer- of opvangtypes indexeren. Hier is geen goedkeuring door het Agentschap Zorg en Gezondheid voor nodig. De voorziening moet de indexering wel eerst meedelen aan Zorg en Gezondheid via het e-loket. De nieuw geïndexeerde prijzen moeten minstens 30 dagen vóór hun toepassing aan het agentschap en de bewoners worden meegedeeld. Hoeveel de prijs dan verhoogd mag worden, hangt af van de index van dat jaar. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Raad voor Maatschappelijk Welzijn Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_RMW_00015 - Verslag van de Raad voor Maatschappelijk Welzijn van 25 januari 2021 - Goedkeuring",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Het verslag van de Raad voor Maatschappelijk Welzijn van 25 januari 2021 wordt ter goedkeuring voorgelegd.Het audioverslag van deze zitting kan u beluisteren op deze link. De raadszitting start om 02:49:40 en eindigt om 03:20:13.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Raad voor Maatschappelijk Welzijn Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_RMW_00017 - Huren van woning als doorgangswoning aan De Mandel - Bekrachtiging",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Er wordt voorgesteld om een woning te huren aan De Mandel als doorgangswoning.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_RMW_00017 - Huren van woning als doorgangswoning aan De Mandel - Bekrachtiging",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Er wordt voorgesteld om een woning te huren aan De Mandel als doorgangswoning.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Raad voor Maatschappelijk Welzijn Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_RMW_00016 - Vragen en antwoord - Aktename",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "Raad voor Maatschappelijk Welzijn Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_RMW_00016 - Vragen en antwoord - Aktename",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00042 - Aanvullend reglement op de politie van het wegverkeer houdende het invoeren van een zone 30 in de Wachelbergen en Wijngaardsveld.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "In het najaar van 2020 werd er een buurtvergadering georganiseerd met de wijk Wachelbergen. Hieruit bleek dat er vanuit de buurtbewoners een duidelijke vraag was voor het invoeren van een zone 30. Aangezien dit een woonwijk is waar bijna uitsluitend bestemmingsverkeer komt en geen doorgaand verkeer, lijkt het ons opportuun om in te gaan op deze vraag.Aan de gemeenteraad wordt gevraagd een aanvullend reglement op de politie van het wegverkeer goed te keuren voor het invoeren van een zone 30 in de Wachelbergen en Wijngaardsveld.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00049 - Retributie op het gebruik van het recyclagepark.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Inwoners moeten bijdragen in de kosten van de exploitatie van het recyclagepark. Derhalve heeft de gemeenteraad in zitting van 7 december 2020 het retributiereglement op het gebruik van het recyclagepark goedgekeurd. In het kader van het burgemeestersconvenant 2030 willen we o.a. inzetten op klimaatadaptatie en dus ook op waterschaarste. IGEAN biedt de mogelijkheid om regenwatertonnen aan te bieden aan de inwoners. Aan de gemeenteraad wordt gevraagd in deze zin het retributiereglement op het gebruik van het recyclagepark aan te passen. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00044 - Personeelsovereenkomst naar aanleiding van de oprichting van een kunstacademie in Wuustwezel door overheveling van structuuronderdelen van schoolbestuur Brasschaat. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "In de raadszitting van 21 december 2020 werd besloten om uit te treden uit de \"Interlokale vereniging Academie noord, regionale academie voor beeldende en audiovisuele kunsten\" en zelf een onderwijsbevoegdheid aan te vragen voor het domein Beeldende en audiovisuele kunsten (zijnde de oprichting van een kunstacademie in Wuustwezel). In overleg met het gemeentebestuur van Brasschaat werd een personeelsovereenkomst opgesteld voor de overheveling van structuuronderdelen van het schoolbestuur van Brasschaat. Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen aan de voorliggende personeelsovereenkomst. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00048 - Charter Masterplan Toegankelijke Haltes.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Als gemeentebestuur erkennen we dat de toegankelijkheid van de haltes voor het openbaar vervoer en de toegankelijkheid van het publiek domein een bepalende rol spelen om elke inwoner en bezoeker gelijke kansen te geven. Zo leveren we een bijdrage aan de uitvoering van het VN-verdrag voor de rechten van personen met een handicap, dat België ratificeerde in 2009. Dit verdrag bepaalt dat personen met een handicap volledig en gelijkwaardig moeten kunnen deelnemen aan de samenleving.Een toegankelijke gemeente is een gemeente waar iedereen zelfstandig mobiel kan zijn, ongeacht zijn mogelijkheden of leeftijd en onder alle omstandigheden. Als het kan, net als iedereen – als het moet, aangepast maar op een evenwaardige manier. Basisbereikbaarheid geldt voor iedereen, jong en oud, onder alle omstandigheden, met of zonder handicap. Mobiel zijn is essentieel om het eigen leven kwaliteitsvol uit te bouwen en te beleven. De Vlaamse regering besliste daarom tot opmaak van een Masterplan Toegankelijkheid met ambitieuze maar haalbare doelstellingen voor het toegankelijk maken van halte-infrastructuur. We wensen als gemeentebestuur tijdens deze lopende legislatuur in te gaan op het aanbod tot een proactieve samenwerking om deze doelstelling mee te helpen realiseren. Het Masterplan toegankelijkheid heeft volgende doelstellingen: 50% van de haltes van het kernnet en aanvullend net zijn toegankelijk tegen 2030bestaande haltes zijn minimaal toegankelijk mits assistentienieuw (her)aangelegde haltes zijn autonoom toegankelijk voor personen met een motorische beperking en voor blinden en slechtzienden.100% van de haltes opgenomen in een mobipunt zijn tegen 2030 autonoom toegankelijk voor personen met een motorische beperking en voor blinden en slechtzienden. Indien bij de inrichting van een mobipunt een nieuwe halte wordt voorzien, dan wordt deze meteen toegankelijk aangelegd.Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen tot het ondertekenen van het Charter \"Masterplan toegankelijke haltes\". ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00037 - Ondertekening van het convenant \"Naar een toegankelijke gemeente\".",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Een toegankelijke gemeente is een gemeente waar iedereen gelijkwaardig en onafhankelijk toegang heeft tot de gebouwen, publieke ruimte, dienstverlening en communicatie. Iedereen kan er comfortabel, kwaliteitsvol en tot op hoge leeftijd wonen, leren, werken, dagelijkse activiteiten uitvoeren, zich verplaatsen en ontspannen. Ook die inwoners met een zichtbare of onzichtbare beperking.Als gemeentebestuur erkennen we dat toegankelijkheid een bepalende rol speelt om elke inwoner en bezoeker, ongeacht zijn mogelijkheden, leeftijd, culturele achtergrond, gelijke kansen te geven om deel te nemen aan het maatschappelijk leven. Hiermee leveren we als gemeente onder andere een bijdrage aan de uitvoering van het VN-verdrag over de rechten van personen met een handicap dat België ratificeerde in 2009. Het VN-verdrag pleit ervoor dat personen met een handicap volledig en gelijkwaardig kunnen deelnemen aan de samenleving.Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen aan het convenant \"naar een toegankelijke gemeente\", zijnde een samenwerkingsovereenkomst af te sluiten met Inter uit Hasselt.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00049 - Retributie op het gebruik van het recyclagepark.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Inwoners moeten bijdragen in de kosten van de exploitatie van het recyclagepark. Derhalve heeft de gemeenteraad in zitting van 7 december 2020 het retributiereglement op het gebruik van het recyclagepark goedgekeurd. In het kader van het burgemeestersconvenant 2030 willen we o.a. inzetten op klimaatadaptatie en dus ook op waterschaarste. IGEAN biedt de mogelijkheid om regenwatertonnen aan te bieden aan de inwoners. Aan de gemeenteraad wordt gevraagd in deze zin het retributiereglement op het gebruik van het recyclagepark aan te passen. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00042 - Aanvullend reglement op de politie van het wegverkeer houdende het invoeren van een zone 30 in de Wachelbergen en Wijngaardsveld.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "In het najaar van 2020 werd er een buurtvergadering georganiseerd met de wijk Wachelbergen. Hieruit bleek dat er vanuit de buurtbewoners een duidelijke vraag was voor het invoeren van een zone 30. Aangezien dit een woonwijk is waar bijna uitsluitend bestemmingsverkeer komt en geen doorgaand verkeer, lijkt het ons opportuun om in te gaan op deze vraag.Aan de gemeenteraad wordt gevraagd een aanvullend reglement op de politie van het wegverkeer goed te keuren voor het invoeren van een zone 30 in de Wachelbergen en Wijngaardsveld.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00050 - Wijziging - Retributies voor de selectieve inzameling en verwerking van huisvuil en GFT met diftar en voor de selectieve inzameling van PMD.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Inwoners moeten bijdragen aan de selectieve inzameling en verwerking van huisvuil en GFT met diftar en voor de selectieve inzameling van PMD.Met de invoering van de nieuwe blauwe zak kwam ook de vraag om een kleiner formaat van pmd-zakken in te voeren (ofwel 60 l ofwel 30 l). Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen aan het gewijzigde retributiereglement. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00045 - Aanvullend reglement op de politie van het wegverkeer houdende het invoeren van een stilstaan- en parkeerverbod in de Rode Dreef.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "In het verleden werd er reeds een parkeerverbod ingesteld in de Rode Dreef. Dit zorgt echter voor praktische problemen bij de landbouwers die daar een perceel hebben. Om deze problemen op te lossen, wordt het bestaande parkeerverbod tussen de Kochdreef en Eikendreef ingekort. Op deze manier is parkeren op de parking in de Eikendreef nog steeds dichter bij de ingang van de sporthal dan parkeren in de Rode Dreef én zijn de problemen voor de landbouwers opgelost.Aan de gemeenteraad wordt gevraagd een aanvullend reglement op de politie van het wegverkeer goed te keuren voor het invoeren van een stilstaan en parkeerverbod in de Rode Dreef.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00045 - Aanvullend reglement op de politie van het wegverkeer houdende het invoeren van een stilstaan- en parkeerverbod in de Rode Dreef.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "In het verleden werd er reeds een parkeerverbod ingesteld in de Rode Dreef. Dit zorgt echter voor praktische problemen bij de landbouwers die daar een perceel hebben. Om deze problemen op te lossen, wordt het bestaande parkeerverbod tussen de Kochdreef en Eikendreef ingekort. Op deze manier is parkeren op de parking in de Eikendreef nog steeds dichter bij de ingang van de sporthal dan parkeren in de Rode Dreef én zijn de problemen voor de landbouwers opgelost.Aan de gemeenteraad wordt gevraagd een aanvullend reglement op de politie van het wegverkeer goed te keuren voor het invoeren van een stilstaan en parkeerverbod in de Rode Dreef.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00044 - Personeelsovereenkomst naar aanleiding van de oprichting van een kunstacademie in Wuustwezel door overheveling van structuuronderdelen van schoolbestuur Brasschaat. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "In de raadszitting van 21 december 2020 werd besloten om uit te treden uit de \"Interlokale vereniging Academie noord, regionale academie voor beeldende en audiovisuele kunsten\" en zelf een onderwijsbevoegdheid aan te vragen voor het domein Beeldende en audiovisuele kunsten (zijnde de oprichting van een kunstacademie in Wuustwezel). In overleg met het gemeentebestuur van Brasschaat werd een personeelsovereenkomst opgesteld voor de overheveling van structuuronderdelen van het schoolbestuur van Brasschaat. Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen aan de voorliggende personeelsovereenkomst. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00047 - Omvorming ILV JoNK tot projectvereniging. - Kennisname statuten en aanstellen leden voor de raad van bestuur.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "In 2020 werd ILV JoNK na goedkeuring door de verschillende gemeenteraden omgevormd naar een projectvereniging met rechtspersoonlijkheid, om aanspraak te kunnen maken op de eenmalige subsidielijn van de Vlaamse overheid ter ondersteuning van intergemeentelijke samenwerking rond vrijetijdsprojecten. De subsidieaanvraag werd principieel goedgekeurd en projectvereniging JoNK ontvangt van 2021 tot 2026 jaarlijks, mits voldoen aan de voorwaarden, 36.150 euro subsidies voor projecten als T-DAY, SWAP, uitwisseling met jeugdraden en Kamp Noord. Om de projectvereniging verder vorm te geven volgens de decretaal bepaalde verplichtingen naar samenstelling, is het noodzakelijk om de afgevaardigden in de raad van bestuur te benoemen. Iedere gemeente wijst, naast de afgevaardigde met stemrecht, slechts één afgevaardigde aan die deelneemt aan de vergaderingen van de raad van bestuur als lid met raadgevende stem. Deze afgevaardigde is een raadslid, verkozen op een lijst waarvan geen enkele verkozene deel uitmaakt van het college van burgemeester en schepenen.Aan de raad wordt voorgesteld om opnieuw schepen van jeugd Kris Van Looveren als stemgerechtigd lid en Ilke Pompen als plaatsvervangend lid voor te dragen voor de raad van bestuur van projectvereniging JoNK voor de periode van 2021 – 2024.Aan de raad wordt eveneens gevraagd een raadslid, verkozen op een lijst waarvan geen enkele verkozene deel uitmaakt van het college van burgemeester en schepen,  aan te duiden als niet-stemgerechtigd lid voor de raad van bestuur van projectvereniging JoNK voor de periode van 2021 – 2024.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00047 - Omvorming ILV JoNK tot projectvereniging. - Kennisname statuten en aanstellen leden voor de raad van bestuur.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "In 2020 werd ILV JoNK na goedkeuring door de verschillende gemeenteraden omgevormd naar een projectvereniging met rechtspersoonlijkheid, om aanspraak te kunnen maken op de eenmalige subsidielijn van de Vlaamse overheid ter ondersteuning van intergemeentelijke samenwerking rond vrijetijdsprojecten. De subsidieaanvraag werd principieel goedgekeurd en projectvereniging JoNK ontvangt van 2021 tot 2026 jaarlijks, mits voldoen aan de voorwaarden, 36.150 euro subsidies voor projecten als T-DAY, SWAP, uitwisseling met jeugdraden en Kamp Noord. Om de projectvereniging verder vorm te geven volgens de decretaal bepaalde verplichtingen naar samenstelling, is het noodzakelijk om de afgevaardigden in de raad van bestuur te benoemen. Iedere gemeente wijst, naast de afgevaardigde met stemrecht, slechts één afgevaardigde aan die deelneemt aan de vergaderingen van de raad van bestuur als lid met raadgevende stem. Deze afgevaardigde is een raadslid, verkozen op een lijst waarvan geen enkele verkozene deel uitmaakt van het college van burgemeester en schepenen.Aan de raad wordt voorgesteld om opnieuw schepen van jeugd Kris Van Looveren als stemgerechtigd lid en Ilke Pompen als plaatsvervangend lid voor te dragen voor de raad van bestuur van projectvereniging JoNK voor de periode van 2021 – 2024.Aan de raad wordt eveneens gevraagd een raadslid, verkozen op een lijst waarvan geen enkele verkozene deel uitmaakt van het college van burgemeester en schepen,  aan te duiden als niet-stemgerechtigd lid voor de raad van bestuur van projectvereniging JoNK voor de periode van 2021 – 2024.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00039 - Wijziging rechtspositieregeling voor het gemeentepersoneel.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Er wordt voorgesteld om de bestaande rechtspositieregeling aan te passen om volgende redenen: In de rechtspositieregeling is voorzien dat dienstvrijstelling kan worden verleend voor deelneming aan examens, ingericht door het gemeentebestuur.  Gezien er één gezamenlijk organogram is voor gemeente en OCMW, is het wenselijk dit uit te breiden naar examens, ingericht door lokaal bestuur Wuustwezel.In de rechtspositieregeling zijn een aantal situaties opgenomen waarbij de algemeen directeur kan beslissen om dienstvrijstelling te verlenen.  Gezien er zich soms andere situaties voordoen waarbij het raadzaam is om dienstvrijstelling te verlenen, is het wenselijk te voorzien dat de algemeen directeur  ook deze dienstvrijstelling kan verlenen.Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen aan voornoemde wijzigingen in de rechtspositieregeling voor het gemeentepersoneel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00039 - Wijziging rechtspositieregeling voor het gemeentepersoneel.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Er wordt voorgesteld om de bestaande rechtspositieregeling aan te passen om volgende redenen: In de rechtspositieregeling is voorzien dat dienstvrijstelling kan worden verleend voor deelneming aan examens, ingericht door het gemeentebestuur.  Gezien er één gezamenlijk organogram is voor gemeente en OCMW, is het wenselijk dit uit te breiden naar examens, ingericht door lokaal bestuur Wuustwezel.In de rechtspositieregeling zijn een aantal situaties opgenomen waarbij de algemeen directeur kan beslissen om dienstvrijstelling te verlenen.  Gezien er zich soms andere situaties voordoen waarbij het raadzaam is om dienstvrijstelling te verlenen, is het wenselijk te voorzien dat de algemeen directeur  ook deze dienstvrijstelling kan verlenen.Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen aan voornoemde wijzigingen in de rechtspositieregeling voor het gemeentepersoneel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00040 - Aanvullend reglement op de politie van het wegverkeer houdende het invoeren van een zone 30 in De Vennekens en omgeving.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "In het verleden kregen we al meermaals de vraag om een zone 30 in te voeren in De Vennekens en omliggende straten. Aangezien dit een woonwijk is waar bijna uitsluitend bestemmingsverkeer komt en geen doorgaand verkeer, lijkt het ons opportuun om in te gaan op deze vraag.Aan de gemeenteraad wordt gevraagd een aanvullend reglement op de politie van het wegverkeer goed te keuren voor het invoeren van een zone 30 in De Vennekens en omgeving.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00037 - Ondertekening van het convenant \"Naar een toegankelijke gemeente\".",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Een toegankelijke gemeente is een gemeente waar iedereen gelijkwaardig en onafhankelijk toegang heeft tot de gebouwen, publieke ruimte, dienstverlening en communicatie. Iedereen kan er comfortabel, kwaliteitsvol en tot op hoge leeftijd wonen, leren, werken, dagelijkse activiteiten uitvoeren, zich verplaatsen en ontspannen. Ook die inwoners met een zichtbare of onzichtbare beperking.Als gemeentebestuur erkennen we dat toegankelijkheid een bepalende rol speelt om elke inwoner en bezoeker, ongeacht zijn mogelijkheden, leeftijd, culturele achtergrond, gelijke kansen te geven om deel te nemen aan het maatschappelijk leven. Hiermee leveren we als gemeente onder andere een bijdrage aan de uitvoering van het VN-verdrag over de rechten van personen met een handicap dat België ratificeerde in 2009. Het VN-verdrag pleit ervoor dat personen met een handicap volledig en gelijkwaardig kunnen deelnemen aan de samenleving.Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen aan het convenant \"naar een toegankelijke gemeente\", zijnde een samenwerkingsovereenkomst af te sluiten met Inter uit Hasselt.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00048 - Charter Masterplan Toegankelijke Haltes.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Als gemeentebestuur erkennen we dat de toegankelijkheid van de haltes voor het openbaar vervoer en de toegankelijkheid van het publiek domein een bepalende rol spelen om elke inwoner en bezoeker gelijke kansen te geven. Zo leveren we een bijdrage aan de uitvoering van het VN-verdrag voor de rechten van personen met een handicap, dat België ratificeerde in 2009. Dit verdrag bepaalt dat personen met een handicap volledig en gelijkwaardig moeten kunnen deelnemen aan de samenleving.Een toegankelijke gemeente is een gemeente waar iedereen zelfstandig mobiel kan zijn, ongeacht zijn mogelijkheden of leeftijd en onder alle omstandigheden. Als het kan, net als iedereen – als het moet, aangepast maar op een evenwaardige manier. Basisbereikbaarheid geldt voor iedereen, jong en oud, onder alle omstandigheden, met of zonder handicap. Mobiel zijn is essentieel om het eigen leven kwaliteitsvol uit te bouwen en te beleven. De Vlaamse regering besliste daarom tot opmaak van een Masterplan Toegankelijkheid met ambitieuze maar haalbare doelstellingen voor het toegankelijk maken van halte-infrastructuur. We wensen als gemeentebestuur tijdens deze lopende legislatuur in te gaan op het aanbod tot een proactieve samenwerking om deze doelstelling mee te helpen realiseren. Het Masterplan toegankelijkheid heeft volgende doelstellingen: 50% van de haltes van het kernnet en aanvullend net zijn toegankelijk tegen 2030bestaande haltes zijn minimaal toegankelijk mits assistentienieuw (her)aangelegde haltes zijn autonoom toegankelijk voor personen met een motorische beperking en voor blinden en slechtzienden.100% van de haltes opgenomen in een mobipunt zijn tegen 2030 autonoom toegankelijk voor personen met een motorische beperking en voor blinden en slechtzienden. Indien bij de inrichting van een mobipunt een nieuwe halte wordt voorzien, dan wordt deze meteen toegankelijk aangelegd.Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen tot het ondertekenen van het Charter \"Masterplan toegankelijke haltes\". ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00046 - Wijziging organogram lokaal bestuur Wuustwezel.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Het organogram voor het lokaal bestuur Wuustwezel zal geleidelijk aan een hervorming krijgen, rekening houdend met interne opportuniteiten, nieuwe samenwerkingsverbanden, geplande pensioneringen en doorgroeimogelijkheden enerzijds en wijzigingen van decreten, protocollen en wetgeving anderzijds. Het is immers belangrijk om als lokaal bestuur op dit vlak niet te blijven stilstaan, maar mee te gaan met de snelheid van onze maatschappij en de uitdagingen dat dat met zich meebrengt. Een aantal gesprekken hieromtrent zijn reeds lopende.AANPASSING ORGANOGRAM (deel 3) - dienst omgeving1./  Vanuit het management team werd gunstig advies gegeven om volgende functie te voorzien in het organogram:  hoofdmedewerker GOA 1,0   -  statutair  -   C4-C5.      Deze functie wordt als statutair voorzien, omdat de procedure bij bevordering zal worden open verklaard en er een interne, statutaire kandidaat is;2./ Wegens aangekondigde pensionering van de administratief assistent (0,5 vte  -  D1-D3), zal er een vervanging voorzien worden. Het is echter opportuun om deze functie voltijds op C1-C3 niveau te gaan voorzien (cfr. de andere administratief medewerkers op de dienst omgeving).UPDATE ORGANOGRAM (deel 7) - sociale dienstVanuit het management team werd gunstig advies gegeven voor de verlenging van de looptijd voor het projectwerk (vrijstelling voor 0,2 vte) naar aanleiding van de inspectie van 2019 tot 31 december 2021.Daarnaast werd er gunstig advies gegeven voor bijkomend 0,3 vte projectwerk rond  het contacteren van personen met inkomensverlies n.a.v. de Corona pandemie en fungerende als een contactpersoon voor onderwijs voor gezinnen in armoede. Ook dit projectwerk werd mee opgenomen in het organogram.Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen aan het gewijzigde organogram.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00046 - Wijziging organogram lokaal bestuur Wuustwezel.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Het organogram voor het lokaal bestuur Wuustwezel zal geleidelijk aan een hervorming krijgen, rekening houdend met interne opportuniteiten, nieuwe samenwerkingsverbanden, geplande pensioneringen en doorgroeimogelijkheden enerzijds en wijzigingen van decreten, protocollen en wetgeving anderzijds. Het is immers belangrijk om als lokaal bestuur op dit vlak niet te blijven stilstaan, maar mee te gaan met de snelheid van onze maatschappij en de uitdagingen dat dat met zich meebrengt. Een aantal gesprekken hieromtrent zijn reeds lopende.AANPASSING ORGANOGRAM (deel 3) - dienst omgeving1./  Vanuit het management team werd gunstig advies gegeven om volgende functie te voorzien in het organogram:  hoofdmedewerker GOA 1,0   -  statutair  -   C4-C5.      Deze functie wordt als statutair voorzien, omdat de procedure bij bevordering zal worden open verklaard en er een interne, statutaire kandidaat is;2./ Wegens aangekondigde pensionering van de administratief assistent (0,5 vte  -  D1-D3), zal er een vervanging voorzien worden. Het is echter opportuun om deze functie voltijds op C1-C3 niveau te gaan voorzien (cfr. de andere administratief medewerkers op de dienst omgeving).UPDATE ORGANOGRAM (deel 7) - sociale dienstVanuit het management team werd gunstig advies gegeven voor de verlenging van de looptijd voor het projectwerk (vrijstelling voor 0,2 vte) naar aanleiding van de inspectie van 2019 tot 31 december 2021.Daarnaast werd er gunstig advies gegeven voor bijkomend 0,3 vte projectwerk rond  het contacteren van personen met inkomensverlies n.a.v. de Corona pandemie en fungerende als een contactpersoon voor onderwijs voor gezinnen in armoede. Ook dit projectwerk werd mee opgenomen in het organogram.Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen aan het gewijzigde organogram.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00050 - Wijziging - Retributies voor de selectieve inzameling en verwerking van huisvuil en GFT met diftar en voor de selectieve inzameling van PMD.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "Inwoners moeten bijdragen aan de selectieve inzameling en verwerking van huisvuil en GFT met diftar en voor de selectieve inzameling van PMD.Met de invoering van de nieuwe blauwe zak kwam ook de vraag om een kleiner formaat van pmd-zakken in te voeren (ofwel 60 l ofwel 30 l). Aan de gemeenteraad wordt gevraagd goedkeuring te verlenen aan het gewijzigde retributiereglement. ",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00040 - Aanvullend reglement op de politie van het wegverkeer houdende het invoeren van een zone 30 in De Vennekens en omgeving.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "description": {
+          "value": "In het verleden kregen we al meermaals de vraag om een zone 30 in te voeren in De Vennekens en omliggende straten. Aangezien dit een woonwijk is waar bijna uitsluitend bestemmingsverkeer komt en geen doorgaand verkeer, lijkt het ons opportuun om in te gaan op deze vraag.Aan de gemeenteraad wordt gevraagd een aanvullend reglement op de politie van het wegverkeer goed te keuren voor het invoeren van een zone 30 in De Vennekens en omgeving.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00043 - Vragenkwartiertje.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00043 - Vragenkwartiertje.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00002 - Verslag vorige vergadering.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad Wuustwezel",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      },
+      {
+        "title_agenda": {
+          "value": "2021_GR_00002 - Verslag vorige vergadering.",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "location": {
+          "value": "Raadzaal van GC Blommaert, Gemeentepark 22, 2990 Wuustwezel",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T20:00:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "bestuursorgaan": {
+          "value": "Gemeenteraad",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Wuustwezel",
+          "type": "literal"
+        }
+      }
+    ]
+  },
+  "head": {
+    "vars": [
+      "geplandeStart",
+      "location",
+      "title_agenda",
+      "description",
+      "bestuursorgaan",
+      "bestuurseenheidnaam"
+    ],
+    "link": []
+  }
+}

@@ -360,18 +360,3 @@ const map = async () => d3.json(await vlaanMap).then((data, error) => {
 });
 map();
 
-
-/* let btnAdd = document.querySelector('#add')
-let btnRemove = document.querySelector('#remove')
-let output = document.querySelector('h1')
-
-btnAdd.addEventListener('click', ()=> {
-  document.addEventListener('mousemove', handleEvent)
-})
-btnRemove.addEventListener('click', ()=>{
-  document.removeEventListener('mousemove', handleEvent)
-})
-
-function handleEvent(e) {
-  output.innerText = `X: ${e.pageX} - Y: ${e.pageY}`
-} */

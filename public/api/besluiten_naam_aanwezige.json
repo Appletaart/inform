@@ -1,0 +1,474 @@
+{
+  "results": {
+    "ordered": true,
+    "distinct": false,
+    "bindings": [
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Nicole Louwagie",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Leen Louwagie",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Laurent Hoornaert",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Doris Dereyne",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Brecht Bogaert",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Tristan Bruynsteen",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Jos Meersch",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Algemeen directeur",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Sabine De Wandel",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Robert Barthier",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Koen Bentein",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Dominique Cool",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "José Victoor",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Marleen Soete",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Lieven Vanbelleghem",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Peter Vantomme",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Claudine Muylle",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Eddy Vanacker",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Jean-Marie Callewaert",
+          "type": "literal"
+        }
+      },
+      {
+        "location": {
+          "value": "digitaal",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "geplandeStart": {
+          "value": "2021-02-22T19:30:00+01:00",
+          "type": "typed-literal",
+          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "functie": {
+          "value": "Lid van de Raad voor Maatschappelijk Welzijn",
+          "type": "literal"
+        },
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "agendapunt_aanwezige": {
+          "value": "Christoph Deraeve",
+          "type": "literal"
+        }
+      }
+    ]
+  },
+  "head": {
+    "vars": [
+      "agendapunt_aanwezige",
+      "geplandeStart",
+      "location",
+      "bestuurseenheidnaam",
+      "functie"
+    ],
+    "link": []
+  }
+}

@@ -1,0 +1,20 @@
+<div class="search">
+  {{!-- template-lint-disable no-log --}}
+<AuLabel for="input-block">Ontdek wat onze vertegenwoordigers voor ons beslissen.</AuLabel>
+<PowerSelect
+  @width="block"
+  title="kie gemeente" 
+  @icon="search"
+  @allowClear={{true}}
+  @disabled={{this.disabled}}
+  @searchEnabled={{true}}
+  @loadingMessage="Aan het laden..."
+  @noMatchesMessage="Geen resultaten"
+  @searchMessage="Typ om te zoeken"
+  @options={{this.singleselects}}
+  @selected={{this.selected}}
+  @onChange={{this.onChange}}
+  @placeholder="Gemeente" as |singleselect|>
+  {{singleselect}}
+</PowerSelect>
+</div>
