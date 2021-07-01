@@ -13,19 +13,14 @@ export default class SearchbarComponent extends Component {
   onChange(value) {
     this.selected = value;
     this.addToService(this.selected);
-    console.log("work?", this.selected);
+    // console.log("work searchbar component", this.selected);
   }
 
   @action
   addToService(item){
     this.searchBar.addItem(item)
-      console.log(item); // in map hbs use  {{on "click" this.addToService}}
+      // console.log('action add to service', item); // in map hbs use  {{on "click" this.addToService}}
   } 
-
-  @action clickToOpen() {
-    this.toggleClick = true;
-  }
-
 
   singleselects = [
     { groupName: 'Provincie Antwerpen', options: [
@@ -93,25 +88,4 @@ export default class SearchbarComponent extends Component {
       'Zaventem','Zemst','Zoutleeuw'
     ] }
   ]
-
-  /* searchRepo(term) {
-    let url = `https://api.github.com/search/repositories?q=${term}`;
-    return fetch(url).then((resp) => resp.json()).then((json) => json.items);
-  } */
-
-  async searchRepo() {
-    let response = await fetch('/api/vlaanderen.json');
-    let data = await response.json();
-    let provincesData = topojson.feature(data, data.objects.provinces).features;
-    let gemeenteData = topojson.feature(data, data.objects.municipalities).features;
-    let gemeente = [];
-    gemeenteData.forEach(name => {
-      let names = name.properties.name_nl;
-      gemeente.push(names)
-    });
-    console.log(gemeente);
-    return gemeente;
-  }// end function
-
-
 }

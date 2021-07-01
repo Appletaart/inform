@@ -2,11 +2,11 @@ import Service from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 
 export default class SearchBarService extends Service {
-    @tracked gemeente = []
+    @tracked gemeente_search;
     
      addItem = (value) => {
-          this.gemeente = value// ...this.itemList/ to make a list
-          console.log(value);
-        //  return this.gemeente 
+          this.gemeente_search = value// ...this.itemList/ to make a list
+        //   console.log('service', value);
+        //  return this.gemeente_search
     }
 }

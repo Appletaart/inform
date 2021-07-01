@@ -1,35 +1,29 @@
 <AuMainHeader @brandLink="https://www.vlaanderen.be/nl" @homeRoute="index" @appTitle="Data Vlaanderen" >
 </AuMainHeader>
 <div class="au-o-layout">
-{{!-- <div class="au-c-form search">
-<p>
-  <AuLabel for="input-block">Ontdek wat onze vertegenwoordigers voor ons beslissen.</AuLabel>
-  <AuInput id="input-block" @width="block" placeholder="Gemeente" title="kie gemeente" @icon="search"/>
-</p>
-</div> --}}
 {{yield}} 
 </div>
 <div class="main_nav">
 <ul class="au-o-region">
   <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="besturen" @model="">
+    <AuNavigationLink @linkRoute="besturen" {{on "click" this.clear}}>
       | Samenstelling<br>
         College van Burgemeester en Schepenen<br>
         Gemeenteraad
     </AuNavigationLink>
   </li>
   <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="agenda">
+    <AuNavigationLink @linkRoute="agenda" {{on "click" this.clear}}>
       | Agenda
     </AuNavigationLink>
   </li>
   <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="besluiten">
+    <AuNavigationLink @linkRoute="besluiten" {{on "click" this.clear}}>
       | Besluiten
     </AuNavigationLink>
   </li>
   <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="archieven">
+    <AuNavigationLink @linkRoute="archieven" {{on "click" (fn this.clear this.gemeente)}}>
       | Archief besluiten
     </AuNavigationLink>
   </li>

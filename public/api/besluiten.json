@@ -43,61 +43,12 @@
           "type": "typed-literal",
           "datatype": "http://www.w3.org/2001/XMLSchema#string"
         },
-        "bestuursorgaan": {
-          "value": "Raad voor Maatschappelijk Welzijn Langemark-Poelkapelle",
-          "type": "literal"
-        },
         "bestuurseenheidnaam": {
           "value": "Langemark-Poelkapelle",
           "type": "literal"
-        }
-      },
-      {
-        "title": {
-          "value": "2021_RMW_00012 - Indexering ligdagprijs woonzorgcentrum en centrum voor kortverblijf - Goedkeuring",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
         },
-        "nbPro": {
-          "value": "19",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "nbNoVote": {
-          "value": "0",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "nbAnti": {
-          "value": "0",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "motivering": {
-          "value": "\n                                    Motivering\n                                    \n                                    \n                                    \n                                    \n                                         Aanleiding en context\n                                         Als basisindex wordt de consumptie-index van december 2019 genomen. Deze bedroeg 133,46. De consumptie-index van december 2020 bedroeg 134,02. Dit betekent een verhogingspercentage van 0,42%.\n\nVolgende ligdagprijzen worden vanaf 19 april 2020 toegepast: \nType kamer\nHuidige ligdagprijs\nGeïndexeerde ligdagprijs\nEénpersoonskamer\n€ 55,20\n€ 55,43\nZorgflat (per persoon)\n€ 49,68\n€ 49,89\nKortverblijf\n€ 55,20\n€ 55,43\n                                    \n                                    \n                                    \n                                    \n                                    \n                                    \n                                ",
-          "type": "literal"
-        },
-        "location": {
-          "value": "digitaal",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "geplandeStart": {
-          "value": "2021-02-22T19:30:00+01:00",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "description": {
-          "value": "2021_RMW_00012 - Indexering ligdagprijs woonzorgcentrum en centrum voor kortverblijf - Goedkeuring",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "bestuursorgaan": {
+        "bestuursclassificatie": {
           "value": "Raad voor Maatschappelijk Welzijn",
-          "type": "literal"
-        },
-        "bestuurseenheidnaam": {
-          "value": "Langemark-Poelkapelle",
           "type": "literal"
         }
       },
@@ -141,61 +92,12 @@
           "type": "typed-literal",
           "datatype": "http://www.w3.org/2001/XMLSchema#string"
         },
-        "bestuursorgaan": {
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuursclassificatie": {
           "value": "Raad voor Maatschappelijk Welzijn",
-          "type": "literal"
-        },
-        "bestuurseenheidnaam": {
-          "value": "Langemark-Poelkapelle",
-          "type": "literal"
-        }
-      },
-      {
-        "title": {
-          "value": "2021_RMW_00013 - Indexering dagprijs centrum voor dagverzorging - Goedkeuring",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "nbPro": {
-          "value": "19",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "nbNoVote": {
-          "value": "0",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "nbAnti": {
-          "value": "0",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "motivering": {
-          "value": "\n                                    Motivering\n                                    \n                                    \n                                    \n                                    \n                                         Aanleiding en context\n                                         Als basisindex wordt de consumptie-index van december 2019 genomen. Deze bedroeg 133,46. De consumptie-index van december 2020 bedroeg 134,02. Dit betekent een verhogingspercentage van 0,42%.\nVolgende dagprijzen wordt vanaf 19 april 2021 toegepast: 22,09 euro.\n                                    \n                                    \n                                    \n                                    \n                                    \n                                    \n                                ",
-          "type": "literal"
-        },
-        "location": {
-          "value": "digitaal",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "geplandeStart": {
-          "value": "2021-02-22T19:30:00+01:00",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "description": {
-          "value": "2021_RMW_00013 - Indexering dagprijs centrum voor dagverzorging - Goedkeuring",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "bestuursorgaan": {
-          "value": "Raad voor Maatschappelijk Welzijn Langemark-Poelkapelle",
-          "type": "literal"
-        },
-        "bestuurseenheidnaam": {
-          "value": "Langemark-Poelkapelle",
           "type": "literal"
         }
       },
@@ -239,61 +141,12 @@
           "type": "typed-literal",
           "datatype": "http://www.w3.org/2001/XMLSchema#string"
         },
-        "bestuursorgaan": {
-          "value": "Raad voor Maatschappelijk Welzijn Langemark-Poelkapelle",
-          "type": "literal"
-        },
         "bestuurseenheidnaam": {
           "value": "Langemark-Poelkapelle",
           "type": "literal"
-        }
-      },
-      {
-        "title": {
-          "value": "2021_RMW_00015 - Verslag van de Raad voor Maatschappelijk Welzijn van 25 januari 2021 - Goedkeuring",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
         },
-        "nbPro": {
-          "value": "19",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "nbNoVote": {
-          "value": "0",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "nbAnti": {
-          "value": "0",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "motivering": {
-          "value": "\n                                    Motivering\n                                    \n                                    \n                                    \n                                    \n                                         Aanleiding en context\n                                         Het verslag van de Raad voor Maatschappelijk Welzijn van 25 januari 2021 wordt ter goedkeuring voorgelegd.Het audioverslag van deze zitting kan u beluisteren op deze link. De raadszitting start om 02:49:40 en eindigt om 03:20:13.\n                                    \n                                    \n                                         Regelgeving: bevoegdheid\n                                         8a08e5925082ef990150853562be0b4f\n                                    \n                                    \n                                    \n                                        Regelgeving bevoegdheid\n                                        \n                                            \n                                            De Raad Maatschappelijk Welzijn is bevoegd op basis van artikel 77 en 78 van het decreet lokaal bestuur.\n                                            <p>De Raad Maatschappelijk Welzijn is bevoegd op basis van artikel 77 en 78 van het decreet lokaal bestuur.</p>\n                                        \n                                    \n                                    \n                                    \n                                    \n                                ",
-          "type": "literal"
-        },
-        "location": {
-          "value": "digitaal",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "geplandeStart": {
-          "value": "2021-02-22T19:30:00+01:00",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "description": {
-          "value": "2021_RMW_00015 - Verslag van de Raad voor Maatschappelijk Welzijn van 25 januari 2021 - Goedkeuring",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "bestuursorgaan": {
+        "bestuursclassificatie": {
           "value": "Raad voor Maatschappelijk Welzijn",
-          "type": "literal"
-        },
-        "bestuurseenheidnaam": {
-          "value": "Langemark-Poelkapelle",
           "type": "literal"
         }
       },
@@ -337,61 +190,12 @@
           "type": "typed-literal",
           "datatype": "http://www.w3.org/2001/XMLSchema#string"
         },
-        "bestuursorgaan": {
+        "bestuurseenheidnaam": {
+          "value": "Langemark-Poelkapelle",
+          "type": "literal"
+        },
+        "bestuursclassificatie": {
           "value": "Raad voor Maatschappelijk Welzijn",
-          "type": "literal"
-        },
-        "bestuurseenheidnaam": {
-          "value": "Langemark-Poelkapelle",
-          "type": "literal"
-        }
-      },
-      {
-        "title": {
-          "value": "2021_RMW_00017 - Huren van woning als doorgangswoning aan De Mandel - Bekrachtiging",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "nbPro": {
-          "value": "19",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "nbNoVote": {
-          "value": "0",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "nbAnti": {
-          "value": "0",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
-        },
-        "motivering": {
-          "value": "\n                                    Motivering\n                                    \n                                    \n                                    \n                                    \n                                         Aanleiding en context\n                                         Tot begin 2019 huurde de sociale dienst een woning aan De Mandel als doorgangswoning. Momenteel beschikt de sociale dienst enkel over de Poelkapellestraat 65 te Langemark als doorgangswoning. Dit is een grote gezinswoning. Het appartement in de Klerkenstraat 5A werd gehuurd tot en met 30 november 2020. Het is aangewezen om een bijkomende woning te huren aan De Mandel als doorgangswoning.De woning op het adres Tuinwijk 10 te Poelkapelle staat leeg en wordt gesloopt binnen anderhalf à twee jaar. Het is een woning met 1 slaapkamer. De sociale dienst bezocht de woning en die is in orde voor verhuur als doorgangswoning.  De Mandel mag wettelijk gezien niet minder vragen dan de helft van de marktwaarde. Dit is 177 EUR, De Mandel stelt dit bedrag dan ook voor als huurprijs.De huurovereenkomst kon ingaan op1 februari voor 1 jaar.  Het Vast Bureau nam hierover een beslissing op 4 januari 2021. \n                                    \n                                    \n                                         Regelgeving: bevoegdheid\n                                         8a08e5925082ef990150853562be0b4f\n                                    \n                                    \n                                    \n                                        Regelgeving bevoegdheid\n                                        \n                                            \n                                            De Raad Maatschappelijk Welzijn is bevoegd op basis van artikel 77 en 78 van het decreet lokaal bestuur.\n                                            <p>De Raad Maatschappelijk Welzijn is bevoegd op basis van artikel 77 en 78 van het decreet lokaal bestuur.</p>\n                                        \n                                    \n                                    \n                                    \n                                    \n                                ",
-          "type": "literal"
-        },
-        "location": {
-          "value": "digitaal",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "geplandeStart": {
-          "value": "2021-02-22T19:30:00+01:00",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#dateTime"
-        },
-        "description": {
-          "value": "2021_RMW_00017 - Huren van woning als doorgangswoning aan De Mandel - Bekrachtiging",
-          "type": "typed-literal",
-          "datatype": "http://www.w3.org/2001/XMLSchema#string"
-        },
-        "bestuursorgaan": {
-          "value": "Raad voor Maatschappelijk Welzijn Langemark-Poelkapelle",
-          "type": "literal"
-        },
-        "bestuurseenheidnaam": {
-          "value": "Langemark-Poelkapelle",
           "type": "literal"
         }
       }
@@ -407,7 +211,7 @@
       "title",
       "description",
       "motivering",
-      "bestuursorgaan",
+      "bestuursclassificatie",
       "bestuurseenheidnaam"
     ],
     "link": []

@@ -1,36 +1,65 @@
 {{page-title "Besluiten"}}
-<Searchbar />
-<Map />
+{{!-- <Searchbar />
+<Map /> --}}
 {{!-- {{#if this.toggleClick}} --}}
 <div id="besluit" class="au-u-regular">
-<div class="toggle" {{!-- {{on "click" this.toggleClose}} --}}></div>
+{{!-- template-lint-disable no-invalid-interactive --}}
+<div class="toggle" {{on "click" this.toggleClose}}></div>
 <div class="head_cut">
 <span class="au-u-bold"> {{this.getGemeente}} </span> | Inwoners : {{this.getPopulation}}<br>
 <hr>
-<span class="au-u-bold">Zitting</span>
-{{#each this.getBesluiten.groupAanwezige as |geplande|}}
-<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Date}}</span> 
-<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Time}} | {{geplande.location}}</span><br>
-{{/each}}
-<span class="aanwezig">
+
 {{#each this.getBesluiten.groupAanwezige as |groupAanwezige|}}
-{{!-- template-lint-disable no-curly-component-invocation --}}
-{{!-- template-lint-disable no-implicit-this --}}
+<div>
+<span class="aanwezig">
+<span class="au-u-bold">Zitting</span>
+<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{groupAanwezige.geplande_Date}}</span> 
+<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{groupAanwezige.geplande_Time}} | {{groupAanwezige.location.value}}</span><br>
 <span class="au-u-bold">Aanwezig {{groupAanwezige.naam_aanwezige.length}} personen </span>
 {{#each groupAanwezige.naam_aanwezige as |naam_aanwezige|}}
-{{naam_aanwezige.agendapunt_aanwezige}},
+{{naam_aanwezige.agendapunt_aanwezige.value}},
 {{/each}}
-{{/each}}
-{{!-- {{#if }}
-Myriam Debergh, VoorzitterRita Demare, BurgemeesterFrederik Sap, Rik Vanwildemeersch, Julie Misplon,
-SchepenenDimitri Carpentier, Toegevoegd schepen (Voorzitter BCSD)Gabriel Deruyter, Lies Colpaert, Tomas
-De Meyer, Ilse Coghe, Kristof Pillaert, Jan Lokere, Arne De Brabandere, Liesbet Casteleyn, Lode
-Vandenbussche, Frederik Demeyere, Els Werbrouck, Stien Gevaert, Johan Vanneste, Pascal Maes,
-Chiron Potié, Gemeenteraadsleden, Rik Dekens, Algemeen directeur
-{{/if}} --}}
 </span>
+</div>
 <hr>
+{{/each}}
+
 <div class="details">
+<div class="details-list">
+{{#each this.getBesluiten.groupStemming as |geplande|}}
+<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Date}}</span> 
+<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Time}} | {{geplande.location.value}}</span><br>
+<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="{{geplande.bestuursclassificatie}} ({{geplande.details.length}})">
+{{#each geplande.details as | details|}}
+<p><br>
+<div class="stemming"><span class="green"></span> {{details.nbPro.value}}</div> 
+<div class="stemming"><span class="orange"></span> {{details.nbAnti.value}}</div>
+<div class="stemming"><span class="red"> </span> {{details.nbNoVote.value}}</div>
+<span class="au-u-bold">{{details.description.value}}</span> <br> 
+{{details.motivering.value}}
+</p>
+{{/each}}
+</AuAccordion>
+{{/each}}
+</div>
+{{!-- groupStemming1 --}}
+{{!-- <div class="details-list">
+{{#each this.getBesluiten.groupStemming1 as |geplande|}}
+<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Date}}</span> 
+<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Time}} | {{geplande.location.value}}</span><br>
+<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="{{geplande.bestuursorgaan}} ({{geplande.details.length}})">
+{{#each geplande.details as | details|}}
+<p><br>
+<div class="stemming"><span class="green"></span> {{details.nbPro.value}}</div> 
+<div class="stemming"><span class="orange"></span> {{details.nbAnti.value}}</div>
+<div class="stemming"><span class="red"> </span> {{details.nbNoVote.value}}</div>
+<span class="au-u-bold">{{details.description.value}}</span> <br> 
+{{details.motivering.value}}
+</p>
+{{/each}}
+</AuAccordion>
+{{/each}}
+</div> --}}
 {{!-- <div class="details-list">
 <h2 class="au-u-bold">Milieu- en afvalbeleid</h2>
 <AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Aktename van het plaatsen van een bovengrondse
@@ -47,17 +76,42 @@ propaangastank">
   <p>I am information. I can even contain</p>
 </AuAccordion>
 </div> --}}
+</div>
+</div>
+</div>
 
+<div id="besluitSearch" class="au-u-regular">
+{{!-- template-lint-disable no-invalid-interactive --}}
+<div class="toggle" {{on "click" this.toggleClose}}></div>
+<div class="head_cut">
+<span class="au-u-bold"> {{this.get_Search}} </span> {{!-- | Inwoners : {{this.getPopulation}} --}}<br>
+<hr>
+
+{{#each this.getBesluitenSearch.groupAanwezige as |groupAanwezige|}}
+<div>
+<span class="aanwezig">
+<span class="au-u-bold">Zitting</span>
+<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{groupAanwezige.geplande_Date}}</span> 
+<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{groupAanwezige.geplande_Time}} | {{groupAanwezige.location.value}}</span><br>
+<span class="au-u-bold">Aanwezig {{groupAanwezige.naam_aanwezige.length}} personen </span>
+{{#each groupAanwezige.naam_aanwezige as |naam_aanwezige|}}
+{{naam_aanwezige.agendapunt_aanwezige.value}},
+{{/each}}
+</span>
+</div>
+<hr>
+{{/each}}
+<div class="details">
 <div class="details-list">
-{{#each this.getBesluiten.groupStemming as |geplande|}}
+{{#each this.getBesluitenSearch.groupStemming as |geplande|}}
 <AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Date}}</span> 
 <AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Time}} | {{geplande.location.value}}</span><br>
-<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="{{geplande.bestuursorgaan}} ({{geplande.details.length}})">
+<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="{{geplande.bestuursclassificatie}} ({{geplande.details.length}})">
 {{#each geplande.details as | details|}}
-<p>
-<div class="stemming"><span class="green">•</span>{{details.nbPro.value}}</div> 
-<div class="stemming"><span class="orange">•</span>{{details.nbAnti.value}}</div>
-<div class="stemming"><span class="red">•</span>{{details.nbNoVote.value}}</div>
+<p><br>
+<div class="stemming"><span class="green"></span> {{details.nbPro.value}}</div> 
+<div class="stemming"><span class="orange"></span> {{details.nbAnti.value}}</div>
+<div class="stemming"><span class="red"> </span> {{details.nbNoVote.value}}</div>
 <span class="au-u-bold">{{details.description.value}}</span> <br> 
 {{details.motivering.value}}
 </p>
@@ -65,12 +119,6 @@ propaangastank">
 </AuAccordion>
 {{/each}}
 </div>
-
-
-
-
-
 </div>
 </div>
 </div>
-{{outlet}}
