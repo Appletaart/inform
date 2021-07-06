@@ -2,7 +2,6 @@ import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 import { action } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
-import { sort } from '@ember/object/computed';
 
 export default class BesluitenController extends Controller {
     @service map; // yes
@@ -27,23 +26,18 @@ export default class BesluitenController extends Controller {
       d3.select("#besluit").transition().style("visibility", "hidden");
       d3.select(".bp-map").transition().style("transform", "scale(1)translate(0,0)")
     }
-    @action
-    remove(gemeente) {
-      console.log(gemeente);
-      this.map.remove(gemeente);
-    }
     
     get get_Search(){
       if(!this.searchBar.gemeente_search){
-        d3.select("#besluitSearch").transition().style("visibility", "hidden")
+        // d3.select("#besluitSearch").transition().style("visibility", "hidden")
         console.log('dont have value', this.searchBar.gemeente_search);
         this.gemeente_search = "Gent"
         return this.gemeente_search 
       }else{
         this.gemeente_search = this.searchBar.gemeente_search;
         console.log('has value search', this.searchBar.gemeente_search);
-        d3.select("#besluitSearch").transition().style("visibility", "visible")
-        d3.select(".bp-map").transition().style("transform", "scale(.80)translate(-160px,0)")
+        // d3.select("#besluitSearch").transition().style("visibility", "visible")
+        // d3.select(".bp-map").transition().style("transform", "scale(.80)translate(-160px,0)")
         return this.gemeente_search
       }
     }
@@ -56,8 +50,8 @@ export default class BesluitenController extends Controller {
       } else {
         this.gemeente = this.map['gemeente'].name;
         console.log('has value map click', this.gemeente );
-        d3.select("#besluit").transition().style("visibility", "visible");
-        d3.select(".bp-map").transition().style("transform", "scale(.80)translate(-160px,0)")
+        d3.select(".besluit").transition().style("visibility", "visible");
+        // d3.select(".bp-map").transition().style("transform", "scale(.80)translate(-160px,0)")
         return this.gemeente
       }
     }

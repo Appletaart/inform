@@ -1,0 +1,51 @@
+<div class="search">
+<AuLabel for="input-block">Ontdek wat onze vertegenwoordigers voor ons beslissen.</AuLabel>
+<PowerSelect
+  @width="block"
+  title="kie gemeente" 
+  @icon="search"
+  @allowClear={{true}}
+  @disabled={{this.disabled}}
+  @searchEnabled={{true}}
+  @loadingMessage="Aan het laden..."
+  @noMatchesMessage="Geen resultaten"
+  @searchMessage="Typ om te zoeken"
+  @identifier={{this.identifier}}
+  @options={{this.singleselects}}
+  @selected={{this.selected}}
+  @onChange={{this.onChange}}
+  @placeholder="Gemeente" as |singleselect|>
+  {{singleselect}}
+</PowerSelect>
+</div>
+
+{{!-- Page Archieven --}}
+<div id="archievenSearch" class="au-u-regular {{this.identifier}}">
+{{!-- template-lint-disable no-invalid-interactive --}}
+<div class="toggle" {{on "click" this.toggleClose}}></div>
+
+<div class="head_cut">
+{{!-- template-lint-disable no-log --}}
+{{!-- {{log this.gemeente_search}} --}}
+<span class="au-u-bold"> {{@get_Search}}  </span> {{!-- | Inwoners : --}}<br>
+<hr>
+<div class="details">
+<div class="details-list">
+<h2 class="au-u-bold">Milieu- en afvalbeleid</h2>
+<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Aktename van het plaatsen van een bovengrondse
+propaangastank">
+  <div class="stemming"><span class="green">•</span>27</div> 
+  <div class="stemming"><span class="orange">•</span>1</div>
+  <div class="stemming"><span class="red">•</span>0</div>
+  <p>I am information. I can even contain</p>
+</AuAccordion>
+<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Aanvraag aanleggen tegeltuintje">
+  <div class="stemming"><span class="green">•</span>27</div> 
+  <div class="stemming"><span class="orange">•</span>1</div>
+  <div class="stemming"><span class="red">•</span>0</div>
+  <p>I am information. I can even contain</p>
+</AuAccordion>
+</div>
+</div>
+</div> 
+</div>

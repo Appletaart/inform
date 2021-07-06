@@ -6,24 +6,24 @@
 <div class="main_nav">
 <ul class="au-o-region">
   <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="besturen" {{on "click" this.clear}}>
+    <AuNavigationLink @linkRoute="besturen" {{on "click" this.searchBar.empty}}>
       | Samenstelling<br>
         College van Burgemeester en Schepenen<br>
         Gemeenteraad
     </AuNavigationLink>
   </li>
   <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="agenda" {{on "click" this.clear}}>
+    <AuNavigationLink @linkRoute="agenda" {{on "click" this.searchBar.empty}}>
       | Agenda
     </AuNavigationLink>
   </li>
   <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="besluiten" {{on "click" this.clear}}>
+    <AuNavigationLink @linkRoute="besluiten"{{on "click" this.searchBar.empty}}>
       | Besluiten
     </AuNavigationLink>
   </li>
   <li class="au-c-navigation__item">
-    <AuNavigationLink @linkRoute="archieven" {{on "click" (fn this.clear this.gemeente)}}>
+    <AuNavigationLink @linkRoute="archieven" {{on "click" this.searchBar.empty}}>
       | Archief besluiten
     </AuNavigationLink>
   </li>

@@ -1,74 +1,10 @@
 {{page-title "Besturen"}}
-{{!-- <Searchbar />
-<Map /> --}}
+<SearchBar::Besturen
+@get_Search={{this.get_Search}} 
+@getBestuurSearch={{this.getBestuurSearch}}/>
 
-{{!-- <div id="textgraph"></div>  --}}
-{{!-- show on page from map --}}
-{{!-- {{#if this.toggleClick}} --}}
-<div id="besturen" class="au-u-regular">
-{{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle" {{on "click" this.toggleClose}}></div>
-<div class="head_cut">
-
-<span class="au-u-bold"> {{this.getGemeente}} </span> | Inwoners : {{this.getPopulation}}<br>
-{{!-- template-lint-disable no-log --}}
-{{!-- {{log this.getBestuur.een_bestuurseenheid}} --}}
-{{#each this.getBestuur.een_burgemeester as | een_burgemeester|}}
-<p>{{een_burgemeester.voornaam}} {{een_burgemeester.achternaam}} {{een_burgemeester.functie}} <span class="au-u-bold">{{een_burgemeester.fractie.value}}</span></p>
-{{/each}}
-<hr>
-<span class="au-u-bold">College van Burgemeester en Schepenen</span><br>
-{{#each this.getBestuur.een_schepenen as |een_schepenen|}}
-<p>{{een_schepenen.voornaam}} {{een_schepenen.achternaam}} {{een_schepenen.functie}} <span class="au-u-bold">{{een_schepenen.fractie.value}}</span></p>
-{{/each}}
-
-{{#each this.getBestuur.een_tschepenen as |een_tschepenen|}}
-<p>{{een_tschepenen.voornaam}} {{een_tschepenen.achternaam}} {{een_tschepenen.functie}} <span class="au-u-bold">{{een_tschepenen.fractie.value}}</span></p>
-
-{{/each}}
-<hr>
-<strong class="au-u-bold">Gemeenteraadsleden</strong><br> 
-{{#each this.getBestuur.een_voorZgr as |een_voorZgr|}}
-<p>{{een_voorZgr.voornaam}} {{een_voorZgr.achternaam}} {{een_voorZgr.functie}} <span class="au-u-bold">{{een_voorZgr.fractie.value}}</span></p>
-
-{{/each}}
-
-{{#each this.getBestuur.een_gr as |een_gr|}}
-<p>{{een_gr.voornaam}} {{een_gr.achternaam}} <span class="au-u-bold">{{een_gr.fractie.value}}</span></p>
-{{/each}}
-</div>
-</div>
-{{!-- {{/if}} --}}
-{{!-- template-lint-disable no-log --}}
-
-{{!-- {{#if this.toggleClick}} --}}
-<div id="mandata" >
-{{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle" {{on "click" this.toggleClose}} ></div>
-<div class="head_cut">
-<span class="au-u-bold"> {{this.get_Search}}</span> {{!-- | Inwoners : {{this.getPopulation}} --}}<br>
-{{!-- template-lint-disable no-log --}}
- {{log this.getBestuurSearch}} 
-{{#each this.getBestuurSearch.een_burgemeester as | een_burgemeester|}}
-<p>{{een_burgemeester.voornaam}} {{een_burgemeester.achternaam}} {{een_burgemeester.functie}} <span class="au-u-bold">{{een_burgemeester.fractie.value}}</span></p>
-{{/each}}
-<hr>
-<span class="au-u-bold">College van Burgemeester en Schepenen</span><br>
-{{#each this.getBestuurSearch.een_schepenen as |een_schepenen|}}
-<p>{{een_schepenen.voornaam}} {{een_schepenen.achternaam}} {{een_schepenen.functie}} <span class="au-u-bold">{{een_schepenen.fractie.value}}</span></p>
-{{/each}}
-{{#each this.getBestuurSearch.een_tschepenen as |een_tschepenen|}}
-<p>{{een_tschepenen.voornaam}} {{een_tschepenen.achternaam}} {{een_tschepenen.functie}} <span class="au-u-bold">{{een_tschepenen.fractie.value}}</span></p>
-{{/each}}
-<hr>
-<strong class="au-u-bold">Gemeenteraadsleden</strong><br> 
-{{#each this.getBestuurSearch.een_voorZgr as |een_voorZgr|}}
-<p>{{een_voorZgr.voornaam}} {{een_voorZgr.achternaam}} {{een_voorZgr.functie}} <span class="au-u-bold">{{een_voorZgr.fractie.value}}</span></p>
-{{/each}}
-{{#each this.getBestuurSearch.een_gr as |een_gr|}}
-<p>{{een_gr.voornaam}} {{een_gr.achternaam}} <span class="au-u-bold">{{een_gr.fractie.value}}</span></p>
-{{/each}}
-</div>
-</div>
-{{!-- {{/if}}  --}}
-{{log this.get_Search}}
+<SwitchBar::SwitchbarBesluiten
+@getGemeente={{this.getGemeente}} 
+@getPopulation={{this.getPopulation}}
+@getBestuur={{this.getBestuur}}
+/>

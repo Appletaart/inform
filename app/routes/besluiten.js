@@ -1,5 +1,4 @@
 import Route from '@ember/routing/route';
-import { tracked } from '@glimmer/tracking';
 class SPARQLQueryDispatcher {
   constructor( endpoint ) {
       this.endpoint = endpoint;
@@ -14,6 +13,7 @@ class SPARQLQueryDispatcher {
   }
 }
 export default class BesluitenRoute extends Route {
+
   async model(){
     /* let response = await fetch('/api/besluiten_naam_aanwezige.json');
     let data = await response.json(); 

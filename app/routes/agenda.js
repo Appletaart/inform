@@ -36,7 +36,7 @@ export default class AgendaRoute extends Route {
                     description: e.description
                 })
                 }) */
-                
+                const endpointUrl1 = 'https://openbelgium-2021.lblod.info/sparql';
                 const endpointUrl = 'https://qa.centrale-vindplaats.lblod.info/sparql';
                 const sparqlQuery = `
                 PREFIX besluit: <http://data.vlaanderen.be/ns/besluit#>

@@ -9,10 +9,13 @@ export default class MapService extends Service {
         //   console.log(this.gemeente);
          return this.gemeente 
     }
-
+    
+    @action
     remove(gemeente){
         this.gemeente.removeObject(gemeente)
     }
+    
+    @action
     empty() {
         return this.gemeente.clear()  
       }

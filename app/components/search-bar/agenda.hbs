@@ -1,0 +1,47 @@
+<div class="search">
+<AuLabel for="input-block">Ontdek wat onze vertegenwoordigers voor ons beslissen.</AuLabel>
+<PowerSelect
+  @width="block"
+  title="kie gemeente" 
+  @icon="search"
+  @allowClear={{true}}
+  @disabled={{this.disabled}}
+  @searchEnabled={{true}}
+  @loadingMessage="Aan het laden..."
+  @noMatchesMessage="Geen resultaten"
+  @searchMessage="Typ om te zoeken"
+  @identifier={{this.identifier}}
+  @options={{this.singleselects}}
+  @selected={{this.selected}}
+  @onChange={{this.onChange}}
+  @placeholder="Gemeente" as |singleselect|>
+  {{singleselect}}
+</PowerSelect>
+</div>
+{{!-- Agenda --}}
+<div id="agendapunt" class="au-u-regular {{this.identifier}}">
+{{!-- template-lint-disable no-invalid-interactive --}}
+<div class="toggle" {{on "click" this.toggleClose}}></div>
+<div class="head_cut">
+<span class="au-u-bold"> {{@get_Search}}</span> <br>
+<hr>
+<span class="au-u-bold">Agenda 2021</span><br>
+<ul class="agendalist">
+{{#each @getAgendaSearch.groupAgenda as |geplande|}}
+<li>{{geplande.geplande_Date}} {{geplande.geplande_Time}} | {{geplande.location.value}}</li>
+{{/each}}
+</ul>
+<span class="au-u-bold">Agendalist</span><br>
+{{#each @getAgendaSearch.groupAgenda as |geplande|}}
+<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Date}}</span> 
+<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Time}} | {{geplande.location.value}}</span><br>
+<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="{{geplande.bestuursclassificatie}} ({{geplande.details_Agenda.length}})">
+{{#each geplande.details_Agenda as | details|}}
+<p><span class="au-u-bold">{{details.title_agenda.value}}</span> <br> 
+{{details.description.value}} 
+</p>
+{{/each}}
+</AuAccordion>
+{{/each}}
+</div>
+</div>

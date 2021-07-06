@@ -1,67 +1,9 @@
 {{page-title "Index"}}
+<SearchBar::Besturen
+@get_Search={{this.get_Search}} 
+/>
 
-{{!-- template-lint-disable no-log --}}
-{{!-- {{log this.IndexController}} --}}
-{{!-- {{log this.model.gemeenteData}}
-{{log this.model.provincesData}}
-{{log this.model.gemeente}} --}} 
-{{!-- <Searchbar />
-<Map /> --}}
-
-<div id="textgraph">
-{{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle"{{on "click" this.toggleClose}}></div>
-<div class="head_cut">
-<span class="au-u-bold"> {{this.getGemeente}} </span> | Inwoners : {{this.getPopulation}}<br>
-
-</div>
-</div>
-
-
-<div id="mandata" >
-{{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle" {{on "click" this.toggleClose}} ></div>
-<div class="head_cut">
-<span class="au-u-bold"> {{this.get_Search}}</span> {{!-- | Inwoners : {{this.getPopulation}} --}}<br>
-</div>
-</div>
-
-{{!-- {{#if this.toggleClick}} toggleclick = true then see it work
-<div id="mandataris">
-<div class="toggle" {{!-- {{on "click" this.toggleClose}}  ></div>
-<div class="head_cut">
-<span class="au-u-bold"> {{this.getGemeente}} </span> | Inwoners : {{this.getPopulation}}<br>
-{{!-- template-lint-disable no-log --}}
-{{!-- {{log this.getBestuur.een_bestuurseenheid}} 
-{{#each this.getBestuur.een_burgemeester as | een_burgemeester|}}
-<p>{{een_burgemeester.voornaam}} {{een_burgemeester.achternaam}} {{een_burgemeester.functie}} <span class="au-u-bold">{{een_burgemeester.fractie.value}}</span></p>
-{{/each}}
-<hr>
-<span class="au-u-bold">College van Burgemeester en Schepenen</span><br>
-{{#each this.getBestuur.een_schepenen as |een_schepenen|}}
-<p>{{een_schepenen.voornaam}} {{een_schepenen.achternaam}} {{een_schepenen.functie}} <span class="au-u-bold">{{een_schepenen.fractie.value}}</span></p>
-{{/each}}
-{{#each this.getBestuur.een_tschepenen as |een_tschepenen|}}
-<p>{{een_tschepenen.voornaam}} {{een_tschepenen.achternaam}} {{een_tschepenen.functie}} <span class="au-u-bold">{{een_tschepenen.fractie.value}}</span></p>
-{{/each}}
-<hr>
-<strong class="au-u-bold">Gemeenteraadsleden</strong><br> 
-{{#each this.getBestuur.een_voorZgr as |een_voorZgr|}}
-<p>{{een_voorZgr.voornaam}} {{een_voorZgr.achternaam}} {{een_voorZgr.functie}} <span class="au-u-bold">{{een_voorZgr.fractie.value}}</span></p>
-{{/each}}
-{{#each this.getBestuur.een_gr as |een_gr|}}
-<p>{{een_gr.voornaam}} {{een_gr.achternaam}} <span class="au-u-bold">{{een_gr.fractie.value}}</span></p>
-{{/each}}
-</div>
-</div>
-{{/if}} --}}
-{{!-- <div class="head_cut">
-{{#each this.model.provincesData as |province|}}
-<p>{{province.properties.name_nl}}</p>
-{{/each}}
-{{#each this.model.gemeenteData as |gemeente|}}
-<p>{{gemeente.properties.name_nl}}</p>
-{{/each}}
-</div> --}}
-
-
+<SwitchBar::SwitchbarBesluiten
+@getGemeente={{this.getGemeente}} 
+@getPopulation={{this.getPopulation}}
+/>

@@ -1,0 +1,20 @@
+<div class="au-c-form">
+  <AuToggleSwitch 
+  @label="click to see the gemeente on the right side map" @disabled={{false}} 
+  @name="switch-left-right"
+  @identifier={{this.identifier}}
+  @checked={{this.checked}}
+  @onChange={{this.onChange}}
+  />
+</div>
+{{!-- Page Index --}}
+<div class="indexpage au-u-regular {{this.identifier}}">
+{{!-- template-lint-disable no-invalid-interactive --}}
+<div class="toggle" {{on "click" this.toggleClose}}></div>
+<div class="head_cut">
+{{!-- template-lint-disable no-log --}}
+{{!-- {{log this.gemeente_search}} --}}
+<span class="au-u-bold"> {{@getGemeente}}  </span> | Inwoners : {{@getPopulation}}<br>
+<hr>
+</div> 
+</div>

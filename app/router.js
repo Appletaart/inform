@@ -7,8 +7,8 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('besturen'/* , {path:'besturen/:gemeente'} */);
   this.route('agenda');
   this.route('besluiten');
   this.route('archieven');
+  this.route('besturen');
 });

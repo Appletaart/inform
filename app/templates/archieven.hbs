@@ -1,74 +1,12 @@
+{{!-- template-lint-disable no-log --}}
 {{page-title "Archieven"}}
-{{!-- <Searchbar />
-<Map /> --}}
-{{!-- template-lint-disable no-log --}}
-{{!-- template-lint-disable no-implicit-this --}}
-
-{{!-- {{#if this.toggleClick}} --}}
-<div id="archieven" class="au-u-regular">
-{{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle" {{on "click" this.toggleClose}}></div>
-
-<div class="head_cut">
-{{!-- template-lint-disable no-log --}}
-{{!-- {{log this.gemeente_search}} --}}
-<span class="au-u-bold"> {{this.getGemeente}}  </span> {{!-- | Inwoners : --}}<br>
-<hr>
-<div class="details">
-<div class="details-list">
-<h2 class="au-u-bold">Milieu- en afvalbeleid</h2>
-<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Aktename van het plaatsen van een bovengrondse
-propaangastank">
-  <div class="stemming"><span class="green">•</span>27</div> 
-  <div class="stemming"><span class="orange">•</span>1</div>
-  <div class="stemming"><span class="red">•</span>0</div>
-  <p>I am information. I can even contain</p>
-</AuAccordion>
-<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Aanvraag aanleggen tegeltuintje">
-  <div class="stemming"><span class="green">•</span>27</div> 
-  <div class="stemming"><span class="orange">•</span>1</div>
-  <div class="stemming"><span class="red">•</span>0</div>
-  <p>I am information. I can even contain</p>
-</AuAccordion>
-</div>
-</div>
-</div> 
-</div>
-{{!--  {{/if}} --}}
-
-<div id="archievenSearch" class="au-u-regular">
-{{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle" {{on "click" this.toggleClose}}></div>
-
-<div class="head_cut">
-{{!-- template-lint-disable no-log --}}
-{{!-- {{log this.gemeente_search}} --}}
-<span class="au-u-bold"> {{this.get_Search}}  </span>{{!--  | Inwoners : --}}<br>
-
-<hr>
-
-<div class="details">
-<div class="details-list">
-<h2 class="au-u-bold">Milieu- en afvalbeleid</h2>
-<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Aktename van het plaatsen van een bovengrondse
-propaangastank">
-  <div class="stemming"><span class="green">•</span>27</div> 
-  <div class="stemming"><span class="orange">•</span>1</div>
-  <div class="stemming"><span class="red">•</span>0</div>
-  <p>I am information. I can even contain</p>
-</AuAccordion>
-<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Aanvraag aanleggen tegeltuintje">
-  <div class="stemming"><span class="green">•</span>27</div> 
-  <div class="stemming"><span class="orange">•</span>1</div>
-  <div class="stemming"><span class="red">•</span>0</div>
-  <p>I am information. I can even contain</p>
-</AuAccordion>
-</div>
-</div>
-
-
-</div> 
-</div>
+<SearchBar::Archieven 
+@get_Search={{this.get_Search}}
+/>
+<SwitchBar::SwitchbarBesluiten  
+@getGemeente={{this.getGemeente}} 
+@getPopulation={{this.getPopulation}}
+/>
 {{log this.getModelSearch}}
 
 

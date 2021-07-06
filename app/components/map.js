@@ -46,7 +46,6 @@ export default class MapComponent extends Component {
         const container = d3.select('.bp-map')
         
         const tooltip = d3.select("#tooltip");
-        const textgraph = d3.select("#textgraph");
         const besturen = d3.select("#besturen");
         const agenda = d3.select("#agenda");
         const besluit = d3.select("#besluit");
@@ -120,16 +119,14 @@ export default class MapComponent extends Component {
           .attr("d", path)
           .attr("fill", (gemeenteDataItem) => {
           let name = gemeenteDataItem.properties["name_nl"]; 
-          // let input_name = info.find(hu => hu === name);
           hasDataAgenda.then(result => {
             let input_name = result.find(hu => hu.e === name)
-            // console.log(input_name.e);
             return d3.select("#"+input_name.e).transition().style("fill", "#e1e5e8")
           }).catch(e => e)
 
           hasDataBesluit.then(result => {
             let input_name = result.find(hu => hu.e === name)
-            //  console.log(input_name.e);
+            // console.log(input_name.e);
             return d3.select("#"+input_name.e).transition().style("fill", "#7f8d99")
           }).catch(e => e)
 
@@ -152,60 +149,13 @@ export default class MapComponent extends Component {
             tooltip.transition().style("visibility", "visible");
             let name = gemeenteDataItem.properties["name_nl"];
             over(name)
-            // big file
-           /*  mandatenData.then(info =>{
-              let input_name = info.find(hu => hu.bestuurseenheidLabel === name);
-              let put_name = input_name.bestuurseenheidLabel;  
-              let bestuurseenheids = d3.group(info, d=> d.bestuurseenheidLabel) //d3.group(info, d => d[19]);
-              let bestuurseenheid = bestuurseenheids.get(put_name);
-              let bestuurfunctie = d3.group(bestuurseenheid, d => d.bestuursfunctieLabel);
-              let burgemeester = bestuurfunctie.get('Burgemeester'); 
-              let formatTime = new Date();
-              let today = formatTime.getTime()
-              let bestuurperiod = new Date("1/1/2019")
-              let period_Start = bestuurperiod.getTime()
-              let eenBurgemeester = []; 
-              if(!burgemeester){
-              }else{
-              burgemeester.forEach(burgemeesters => {
-              let start_date = new Date(burgemeesters.start)
-              let bestuur_Start = start_date.getTime()
-              let end_date = new Date(burgemeesters.eind)
-              let bestuur_End = end_date.getTime()
-              if(+period_Start <= +bestuur_Start && !(+bestuur_End <= +today)){   
-                  eenBurgemeester.push({voornaam: burgemeesters.voornaam, achternaam: burgemeesters.achternaam, fractie: burgemeesters.fractieNaam})
-                  return eenBurgemeester
-              } //end condition
-              })}
-              tooltip.text(gemeenteDataItem["properties"].name_nl + " | "+ eenBurgemeester[0].voornaam + " " + eenBurgemeester[0].achternaam + " " + eenBurgemeester[0].fractie + " " );
-            }) */  
-          })
-          .on("click", (gemeenteDataItem) => {
-            //  textgraph.transition().style("visibility", "visible");
-            //  besturen.transition().style("visibility", "visible");
-            //  agenda.transition().style("visibility", "visible");
-            //  besluit.transition().style("visibility", "visible");
-            //  d3.select("#archieven").transition().style("visibility", "visible")
-            //  container.transition().style("transform", "scale(.80)translate(-160px,0)")
-            
+        }).on("click", (gemeenteDataItem) => {
+              d3.select(".indexpage").transition().style("visibility", "visible")
             //  let name = gemeenteDataItem.properties["name_nl"];
             //  let population = gemeenteDataItem.properties["population"];
             //  console.log(name, population);
-            
-            /* mandatenData.then(info =>{
-            let input_name = info.find(hu => hu[19] === name);
-            let put_name = input_name[19];
-            mandaten(put_name, population);
-            // console.log(put_name);
-            }) // point to specific gemeente
-            */
-            /* d3.select(".toggle").on("click", () => {
-              textgraph.transition().style("visibility", "hidden");
-              besturen.transition().style("visibility", "hidden")
-              agenda.transition().style("visibility", "hidden")
-              besluit.transition().style("visibility", "hidden")
-              d3.select("#archieven").transition().style("visibility", "hidden")
-              container.transition().style("transform", "scale(1)translate(0,0)")
+              /* d3.select(".toggle").on("click", () => {
+              d3.select(".indexpage").transition().style("visibility", "hidden")
             }); */
           })
           .on("mouseout", gemeenteDataItem => {
@@ -230,18 +180,8 @@ export default class MapComponent extends Component {
             // console.log(data); 
             provincesData = topojson.feature(data, data.objects.provinces).features;
             gemeenteData = topojson.feature(data, data.objects.municipalities).features;
-           
-            /* mandatenData = fetch('/api/mandaten.json').then(
-              response => response.json().then(
-                (data, error) => {
-                  if (error) {
-                    console.log(log);
-                  } else {
-                    return data
-                }})) */
-
-             mandatenData = fetch_mandataris().then(
-              function(result) {// console.log("Success!", result.results['bindings']);
+            mandatenData = fetch_mandataris().then(
+            function(result) {// console.log("Success!", result.results['bindings']);
                 const datas = result.results['bindings']
                 const realdata = [];
                 datas.forEach(e => {
@@ -250,25 +190,23 @@ export default class MapComponent extends Component {
                         eind: e.eind, 
                         achternaam: e.achternaam.value, 
                         voornaam: e.voornaam.value, 
-                        bestuursfunctie: e.bestuursfunctie.value, 
                         fractie: e.fractie, 
                         bestuurseenheidnaam: e.bestuurseenheidnaam.value
                     })
                 })  
-                // console.log(realdata);
                 return realdata
               }).catch(function(error) {
                 console.log("Failed!", error);
               })
             hasDataAgenda = hasAgenda().then(
-              result => {
+                result => {
                 const realdata = [];
                 result.forEach(e => realdata.push({e}))
                 // console.log(realdata)
                 return realdata
               } );
             hasDataBesluit = hasBesluit().then(
-              result => {
+                result => {
                 const realdata = [];
                 result.forEach(e => realdata.push({e}))
                 // console.log(realdata)
@@ -277,7 +215,7 @@ export default class MapComponent extends Component {
 
             drawMap();
             }})// end mandaten
-        map()
+            map()
 
         async function over(name) {
           let eenBurgemeester = []; 
@@ -286,16 +224,11 @@ export default class MapComponent extends Component {
             let put_name = input_name.bestuurseenheidnaam;  
             let bestuurseenheids = d3.group(info, d=> d.bestuurseenheidnaam) //d3.group(info, d => d[19]);
             let bestuurseenheid = bestuurseenheids.get(put_name);
-            let bestuurfunctie = d3.group(bestuurseenheid, d => d.bestuursfunctie);
-            let burgemeester = bestuurfunctie.get('Burgemeester'); 
             let formatTime = new Date();
             let today = formatTime.getTime()
             let bestuurperiod = new Date("1/1/2019")
             let period_Start = bestuurperiod.getTime()
-            if(!burgemeester){
-              return document.querySelector('#tooltip').innerHTML = `<span class="gemeente">${name}</span> `
-            }else{
-            burgemeester.forEach(burgemeesters => {
+            bestuurseenheid.forEach(burgemeesters => {
             let start_date = new Date(burgemeesters.start)
             let bestuur_Start = start_date.getTime()
             let end_date = new Date(burgemeesters.eind)
@@ -311,11 +244,11 @@ export default class MapComponent extends Component {
               return document.querySelector('#tooltip').innerHTML = `<span class="gemeente">${name}</span> | ${eenBurgemeester[0].voornaam} ${eenBurgemeester[0].achternaam} <span class="burgermeester">${eenBurgemeester[0].fractie.value}</span> `
             }
             }
-          })   
+          )   
         }//end over()
 
         async function fetch_mandataris(){
-          const endpointUrl = 'https://openbelgium-2021.lblod.info/sparql';
+          const endpointUrl = 'https://centrale-vindplaats.lblod.info/sparql';
           const sparqlQuery = `
               PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
               PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -343,7 +276,7 @@ export default class MapComponent extends Component {
               
               ?mandataris <http://www.w3.org/ns/org#holds> ?functie .
               ?functie <http://www.w3.org/ns/org#role> ?rol .
-              ?rol <http://www.w3.org/2004/02/skos/core#prefLabel> ?bestuursfunctie .
+              ?rol <http://www.w3.org/2004/02/skos/core#prefLabel> 'Burgemeester' .
               
               OPTIONAL {?mandataris <http://www.w3.org/ns/org#hasMembership> ?lid .
                     ?lid <http://www.w3.org/ns/org#organisation> ?o.

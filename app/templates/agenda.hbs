@@ -6,10 +6,20 @@
 {{!-- {{log this.getAgenda}} --}}
 {{!-- {{log this.client.fullName}} --}}
 {{!-- {{#if this.toggleClick}} --}}
-<div id="agenda" class="au-u-regular">
+<SearchBar::Agenda
+@get_Search={{this.get_Search}} 
+@getAgendaSearch={{this.getAgendaSearch}}
+/>
+<SwitchBar::SwitchbarBesluiten  
+@getGemeente={{this.getGemeente}} 
+@getPopulation={{this.getPopulation}}
+@getAgenda={{this.getAgenda}}
+/>
+
+{{!-- <div id="agenda" class="au-u-regular"> --}}
 {{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle" {{on "click" this.toggleClose}} {{!-- {{on "click" (fn this.remove this.gemeente)}} --}}></div>
-<div class="head_cut">
+{{!-- <div class="toggle" {{on "click" this.toggleClose}} {{on "click" (fn this.remove this.gemeente)}}></div> --}}
+{{!-- <div class="head_cut">
 <span class="au-u-bold"> {{this.getGemeente}}</span> | Inwoners : {{this.getPopulation}}<br>
 <hr>
 <span class="au-u-bold">Agenda</span><br>
@@ -24,22 +34,27 @@
 {{#each this.getAgenda.groupAgenda as |geplande|}}
 <AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Date}}</span> 
 <AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Time}} | {{geplande.location.value}}</span><br>
+
+
 <AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="{{geplande.bestuursclassificatie}} ({{geplande.details_Agenda.length}})">
 {{#each geplande.details_Agenda as | details|}}
+
 <p><span class="au-u-bold">{{details.title_agenda.value}}</span> <br> 
 {{details.description.value}} 
 </p>
 
 {{/each}}
 </AuAccordion>
+
+
 {{/each}}
 </div>
-</div>
-{{!-- {{/if}} --}}
+</div> --}}
 
-<div id="agendapunt" class="au-u-regular">
+
+{{!-- <div id="agendapunt" class="au-u-regular"> --}}
 {{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle" {{on "click" this.toggleClose}}></div>
+{{!-- <div class="toggle" {{on "click" this.toggleClose}}></div>
 <div class="head_cut">
 <span class="au-u-bold"> {{this.get_Search}}</span> <br>
 <hr>
@@ -65,4 +80,5 @@
 </AuAccordion>
 {{/each}}
 </div>
-</div>
+</div> --}}
+

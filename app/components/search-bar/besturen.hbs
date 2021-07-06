@@ -1,0 +1,47 @@
+<div class="search">
+<AuLabel for="input-block">Ontdek wat onze vertegenwoordigers voor ons beslissen.</AuLabel>
+<PowerSelect
+  @width="block"
+  title="kie gemeente" 
+  @icon="search"
+  @allowClear={{true}}
+  @disabled={{this.disabled}}
+  @searchEnabled={{true}}
+  @loadingMessage="Aan het laden..."
+  @noMatchesMessage="Geen resultaten"
+  @searchMessage="Typ om te zoeken"
+  @identifier={{this.identifier}}
+  @options={{this.singleselects}}
+  @selected={{this.selected}}
+  @onChange={{this.onChange}}
+  @placeholder="Gemeente" as |singleselect|>
+  {{singleselect}}
+</PowerSelect>
+</div>
+{{!-- Besturen --}}
+<div id="mandata" class="au-u-regular {{this.identifier}}">
+{{!-- template-lint-disable no-invalid-interactive --}}
+<div class="toggle" {{on "click" this.toggleClose}} ></div>
+ <div class="head_cut">
+<span class="au-u-bold"> {{@get_Search}}</span><br>
+{{#each @getBestuurSearch.een_burgemeester as | een_burgemeester|}}
+<p>{{een_burgemeester.voornaam}} {{een_burgemeester.achternaam}} {{een_burgemeester.functie}} <span class="au-u-bold">{{een_burgemeester.fractie.value}}</span></p>
+{{/each}}
+<hr>
+<span class="au-u-bold">College van Burgemeester en Schepenen</span><br>
+{{#each @getBestuurSearch.een_schepenen as |een_schepenen|}}
+<p>{{een_schepenen.voornaam}} {{een_schepenen.achternaam}} {{een_schepenen.functie}} <span class="au-u-bold">{{een_schepenen.fractie.value}}</span></p>
+{{/each}}
+{{#each @getBestuurSearch.een_tschepenen as |een_tschepenen|}}
+<p>{{een_tschepenen.voornaam}} {{een_tschepenen.achternaam}} {{een_tschepenen.functie}} <span class="au-u-bold">{{een_tschepenen.fractie.value}}</span></p>
+{{/each}}
+<hr>
+<strong class="au-u-bold">Gemeenteraadsleden</strong><br> 
+{{#each @getBestuurSearch.een_voorZgr as |een_voorZgr|}}
+<p>{{een_voorZgr.voornaam}} {{een_voorZgr.achternaam}} {{een_voorZgr.functie}} <span class="au-u-bold">{{een_voorZgr.fractie.value}}</span></p>
+{{/each}}
+{{#each @getBestuurSearch.een_gr as |een_gr|}}
+<p>{{een_gr.voornaam}} {{een_gr.achternaam}} <span class="au-u-bold">{{een_gr.fractie.value}}</span></p>
+{{/each}}
+</div> 
+</div>
