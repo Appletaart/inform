@@ -5,20 +5,11 @@ export default class MapService extends Service {
     @tracked gemeente = []
 
     addItem = (item) => {
-         this.gemeente = {name: item.target.id, population: item.target.__data__.properties.population}// ...this.itemList/ to make a list
+         this.gemeente = {name: item.target.id/* , population: item.target.__data__.properties.population */}// ...this.itemList/ to make a list
         //   console.log(this.gemeente);
          return this.gemeente 
     }
-    
-    @action
-    remove(gemeente){
-        this.gemeente.removeObject(gemeente)
-    }
-    
-    @action
-    empty() {
-        return this.gemeente.clear()  
-      }
+
     /* addItem(item){
         console.log(item);
         console.log(item.target.id);

@@ -19,29 +19,43 @@
 </PowerSelect>
 </div>
 {{!-- Agenda --}}
-<div id="agendapunt" class="au-u-regular {{this.identifier}}">
+<div class="agendaSearch au-u-regular {{this.identifier}}">
+<div id="topAgendap" class="bottombox"></div>
 {{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle" {{on "click" this.toggleClose}}></div>
-<div class="head_cut">
-<span class="au-u-bold"> {{@get_Search}}</span> <br>
-<hr>
-<span class="au-u-bold">Agenda 2021</span><br>
+<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
+<div class="au-o-box">
+<span class="au-u-h5 au-u-bold"> {{@get_Search}}   </span><Object::Population  @name="{{@get_Search}}"/><br>
+<hr/>
+<span class="au-u-h5 au-u-bold">Agenda</span><br>
 <ul class="agendalist">
 {{#each @getAgendaSearch.groupAgenda as |geplande|}}
 <li>{{geplande.geplande_Date}} {{geplande.geplande_Time}} | {{geplande.location.value}}</li>
 {{/each}}
 </ul>
-<span class="au-u-bold">Agendalist</span><br>
+<br>
+<span class="au-u-h5 au-u-bold">Agendalist</span><br>
 {{#each @getAgendaSearch.groupAgenda as |geplande|}}
-<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Date}}</span> 
-<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Time}} | {{geplande.location.value}}</span><br>
-<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="{{geplande.bestuursclassificatie}} ({{geplande.details_Agenda.length}})">
-{{#each geplande.details_Agenda as | details|}}
-<p><span class="au-u-bold">{{details.title_agenda.value}}</span> <br> 
-{{details.description.value}} 
+<AuIcon @icon="calendar" @size="medium" @ariaHidden={{true}} /><span class="au-u-h6">{{geplande.geplande_Date}}</span> 
+<AuIcon @icon="info-circle" @size="medium" @ariaHidden={{true}} /><span class="au-u-h6">{{geplande.geplande_Time}} | {{geplande.location.value}}</span><br>
+<AuCard @expandable={{true}} @flex={{true}} @divided={{true}} as |c|>
+  <c.header @badgeSkin="brand">
+   <AuHeading @level="6" @skin="6" class="au-card_text-blue">
+      {{geplande.bestuursclassificatie}} ({{geplande.details_Agenda.length}})
+    </AuHeading>
+  </c.header>
+  {{#each geplande.details_Agenda as | details|}}
+  <c.content>
+<p><span class="au-u-medium">{{details.title_agenda.value}}</span> <br> 
+{{#if details.description.value}}
+<span class="au-u-medium">Description:</span> {{details.description.value}} <br>
+{{/if}}
 </p>
-{{/each}}
-</AuAccordion>
+  </c.content>
+  {{/each}}
+</AuCard>
+<a href="#topAgendap" class="toTop"><AuIcon @icon="nav-up" @size="large" @ariaHidden={{true}} /></a>
+<br>
 {{/each}}
 </div>
+<div class="bottombox"></div>
 </div>

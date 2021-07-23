@@ -2,11 +2,14 @@
 {{page-title "Archieven"}}
 <SearchBar::Archieven 
 @get_Search={{this.get_Search}}
+@getArchievenSearch={{this.getArchievenSearch}}
 />
 <SwitchBar::SwitchbarBesluiten  
 @getGemeente={{this.getGemeente}} 
 @getPopulation={{this.getPopulation}}
+@getArchieven={{this.getArchieven}}
+@model={{this.model}}
 />
-{{log this.getModelSearch}}
+
 
 

@@ -12,7 +12,6 @@ export default class Agenda extends Model {
   @hasMany('signed-resource') signedResources; */
   @attr('date') geplandeStart;
   @attr('string') location;
-  @attr('string') title_before_agendapunt;
   @attr('string') title_agenda;
   @attr('string') description;
   @attr('string') bestuursorgaan;

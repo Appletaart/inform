@@ -10,8 +10,4 @@ export default class SearchBarService extends Service {
           return this.gemeente_search
     }
 
-    @action
-    empty() {
-        return this.gemeente_search.clear()  
-      }
 }

@@ -20,14 +20,14 @@
 </div>
 
 {{!-- Page index --}}
-<div id="indexpage" class="au-u-regular {{this.identifier}}">
+<div class="indexSearch indexSearch--{{this.identifier}} au-u-regular">
+<div class="bottombox"></div>
 {{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle" {{on "click" this.toggleClose}}></div>
+<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
+<div class="au-o-box">
+<span class="au-u-h5 au-u-bold"> {{@get_Search}} </span><Object::Population  @name="{{@get_Search}}"/><br>
+<hr/>
 
-<div class="head_cut">
-{{!-- template-lint-disable no-log --}}
-{{!-- {{log this.gemeente_search}} --}}
-<span class="au-u-bold"> {{@get_Search}}  </span> {{!-- | Inwoners : --}}<br>
-<hr>
-</div> 
+</div>
+<div class="bottombox"></div> 
 </div>

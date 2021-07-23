@@ -3,22 +3,22 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | switch-bar/indexpage', function(hooks) {
+module('Integration | Component | archieven/gemeente', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<SwitchBar::Indexpage />`);
+    await render(hbs`<Archieven::Gemeente />`);
 
     assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
-      <SwitchBar::Indexpage>
+      <Archieven::Gemeente>
         template block text
-      </SwitchBar::Indexpage>
+      </Archieven::Gemeente>
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');

@@ -1,5 +1,4 @@
-import Model, {attr} from '@ember-data/model';
-
+import Model, {attr, hasMany} from '@ember-data/model';
 export default class VlaanMapModel extends Model {
     @attr('string') objects;
     @attr('string') provinces;
@@ -8,4 +7,6 @@ export default class VlaanMapModel extends Model {
     @attr('string') properties;
     @attr('string') name_nl;
     @attr('number') population;
+    @hasMany('population') gemeenten;
+    @hasMany('population') inwoners;
 }

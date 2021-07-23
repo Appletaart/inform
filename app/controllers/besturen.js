@@ -6,15 +6,7 @@ export default class BesturenController extends Controller {
     @service map;
     @service searchBar;
     @tracked gemeente;
-    @tracked population;
     @tracked gemeente_search;
-
-    @action toggleClose() {
-      console.log("work? left-right bar component");
-      d3.select("#mandata").transition().style("visibility", "hidden")
-      d3.select(".besturen").transition().style("visibility", "hidden")
-      d3.select(".bp-map").transition().style("transform", "scale(1)translate(0,0)")
-    }
 
     get getGemeente() {
         if (!this.map['gemeente'].name) {
@@ -28,26 +20,15 @@ export default class BesturenController extends Controller {
           return this.gemeente
         }
       }
-    
-      get getPopulation() {
-        if (!this.map['gemeente'].population) {
-          this.population = 'Roeselare'
-          return this.population.toLocaleString()
-        } else {
-          this.population = this.map['gemeente'].population;
-          return this.population.toLocaleString()
-        }
-      }
 
       get get_Search(){
         if(!this.searchBar.gemeente_search){
           this.gemeente_search = "Gent"
-          console.log('dont have value', this.searchBar.gemeente_search);
+          // console.log('dont have value', this.searchBar.gemeente_search);
           return this.gemeente_search 
         }else{
           this.gemeente_search = this.searchBar.gemeente_search;
-          console.log('has value search', this.searchBar.gemeente_search);
-          // d3.select("#mandata").transition().style("visibility", "visible")
+          // console.log('has value search', this.searchBar.gemeente_search);
           return this.gemeente_search
         }
       }

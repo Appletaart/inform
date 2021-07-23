@@ -29,7 +29,6 @@ export default class AgendaController extends Controller {
     @service searchBar;
     @tracked gemeente_search;
     @tracked gemeente;
-    @tracked population;
     
     get get_Search(){
       if(!this.searchBar.gemeente_search){
@@ -55,19 +54,8 @@ export default class AgendaController extends Controller {
       }
     }
   
-    get getPopulation() {
-      if (!this.map['gemeente'].population) {
-        this.population = 'Roeselare'
-        return this.population.toLocaleString()
-      } else {
-        this.population = this.map['gemeente'].population;
-        return this.population.toLocaleString()
-      }
-    }
-
-  
       get getAgenda() {
-        const bestuurseenheids = d3.group(this.model.realdata, d => d.bestuurseenheidnaam);     
+        const bestuurseenheids = d3.group(this.model, d => d.bestuurseenheidnaam);     
         const een_bestuurseenheid = []
         for (const [key] of bestuurseenheids) {een_bestuurseenheid.push(key)}
         const bestuurseenheid = bestuurseenheids.get(this.gemeente);
@@ -84,7 +72,6 @@ export default class AgendaController extends Controller {
               geplande_Date: geplande_Date,
               geplande_Time: geplande_Time,
               bestuursclassificatie: bestuurseenheids.bestuursclassificatie,
-              // bestuursorgaan: bestuurseenheids.bestuursorgaan,
               location: bestuurseenheids.location,
               title_before_agendapunt: bestuurseenheids.title_before_agendapunt,
               title_agenda: bestuurseenheids.title_agenda,
@@ -108,7 +95,7 @@ export default class AgendaController extends Controller {
       }// eind getAgenda
 
       get getAgendaSearch() {
-      const bestuurseenheids = d3.group(this.model.realdata, d => d.bestuurseenheidnaam); 
+      const bestuurseenheids = d3.group(this.model, d => d.bestuurseenheidnaam); 
       //  console.log(bestuurseenheids);    
       const een_bestuurseenheid = []
       for (const [key] of bestuurseenheids) {een_bestuurseenheid.push(key)}
@@ -126,7 +113,6 @@ export default class AgendaController extends Controller {
             geplande_Date: geplande_Date,
             geplande_Time: geplande_Time,
             bestuursclassificatie: bestuurseenheids.bestuursclassificatie,
-            // bestuursorgaan: bestuurseenheids.bestuursorgaan,
             location: bestuurseenheids.location,
             title_before_agendapunt: bestuurseenheids.title_before_agendapunt,
             title_agenda: bestuurseenheids.title_agenda,

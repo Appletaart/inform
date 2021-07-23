@@ -1,0 +1,42 @@
+$N-VA: orange;
+$CDandV: #ff6600;
+$OpenVld: blue;
+$VlaamsBelang: yellow;
+$Groen: green;
+$Vooruit: red;
+/* 
+N-VA
+CD&V
+Open Vld
+Vlaams Belang
+Groen
+Vooruit
+TEAM 8980
+ */
+.N-VA {
+    color: $N-VA;
+}
+.CD\26V, .CD\26V\+{
+    color: $CDandV;
+}
+.Open, .Open-Vld{
+    color: $OpenVld;
+}
+.Vlaams {
+    color: $VlaamsBelang;
+}
+.Groen{
+    color: $Groen;
+}
+.Vooruit{
+    color: $Vooruit;
+}
+.TEAM {
+    color:#24cccc;
+}
+.Lijst {
+    color:#0adf38;
+}
+.Team {
+    color: #ec2805;
+}

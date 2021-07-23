@@ -20,81 +20,52 @@
 </div>
 
 
-<div id="besluitSearch" class="au-u-regular {{this.identifier}}">
+<div class="besluitSearch au-u-regular {{this.identifier}}">
+<div id="topBesluiten" class="bottombox"></div>
 {{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle" {{on "click" this.toggleClose}}></div>
-<div class="head_cut">
-<span class="au-u-bold"> {{@get_Search}} </span><br>
-<hr>
+<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
+<div class="au-o-box">
+<span class="au-u-h5 au-u-bold"> {{@get_Search}}   </span><Object::Population  @name="{{@get_Search}}"/><br>
+<hr/>
 
-{{#each @getBesluitenSearch.groupAanwezige as |groupAanwezige|}}
-<div>
-<span class="aanwezig">
+{{#each @getBesluitenSearch as |geplande|}}
+<AuContent>
+<div class="aanwezig">
 <span class="au-u-bold">Zitting</span>
-<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{groupAanwezige.geplande_Date}}</span> 
-<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{groupAanwezige.geplande_Time}} | {{groupAanwezige.location.value}}</span><br>
-<span class="au-u-bold">Aanwezig {{groupAanwezige.naam_aanwezige.length}} personen </span>
-{{#each groupAanwezige.naam_aanwezige as |naam_aanwezige|}}
-{{naam_aanwezige.agendapunt_aanwezige.value}},
-{{/each}}
-</span>
-</div>
-<hr>
-{{/each}}
-<div class="details">
-<div class="details-list">
-{{#each @getBesluitenSearch.groupStemming as |geplande|}}
 <AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Date}}</span> 
 <AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Time}} | {{geplande.location.value}}</span><br>
-<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="{{geplande.bestuursclassificatie}} ({{geplande.details.length}})">
+{{#if (gt geplande.count 1)}}
+<span class="au-u-bold">Aanwezig {{geplande.count}} personen </span>
+{{/if}}
+{{geplande.aanwezigenInfo}}
+</div>
+</AuContent>
+<AuCard @expandable={{true}} @flex={{true}} @divided={{true}} as |c|>
+<c.header @badgeSkin="brand" >
+  <AuHeading @level="6" @skin="6" class="au-card_text-blue">
+    {{geplande.bestuursclassificatie}} ({{geplande.details.length}})
+  </AuHeading>
+</c.header>
 {{#each geplande.details as | details|}}
+<c.content>
 <p><br>
-<div class="stemming"><span class="green"></span> {{details.nbPro.value}}</div> 
-<div class="stemming"><span class="orange"></span> {{details.nbAnti.value}}</div>
-<div class="stemming"><span class="red"> </span> {{details.nbNoVote.value}}</div>
-<span class="au-u-bold">{{details.description.value}}</span> <br> 
-{{details.motivering.value}}
+<div class="stemming"><span class="circle circle__green"></span> {{details.nbPro.value}}</div> 
+<div class="stemming"><span class="circle circle__orange"></span> {{details.nbAnti.value}}</div>
+<div class="stemming"><span class="circle circle__red"> </span> {{details.nbNoVote.value}}</div>
+<span class="au-u-medium">{{details.title.value}}</span> <br>
+{{#if details.description.value}}
+<span class="au-u-medium">Description:</span> {{details.description.value}} <br>
+{{/if}}
+{{#if details.motivering.value}}
+<span class="au-u-medium">Motivering:</span> {{details.motivering.value}}
+{{/if}}
 </p>
+</c.content>
 {{/each}}
-</AuAccordion>
+</AuCard>
+<a href="#topBesluiten" class="toTop"><AuIcon @icon="nav-up" @alignment="right" @size="large" @ariaHidden={{true}} /></a>
+<br>
 {{/each}}
 </div>
-
-{{!-- groupStemming1 --}}
-{{!-- <div class="details-list">
-{{#each this.getBesluiten.groupStemming1 as |geplande|}}
-<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Date}}</span> 
-<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Time}} | {{geplande.location.value}}</span><br>
-<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="{{geplande.bestuursorgaan}} ({{geplande.details.length}})">
-{{#each geplande.details as | details|}}
-<p><br>
-<div class="stemming"><span class="green"></span> {{details.nbPro.value}}</div> 
-<div class="stemming"><span class="orange"></span> {{details.nbAnti.value}}</div>
-<div class="stemming"><span class="red"> </span> {{details.nbNoVote.value}}</div>
-<span class="au-u-bold">{{details.description.value}}</span> <br> 
-{{details.motivering.value}}
-</p>
-{{/each}}
-</AuAccordion>
-{{/each}}
-</div> --}}
-{{!-- <div class="details-list">
-<h2 class="au-u-bold">Milieu- en afvalbeleid</h2>
-<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Aktename van het plaatsen van een bovengrondse
-propaangastank">
-  <div class="stemming"><span class="green">•</span>27</div> 
-  <div class="stemming"><span class="orange">•</span>1</div>
-  <div class="stemming"><span class="red">•</span>0</div>
-  <p>I am information. I can even contain</p>
-</AuAccordion>
-<AuAccordion class="accordion" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Aanvraag aanleggen tegeltuintje">
-  <div class="stemming"><span class="green">•</span>27</div> 
-  <div class="stemming"><span class="orange">•</span>1</div>
-  <div class="stemming"><span class="red">•</span>0</div>
-  <p>I am information. I can even contain</p>
-</AuAccordion>
-</div> --}}
-
-</div>
-</div>
+<div class="bottombox"></div> 
 </div>

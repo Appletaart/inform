@@ -1,5 +1,4 @@
 import Route from '@ember/routing/route';
-import { inject as service } from '@ember/service';
 class SPARQLQueryDispatcher {
   constructor( endpoint ) {
       this.endpoint = endpoint;
@@ -14,11 +13,6 @@ class SPARQLQueryDispatcher {
   }
 }
 export default class AgendaRoute extends Route {
- /*  @service map;
-  setupController() {
-    super.setupController(...arguments);
-    this.map.empty();
-  } */
   async model(){
                /*  let response = await fetch('/api/agenda.json');
                 let datas = await response.json(); 
@@ -60,11 +54,20 @@ export default class AgendaRoute extends Route {
                   OPTIONAL { ?zitting besluit:geplandeStart ?geplandeStart }
                   OPTIONAL { ?zitting <http://www.w3.org/ns/prov#atLocation> ?location}
                   
+                  BIND(day(now()) AS ?day)
+                  BIND(IF(?day < 10, "-0", "-") AS ?day2)
+                  BIND(month(now()) - 2 AS ?month)
+                  BIND(IF(?month < 10, "-0", "-") AS ?month2) 
+                  BIND(year(now()) AS ?year)
+                  BIND(CONCAT(?year, ?month2, ?month, ?day2, ?day) as ?dayTofilter)
+                  BIND(xsd:date(now()) AS ?time)
+                  BIND(STRDT(?dayTofilter, xsd:date) AS ?filterDate)
+
                   ?zitting besluit:behandelt ?agendapunt.
                   ?agendapunt a besluit:Agendapunt .
                   ?agendapunt terms:title ?title_agenda .
                    OPTIONAL { ?agendapunt terms:description ?description .
-                       ?agendapunt besluit:geplandOpenbaar ?OpenbaarOfNiet .
+                   ?agendapunt besluit:geplandOpenbaar ?OpenbaarOfNiet .
                   BIND (IF(?openbaarOfNiet = 1, "Openbaar", "Openbaar niet") as ?geplandOpenbaar)
                  }
                   ?zitting besluit:isGehoudenDoor ?bo .
@@ -75,10 +78,11 @@ export default class AgendaRoute extends Route {
                   ?s a besluit:Bestuurseenheid .
                   ?s besluit:werkingsgebied [rdfs:label ?bestuurseenheidnaam]
                   
-                  FILTER (?geplandeStart > "2021-04-01"^^xsd:date)
+                  FILTER (?geplandeStart > ?filterDate) 
                 }
                 ORDER BY DESC(?geplandeStart) ASC(?title_agenda)
               `;
+              // FILTER (?geplandeStart > "2021-01-01"^^xsd:date) 
               const results = []
               const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl );
               const data_qa = await queryDispatcher.query( sparqlQuery ).then(results);
@@ -94,6 +98,6 @@ export default class AgendaRoute extends Route {
                   description: e.description
                   })
               })  
-              return {/* data, */ realdata};        
+              return realdata;        
     }
 }

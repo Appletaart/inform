@@ -1,36 +1,57 @@
- <AuButtonGroup>
-<div class="search">
-<AuLabel for="input-block">Ontdek wat onze vertegenwoordigers voor ons beslissen.</AuLabel>
-<PowerSelect
-  @width="block"
-  title="kie gemeente" 
-  @icon="search"
-  @allowClear={{true}}
-  @disabled={{this.disabled}}
-  @searchEnabled={{true}}
-  @loadingMessage="Aan het laden..."
-  @noMatchesMessage="Geen resultaten"
-  @searchMessage="Typ om te zoeken"
-  @identifier={{this.identifier}}
-  @options={{this.singleselects}}
-  @selected={{this.selected}}
-  @onChange={{this.onChange}}
-  @placeholder="Gemeente" as |singleselect|>
-  {{singleselect}}
-</PowerSelect>
+{{!-- template-lint-disable no-log --}}
+
+{{!-- Fretch data from component --}}
+{{!-- 
+<AuButtonGroup>
+{{#each this.year as |year|}}
+<AuButton @skin="secondary" class="au-u-bold">
+<div class="year {{this.active}}" {{on "click" this.isOpen}}>{{year}}</div>
+</AuButton>
+{{/each}}
+</AuButtonGroup> 
+<div class="{{this.visible}}">
+{{#each this.month as |month|}}
+<AuButton class="month" {{on "click" this.isOpening}}>{{month}}</AuButton>
+{{/each}}
 </div>
-</AuButtonGroup>
-{{!-- Page Archieven --}}
-<div class="archievenSearch au-u-regular {{this.identifier}}">
-<div id="top" class="bottombox"></div>
-{{!-- template-lint-disable no-invalid-interactive --}}
-<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
-<div class="au-o-box">
-<span class="au-u-h5 au-u-bold"> {{@get_Search}} </span><Object::Population  @name="{{@get_Search}}"/><br>
-<AuHr/>
+<div class="details {{this.visibly}}">
+<div class="details-list">
+<h2 class="au-u-bold">Milieu- en afvalbeleid</h2>
+{{#each this.datas_bestemmen as |bestemmen|}}
+{{#each this.datas_aanwezigen as |aanwezigen|}}
+<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{bestemmen.geplandeStart}}</span> 
+<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">Time | Location</span><br>
+<p>{{aanwezigen.aanwezigenInfo}}</p>
+{{/each}}
+<AuCard @expandable={{true}} @flex={{true}} @divided={{true}} as |c|>
+  <c.header @badgeSkin="brand" >
+    <AuHeading @level="6" @skin="6" class="au-card_text-blue">
+    {{bestemmen.bestuursclassificatie}}
+    </AuHeading>
+  </c.header>
+  <c.content>
+{{#each bestemmen.details as |details|}}
+<p><br>
+<div class="stemming"><span class="circle circle__green"></span> {{bestemmen.nbPro.value}}</div> 
+<div class="stemming"><span class="circle circle__orange"></span> {{bestemmen.nbNoVote.value}}</div>
+<div class="stemming"><span class="circle circle__red"> </span> {{bestemmen.nbAnti.value}}</div>
+<p class="au-u-bold">{{details.title.value}}</p> <br> 
+{{details.motivering.value}}
+</p>
+{{/each}}
+</c.content>
+</AuCard>
+{{/each}}
+<br>
+</div>
+</div>
+ --}}
+
+{{log @model.bestuurseenheidnaam}}
+<p>{{@bestuurseenheidnaam}}</p>
 
 <div class="au-u-regular">
-{{#each @getArchievenSearch.stemming_years as |groupAanwezige|}}
+{{#each @getArchieven.stemming_years as |groupAanwezige|}}
 <AuCard @expandable={{true}} @flex={{true}} @divided={{true}} as |c|>
   <c.header @badgeSkin="brand" >
     <AuHeading @level="6" @skin="6" class="au-card_text-blue">
@@ -38,7 +59,7 @@
     </AuHeading>
   </c.header>
   {{!-- Dit head voor year --}}
-{{#each @getArchievenSearch.stemming_years as | details|}}
+{{#each @getArchieven.stemming_years as | details|}}
 {{#if (is-equal groupAanwezige.geplande_Year details.geplande_Year)}}
 {{#if (is-equal groupAanwezige.geplande_Month details.geplande_Month)}}
 <c.content>
@@ -50,7 +71,7 @@
   </c.header>
 {{!-- Dit head voor month --}}
 {{!-- start from besluit --}}
-{{#each @getArchievenSearch.groupStemming as |geplande|}}
+{{#each @getArchieven.groupStemming as |geplande|}}
 {{#if (is-equal details.geplande_Year geplande.geplande_Year)}}
 {{#if (is-equal details.geplande_Month geplande.geplande_Month)}}
 <c.content>
@@ -88,7 +109,7 @@
 </c.content>
 {{/each}}
 </AuCard>
-<a href="#top" class="toTop"><AuIcon @icon="nav-up" @alignment="left" @size="large" @ariaHidden={{true}} /></a>
+<a href="#toTop"class="toTop"><AuIcon @icon="nav-up" @alignment="right" @size="large" @ariaHidden={{true}} /></a>
 </c.content>
 {{/if}}
 {{/if}}
@@ -103,6 +124,9 @@
 <br>
 {{/each}}
 </div>
-</div>
-<div class="bottombox"></div> 
-</div>
+
+
+
+
+
+

@@ -14,62 +14,127 @@ class SPARQLQueryDispatcher {
 }
 
 export default class ArchievenRoute extends Route {
-    /* async model(){
+    async model(params){
+    const { gemeente } = params;
     const endpointUrl = 'https://openbelgium-2021.lblod.info/sparql';
+    const endpointUrl1 = 'https://qa.centrale-vindplaats.lblod.info/sparql';
     const sparqlQuery = `
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX mandaat: <http://data.vlaanderen.be/ns/mandaat#>
-        PREFIX mandataris: <http://data.vlaanderen.be/ns/mandaat#Mandataris>
-        PREFIX besluit: <http://data.vlaanderen.be/ns/besluit#>
-        PREFIX bevat: <http://www.w3.org/ns/org#hasPost>
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-        PREFIX bestuurseenheidt: <https://data.vlaanderen.be/ns/besluit#Bestuurseenheid>
-        PREFIX bestuursorgaan: <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan>
-        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-        SELECT DISTINCT ?start ?eind ?achternaam ?voornaam ?bestuursfunctie ?fractie ?bestuurseenheidnaam WHERE {
-          ?mandataris a mandaat:Mandataris .
-          ?mandataris mandaat:start ?start.
-          OPTIONAL {?mandataris mandaat:einde ?eind.}
-          OPTIONAL {?mandataris <http://data.vlaanderen.be/ns/mandaat#rangorde> ?rangorde.}
-          OPTIONAL {?mandataris <http://data.vlaanderen.be/ns/mandaat#beleidsdomein> ?beleid.
-                      ?beleid skos:prefLabel ?beleidsdomein.}
+    PREFIX besluit: <http://data.vlaanderen.be/ns/besluit#>
+    PREFIX bestuursorgaan:<http://data.vlaanderen.be/ns/besluit#Bestuursorgaan>
+    PREFIX mandaat: <http://data.vlaanderen.be/ns/mandaat#>
+    PREFIX mandataris: <http://data.vlaanderen.be/ns/mandaat#Mandataris>
+    PREFIX persoon: <http://data.vlaanderen.be/ns/persoon#>
+    PREFIX dcterms: <http://purl.org/dc/terms/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX ontology: <http://data.europa.eu/eli/ontology#> 
+    PREFIX citeeropschrift: <http://data.europa.eu/eli/ontology#title_short>
+    PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+    PREFIX terms: <http://purl.org/dc/terms/> 
+    PREFIX isBestuurlijkeAliasVan: <http://data.vlaanderen.be/ns/mandaat#isBestuurlijkeAliasVan>
+    PREFIX gebruikteVoornaam: <https://data.vlaanderen.be/ns/persoon#gebruikteVoornaam>
+    PREFIX familyName: <http://xmlns.com/foaf/0.1/familyName>
+    PREFIX classificatie: <http://data.vlaanderen.be/ns/besluit#classificatie>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX behandelingAgendapunt: <https://data.vlaanderen.be/ns/besluit#BehandelingVanAgendapunt>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    
+    SELECT DISTINCT ?geplandeStart ?location (GROUP_CONCAT(DISTINCT ?aanwezigen; separator = " , ") AS ?aanwezigenInfo) (COUNT(distinct ?aanwezigen) as ?count) ?nbPro ?nbAnti ?nbNoVote ?title ?description ?motivering ?bestuursclassificatie ?bestuurseenheidnaam WHERE {
+    ?zitting a besluit:Zitting ;
+                  besluit:geplandeStart ?geplandeStart;
+                   besluit:behandelt ?agendapunt .
+                  ?agendapunt a besluit:Agendapunt .
+    OPTIONAL { ?zitting <http://www.w3.org/ns/prov#atLocation> ?location}
+     
+    ?behandelingAgendapunt a besluit:BehandelingVanAgendapunt;
+          terms:subject ?agendapunt;
+           prov:generated ?decision.
+        ?decision ontology:title ?title;
+        prov:value ?value;
+        ontology:description ?description .
+    OPTIONAL {?decision besluit:motivering ?motivering .}
+        
           
-          ?mandataris <http://data.vlaanderen.be/ns/mandaat#isBestuurlijkeAliasVan> ?person .
-          ?person a <http://www.w3.org/ns/person#Person> .
-          ?person <http://xmlns.com/foaf/0.1/familyName> ?achternaam .
-          ?person <http://data.vlaanderen.be/ns/persoon#gebruikteVoornaam> ?voornaam.
-          
-          ?mandataris <http://www.w3.org/ns/org#holds> ?functie .
-          ?functie <http://www.w3.org/ns/org#role> ?rol .
-          ?rol <http://www.w3.org/2004/02/skos/core#prefLabel> ?bestuursfunctie .
-          
-          OPTIONAL {?mandataris <http://www.w3.org/ns/org#hasMembership> ?lid .
-                ?lid <http://www.w3.org/ns/org#organisation> ?o.
-                ?o a <http://data.vlaanderen.be/ns/mandaat#Fractie>.
-                  ?o <https://www.w3.org/ns/regorg#legalName> ?fractie.}
-          
-          ?mandataris <http://www.w3.org/ns/org#holds> ?manda .
-          ?manda a <http://data.vlaanderen.be/ns/mandaat#Mandaat> .
-          ?specializationInTime <http://www.w3.org/ns/org#hasPost> ?manda.
-          ?manda <http://www.w3.org/ns/org#role> ?bo .
-          ?bo <http://www.w3.org/2004/02/skos/core#prefLabel> ?bestuursorgaanTijd .
-          ?specializationInTime <http://data.vlaanderen.be/ns/mandaat#isTijdspecialisatieVan> ?boo  .
-          ?boo <http://www.w3.org/2004/02/skos/core#prefLabel> ?bestuursorgaan .
-          ?boo besluit:classificatie ?classificatie.
-          ?classificatie skos:prefLabel ?bestuursclassificatie .
-          ?boo besluit:bestuurt ?s .
-          ?s a besluit:Bestuurseenheid .
-          ?s besluit:werkingsgebied [rdfs:label ?bestuurseenheidnaam]
-                
-          FILTER (?eind >= xsd:date(NOW()) || NOT EXISTS {?mandataris mandaat:einde ?eind.} )
-        }
-
-        ORDER BY ASC(?bestuurseenheidnaam) ASC(?fractie) ASC(?voornaam) 
-    `;
+    ?behandelingVanAgendapunt dcterms:subject ?agendapunt ;
+                                besluit:heeftStemming ?stemming.
+    ?stemming besluit:aantalVoorstanders ?nbPro;
+                besluit:aantalTegenstanders ?nbAnti;
+                besluit:aantalOnthouders ?nbNoVote.
+    ?besluit prov:wasGeneratedBy ?behandelingVanAgendapunt ;
+             ontology:title ?title .
+    ?zitting besluit:isGehoudenDoor ?bo .  
+      
+    OPTIONAL {	?bo a <http://www.w3.org/ns/org#classification> .}
+    OPTIONAL {  ?bo <http://www.w3.org/2004/02/skos/core#prefLabel> ?bestuursorgaan .}
+                  ?bo besluit:classificatie ?classificatie.
+                ?classificatie skos:prefLabel ?bestuursclassificatie .
+            
+                  ?bo besluit:bestuurt ?s .
+                  ?s a besluit:Bestuurseenheid .
+                  ?s besluit:werkingsgebied [rdfs:label ?bestuurseenheidnaam].
+      
+    OPTIONAL {  ?behandelingAgendapunt a besluit:BehandelingVanAgendapunt; 
+                terms:subject ?agendapunt;
+                 besluit:heeftAanwezige ?aanwezige . 
+                  ?aanwezige mandaat:isBestuurlijkeAliasVan ?person .
+                ?person a <http://www.w3.org/ns/person#Person> .
+                  ?person persoon:gebruikteVoornaam ?firstName;
+                 foaf:familyName ?familyName .
+    }
+    BIND(CONCAT(?firstName, " ", ?familyName) as ?aanwezigen) 
+    
+    }
+    GROUP BY ?geplandeStart ?location ?nbPro ?nbAnti ?nbNoVote ?title ?description ?motivering ?bestuursclassificatie ?bestuurseenheidnaam
+    ORDER BY DESC(?geplandeStart) ASC(?title)`;
     const results = []
-    const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl );
-    return await queryDispatcher.query( sparqlQuery ).then(results);
-    } */
+    const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl1 );
+    const getData =  await queryDispatcher.query( sparqlQuery ).then(results);
+    const datas = []
+    getData.results.bindings.forEach(e => {
+        datas.push({
+        bestuurseenheidnaam: e.bestuurseenheidnaam.value,
+        bestuursclassificatie: e.bestuursclassificatie.value,
+        geplandeStart: e.geplandeStart.value,
+        location: e.location,
+        aanwezigenInfo: e.aanwezigenInfo.value,
+        count: e.count.value,
+        title: e.title,
+        description: e.description,
+        motivering: e.motivering,
+        nbPro: e.nbPro,
+        nbAnti: e.nbAnti,
+        nbNoVote: e.nbNoVote
+        })
+        })
+        const bestuurseenheidnaam = datas.find(({ bestuurseenheidnaam }) => bestuurseenheidnaam === gemeente)
+      return {datas, bestuurseenheidnaam}
+}
+/* 
+    async model(params){
+        const { gemeente } = params;
+            let responses = await fetch('/api/archieven.json');
+            let data = await responses.json();
+            const datas = [];
+            data.results.bindings.forEach(e => {
+            datas.push({
+            bestuurseenheidnaam: e.bestuurseenheidnaam.value,
+            bestuursclassificatie: e.bestuursclassificatie.value,
+            geplandeStart: e.geplandeStart.value,
+            location: e.location,
+            aanwezigenInfo: e.aanwezigenInfo.value,
+            count: e.count.value,
+            title: e.title,
+            motivering: e.motivering,
+            nbPro: e.nbPro,
+            nbAnti: e.nbAnti,
+            nbNoVote: e.nbNoVote
+            })})
+
+            const bestuurseenheidnaam = datas.find(({ bestuurseenheidnaam }) => bestuurseenheidnaam === gemeente)
+            // console.log(datas);
+            return {datas, bestuurseenheidnaam}
+    
+} // end model
+ */
+
 }

@@ -19,29 +19,31 @@
 </PowerSelect>
 </div>
 {{!-- Besturen --}}
-<div id="mandata" class="au-u-regular {{this.identifier}}">
+<div class="besturenSearch au-u-regular {{this.identifier}}">
+<div class="bottombox"></div>
 {{!-- template-lint-disable no-invalid-interactive --}}
-<div class="toggle" {{on "click" this.toggleClose}} ></div>
- <div class="head_cut">
-<span class="au-u-bold"> {{@get_Search}}</span><br>
+<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
+<div class="au-o-box">
+<span class="au-u-h5 au-u-bold"> {{@get_Search}} </span><Object::Population  @name="{{@get_Search}}"/><br>
 {{#each @getBestuurSearch.een_burgemeester as | een_burgemeester|}}
-<p>{{een_burgemeester.voornaam}} {{een_burgemeester.achternaam}} {{een_burgemeester.functie}} <span class="au-u-bold">{{een_burgemeester.fractie.value}}</span></p>
+<p>{{een_burgemeester.voornaam}} {{een_burgemeester.achternaam}} {{een_burgemeester.functie}} <span class="au-u-medium">{{een_burgemeester.fractie.value}}</span></p>
 {{/each}}
 <hr>
 <span class="au-u-bold">College van Burgemeester en Schepenen</span><br>
 {{#each @getBestuurSearch.een_schepenen as |een_schepenen|}}
-<p>{{een_schepenen.voornaam}} {{een_schepenen.achternaam}} {{een_schepenen.functie}} <span class="au-u-bold">{{een_schepenen.fractie.value}}</span></p>
+<p>{{een_schepenen.voornaam}} {{een_schepenen.achternaam}} {{een_schepenen.functie}} <span class="au-u-medium">{{een_schepenen.fractie.value}}</span></p>
 {{/each}}
 {{#each @getBestuurSearch.een_tschepenen as |een_tschepenen|}}
-<p>{{een_tschepenen.voornaam}} {{een_tschepenen.achternaam}} {{een_tschepenen.functie}} <span class="au-u-bold">{{een_tschepenen.fractie.value}}</span></p>
+<p>{{een_tschepenen.voornaam}} {{een_tschepenen.achternaam}} {{een_tschepenen.functie}} <span class="au-u-medium">{{een_tschepenen.fractie.value}}</span></p>
 {{/each}}
 <hr>
 <strong class="au-u-bold">Gemeenteraadsleden</strong><br> 
 {{#each @getBestuurSearch.een_voorZgr as |een_voorZgr|}}
-<p>{{een_voorZgr.voornaam}} {{een_voorZgr.achternaam}} {{een_voorZgr.functie}} <span class="au-u-bold">{{een_voorZgr.fractie.value}}</span></p>
+<p>{{een_voorZgr.voornaam}} {{een_voorZgr.achternaam}} {{een_voorZgr.functie}} <span class="au-u-medium">{{een_voorZgr.fractie.value}}</span></p>
 {{/each}}
 {{#each @getBestuurSearch.een_gr as |een_gr|}}
-<p>{{een_gr.voornaam}} {{een_gr.achternaam}} <span class="au-u-bold">{{een_gr.fractie.value}}</span></p>
+<p>{{een_gr.voornaam}} {{een_gr.achternaam}} <span class="au-u-medium">{{een_gr.fractie.value}}</span></p>
 {{/each}}
 </div> 
+<div class="bottombox"></div>
 </div>

@@ -32,7 +32,6 @@ export default class MapComponent extends Component {
       this.map.addItem(item)
     }
 
-
     @action
     initMap() {
         let provincesData;
@@ -41,8 +40,8 @@ export default class MapComponent extends Component {
         let hasDataAgenda;
         let hasDataBesluit;
 
-        const width = 800;
-        const height = 330;
+        const width = 790;
+        const height = 309;
         const container = d3.select('.bp-map')
         
         const tooltip = d3.select("#tooltip");
@@ -63,6 +62,12 @@ export default class MapComponent extends Component {
         .attr("viewBox", [0, 0, width, height])
 
         const g = svg.append("g");
+              g.append("text")
+              .attr("x", 665)
+              .attr("y", 32)
+              .attr("class", "text_legend")
+              .attr("fill", "#657d9a")
+              .text("recente 2 maanden")
 
               g.append("rect")
               .attr("x", 650)
@@ -90,9 +95,7 @@ export default class MapComponent extends Component {
               g.append("text")
               .attr("x", 665)
               .attr("y", 62)
-              // .attr("dy", 3)
               .attr("class", "text_legend")
-              // .attr("height", "0.1em")
               .attr("fill", "#657d9a")
               .text("beschikbaar besluiten")
 
@@ -113,26 +116,30 @@ export default class MapComponent extends Component {
           return name;
           })
           .attr("population", gemeenteDataItem => {
+          // let name = gemeenteDataItem.properties["name_nl"]; 
           let population = gemeenteDataItem.properties["population"];
           return population;
           })
           .attr("d", path)
-          .attr("fill", (gemeenteDataItem) => {
+          .attr("fill", (gemeenteDataItem, item) => {
           let name = gemeenteDataItem.properties["name_nl"]; 
+          
           hasDataAgenda.then(result => {
             let input_name = result.find(hu => hu.e === name)
+            //Issue: It doesn't show de result in De Panne
             return d3.select("#"+input_name.e).transition().style("fill", "#e1e5e8")
           }).catch(e => e)
+          
 
           hasDataBesluit.then(result => {
+            //Issue: It doesn't show de result in De Panne
             let input_name = result.find(hu => hu.e === name)
-            // console.log(input_name.e);
             return d3.select("#"+input_name.e).transition().style("fill", "#7f8d99")
           }).catch(e => e)
 
-          if (name === "De Panne"){
-            return "#e1e5e8";
-          } 
+         /*  if (name === "De Panne"){
+            return "#7f8d99";
+          }  */
           return "#f8f8f8";
           /*
           if (name === "De Panne"){
@@ -150,13 +157,7 @@ export default class MapComponent extends Component {
             let name = gemeenteDataItem.properties["name_nl"];
             over(name)
         }).on("click", (gemeenteDataItem) => {
-              d3.select(".indexpage").transition().style("visibility", "visible")
-            //  let name = gemeenteDataItem.properties["name_nl"];
-            //  let population = gemeenteDataItem.properties["population"];
-            //  console.log(name, population);
-              /* d3.select(".toggle").on("click", () => {
-              d3.select(".indexpage").transition().style("visibility", "hidden")
-            }); */
+              //  d3.select(".indexClick").transition().style("visibility", "visible")
           })
           .on("mouseout", gemeenteDataItem => {
             tooltip.transition().style("visibility", "hidden");
@@ -173,15 +174,14 @@ export default class MapComponent extends Component {
 
       }//drawMap
       
-      const map = async () => d3.json('/api/vlaanderens.json').then((data, error) => {
+      const map = async () => d3.json('/api/vlaanderen.json').then((data, error) => {
           if (error) {
             console.log(log);
           } else { 
-            // console.log(data); 
             provincesData = topojson.feature(data, data.objects.provinces).features;
             gemeenteData = topojson.feature(data, data.objects.municipalities).features;
             mandatenData = fetch_mandataris().then(
-            function(result) {// console.log("Success!", result.results['bindings']);
+            function(result) {
                 const datas = result.results['bindings']
                 const realdata = [];
                 datas.forEach(e => {
@@ -212,14 +212,13 @@ export default class MapComponent extends Component {
                 // console.log(realdata)
                 return realdata
               } );
-
             drawMap();
             }})// end mandaten
-            map()
+            map();
 
         async function over(name) {
           let eenBurgemeester = []; 
-          mandatenData.then(info =>{
+            mandatenData.then(info =>{
             let input_name = info.find(hu => hu.bestuurseenheidnaam === name);
             let put_name = input_name.bestuurseenheidnaam;  
             let bestuurseenheids = d3.group(info, d=> d.bestuurseenheidnaam) //d3.group(info, d => d[19]);
@@ -241,7 +240,21 @@ export default class MapComponent extends Component {
             if(!eenBurgemeester[0].fractie){
               return document.querySelector('#tooltip').innerHTML = `<span class="gemeente">${name}</span> | ${eenBurgemeester[0].voornaam} ${eenBurgemeester[0].achternaam} ${[eenBurgemeester[0].fractie]} `
             }else{
-              return document.querySelector('#tooltip').innerHTML = `<span class="gemeente">${name}</span> | ${eenBurgemeester[0].voornaam} ${eenBurgemeester[0].achternaam} <span class="burgermeester">${eenBurgemeester[0].fractie.value}</span> `
+              const classColor = eenBurgemeester[0].fractie.value;
+              switch(classColor){
+                case "N-VA":
+                case "Groen":
+                case "Vooruit":
+                case "CD&V":
+                case "CD&V+": 
+                case "Open": 
+                case "Open-Vld":
+                case "Vlaams":
+                case "TEAM":
+                case "Lijst": 
+              }
+              //  console.log(classColor);
+              return document.querySelector('#tooltip').innerHTML = `<span class="gemeente">${name}</span> | ${eenBurgemeester[0].voornaam} ${eenBurgemeester[0].achternaam} <span class="fractie ${classColor}">${eenBurgemeester[0].fractie.value}</span>`
             }
             }
           )   
@@ -308,6 +321,7 @@ export default class MapComponent extends Component {
 
         async function hasAgenda(){
           const endpointUrl = 'https://qa.centrale-vindplaats.lblod.info/sparql';
+          const endpointUrl1 = 'https://openbelgium-2021.lblod.info/sparql';
           const sparqlQuery = `
           PREFIX dcterm: <http://purl.org/dc/terms/>
           PREFIX dct: <http://purl.org/dc/terms/>
@@ -331,12 +345,21 @@ export default class MapComponent extends Component {
             ?bo besluit:bestuurt ?s .
             ?s a besluit:Bestuurseenheid .
             ?s besluit:werkingsgebied [rdfs:label ?bestuurseenheidnaam]
-            FILTER (?geplandeStart > "2021-04-01"^^xsd:date)
+            BIND(day(now()) AS ?day)
+            BIND(IF(?day < 10, "-0", "-") AS ?day2)
+            BIND(month(now()) - 2 AS ?month)
+            BIND(IF(?month < 10, "-0", "-") AS ?month2) 
+            BIND(year(now()) AS ?year)
+            BIND(CONCAT(?year, ?month2, ?month, ?day2, ?day) as ?dayTofilter)
+            BIND(xsd:date(now()) AS ?time)
+            BIND(STRDT(?dayTofilter, xsd:date) AS ?filterDate)
+            FILTER (?geplandeStart > ?filterDate)
           }
           GROUP BY ?bestuurseenheidnaam
           `;
+          // FILTER (?geplandeStart > "2021-01-01"^^xsd:date)
           const results = []
-          const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl);
+          const queryDispatcher = new SPARQLQueryDispatcher(endpointUrl);
           const data_qa = await queryDispatcher.query( sparqlQuery ).then(results);
           const realdata = [];
           data_qa.results.bindings.forEach(e => {
@@ -346,14 +369,9 @@ export default class MapComponent extends Component {
           }
 
         async function hasBesluit(){
-          const endpointUrl = 'https://openbelgium-2021.lblod.info/sparql';
+          const endpointUrl = 'https://qa.centrale-vindplaats.lblod.info/sparql';
+          const endpointUrl1 = 'https://openbelgium-2021.lblod.info/sparql';
           const sparqlQuery = `
-          PREFIX dcterm: <http://purl.org/dc/terms/>
-          PREFIX dct: <http://purl.org/dc/terms/>
-          PREFIX dc: <http://purl.org/dc/elements/1.1/>
-          PREFIX bs: <https://w3id.org/def/basicsemantics-owl#>
-          PREFIX ma: <http://www.w3.org/ns/ma-ont#>
-          PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
           PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
           PREFIX besluit: <http://data.vlaanderen.be/ns/besluit#>
           PREFIX bestuursorgaan:<http://data.vlaanderen.be/ns/besluit#Bestuursorgaan>
@@ -375,43 +393,63 @@ export default class MapComponent extends Component {
           PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
           SELECT DISTINCT ?bestuurseenheidnaam WHERE {
-            ?zitting a besluit:Zitting ;
-                  besluit:geplandeStart ?geplandeStart;
-                  besluit:behandelt ?agendapunt .
-                  ?agendapunt a besluit:Agendapunt .
+          ?zitting a besluit:Zitting ;
+          besluit:geplandeStart ?geplandeStart;
+          besluit:behandelt ?agendapunt .
+          ?agendapunt a besluit:Agendapunt .
           OPTIONAL { ?zitting <http://www.w3.org/ns/prov#atLocation> ?location}
-            
+          BIND(day(now()) AS ?day)
+          BIND(IF(?day < 10, "-0", "-") AS ?day2)
+          BIND(month(now()) - 2 AS ?month)
+          BIND(IF(?month < 10, "-0", "-") AS ?month2) 
+          BIND(year(now()) AS ?year)
+          BIND(CONCAT(?year, ?month2, ?month, ?day2, ?day) as ?dayTofilter)
+          BIND(xsd:date(now()) AS ?time)
+          BIND(STRDT(?dayTofilter, xsd:date) AS ?filterDate)
+
           ?behandelingAgendapunt a besluit:BehandelingVanAgendapunt;
-              terms:subject ?agendapunt;
-              prov:generated ?decision.
-            ?decision ontology:title ?title;
-              prov:value ?value;
-              besluit:motivering ?motivering;
-              ontology:description ?description .
-                
+                            terms:subject ?agendapunt;
+                            prov:generated ?decision.
+          ?decision ontology:title ?title;
+                  prov:value ?value;
+                  ontology:description ?description .
+          OPTIONAL {?decision besluit:motivering ?motivering .}
+                      
           ?behandelingVanAgendapunt dcterms:subject ?agendapunt ;
-                                      besluit:heeftStemming ?stemming.
+                                  besluit:heeftStemming ?stemming.
           ?stemming besluit:aantalVoorstanders ?nbPro;
-                      besluit:aantalTegenstanders ?nbAnti;
-                      besluit:aantalOnthouders ?nbNoVote.
-          
+                  besluit:aantalTegenstanders ?nbAnti;
+                  besluit:aantalOnthouders ?nbNoVote.
           ?besluit prov:wasGeneratedBy ?behandelingVanAgendapunt ;
-                  ontology:title ?title .
-          ?zitting besluit:isGehoudenDoor ?bo .
+                ontology:title ?title .
+          ?zitting besluit:isGehoudenDoor ?bo .  
+
           OPTIONAL {	?bo a <http://www.w3.org/ns/org#classification> .}
           OPTIONAL {  ?bo <http://www.w3.org/2004/02/skos/core#prefLabel> ?bestuursorgaan .}
-          OPTIONAL {  ?bo besluit:classificatie ?classificatie.
-                  ?classificatie skos:prefLabel ?bestuursclassificatie .}
+              ?bo besluit:classificatie ?classificatie.
+              ?classificatie skos:prefLabel ?bestuursclassificatie .
+              
+              ?bo besluit:bestuurt ?s .
+              ?s a besluit:Bestuurseenheid .
+              ?s besluit:werkingsgebied [rdfs:label ?bestuurseenheidnaam].
 
-                  ?bo besluit:bestuurt ?s .
-                  ?s a besluit:Bestuurseenheid .
-                  ?s <http://www.w3.org/2004/02/skos/core#prefLabel> ?bestuurseenheidnaam .
-            
-          FILTER (?geplandeStart > "2021-02-01"^^xsd:date)
+          OPTIONAL {  ?behandelingAgendapunt a besluit:BehandelingVanAgendapunt; 
+            terms:subject ?agendapunt;
+            besluit:heeftAanwezige ?aanwezige . 
+              ?aanwezige mandaat:isBestuurlijkeAliasVan ?person .
+              ?person a <http://www.w3.org/ns/person#Person> .
+              ?person persoon:gebruikteVoornaam ?firstName;
+                    foaf:familyName ?familyName .
           }
+          BIND(CONCAT(?firstName, " ", ?familyName) as ?aanwezigen) 
+          FILTER (?geplandeStart > ?filterDate)
+                }
+          GROUP BY ?geplandeStart ?location ?nbPro ?nbAnti ?nbNoVote ?title ?description ?motivering ?bestuursclassificatie ?bestuurseenheidnaam
+          ORDER BY DESC(?geplandeStart) ASC(?title)
           `;
+          // FILTER (?geplandeStart > "2021-04-01"^^xsd:date)
           const results = []
-          const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl);
+          const queryDispatcher = new SPARQLQueryDispatcher(endpointUrl);
           const data_qa = await queryDispatcher.query( sparqlQuery ).then(results);
           const realdata = [];
           data_qa.results.bindings.forEach(e => {
@@ -419,10 +457,7 @@ export default class MapComponent extends Component {
           }) 
           return realdata
           }
-
+     
     } //end initMap 
-
-
-
   
 }

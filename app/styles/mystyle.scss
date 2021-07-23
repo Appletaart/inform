@@ -6,59 +6,44 @@ $color_lynch_approx: #657d9a;
 $color_cape_cod_approx: #364b4a;
 $color_cape_cod_approx1: #7f8d99;
 $gray: grey;
-$color_supernova_approx: #fcca04;
 $color_martini_approx: #999;
 
 //fonts
-$font_0: Gill Sans;
-$font_1: Gill Sans MT;
-$font_2: Calibri;
-$font_3: Trebuchet MS;
 $font_4: sans-serif;
-
-//urls
-$url_0: url(svg/search.svg);
-$url_1: url(svg/cancel.svg);
 
 * {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	// background-color: #fcca04;
 }
 .au-c-main-header {
 	z-index: 25;
   }
-.au-c-form > * + * {
-	margin-top: 1rem;
+.search{
+	margin-top: 2.4rem;
+	width: 35%;
+	z-index: 10;
+	position: relative;
 }
 .au-c-form{
-	position: absolute;
-	top: 0;
-	margin: 150px 0px 5px 0;
+	position: relative;
+	margin-top: 2rem;
 	.au-c-toggle-switch {
 		background-color: #f5f8fa;
-		padding: .8rem;
-		width: auto;
-		border-radius: 0.2rem;
+		padding: 1.2rem;
+		width: 35%;
+		border-radius: 0.3rem;
 	}
 }
-.search{
-	// width: 80%;
-	// height: 70px;
-	padding: 70px 0px 5px 0;
-	z-index: 10;
-	position: absolute;
-	top: 0;
-	display:flex;
-	flex-direction: column;
-  }
 .bp-map {
+	/* position: absolute;
+	top: 12rem;
+	width:fit-content; */
+	// for map under outlat
 	position: relative;
 	width: 100%; // 78% for besturen
-	height: 100%;
+	align-items: center;
 	z-index: 0;
-	margin-top: 10rem;
 }
 .provinces {
 	fill: none;
@@ -71,56 +56,42 @@ $url_1: url(svg/cancel.svg);
 		fill: $color_cape_cod_approx;
 	}
 }
-.test{
-	position: absolute;
-	height: auto;
-	width: auto;
-}
 path {
 	stroke: $white;
-	stroke-width: 0.5px;
+	stroke-width: 0.05rem;
 }
 .legend, .legend_besluit{
 	stroke: #657d9a;
 	stroke-width: 0.1rem;
 }
-
 .text_legend{
 	font-size: 1.1rem;
 	color: $color_lynch_approx;
 }
 #tooltip {
 	position: absolute;
-	top: 650px;
-	left: 50%;
 	visibility: hidden;
 	pointer-events: none;
 	z-index: 100;
 	display: block;
-	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 	transition: 0.1s;
-	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
 	transform: translate(2%, -50%);
 	height: auto;
 	width: auto;
-	margin-top: 2px;
 	background-color: $white;
 	color: $color_cape_cod_approx;
-	margin-bottom: 5px;
-	font: 1.5rem $font_4;
+	font: 1.5rem;
 	text-align: left;
-	padding: 8px 10px;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 5px;
-	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: 5px 5px 10px -6px $gray;
-	.burgermeester {
+	padding: 0.8rem 1.1rem;
+	border-radius: 0.5rem;
+	box-shadow: 0.5rem 0.5rem 1rem -0.6rem $gray;
+	.fractie {
 		font-size: 1.5rem;
-		font-weight: bold;
+		font-weight:500;
 	}
 	.gemeente {
 		font-size: 1.7rem;
-		font-weight: lighter;
+		font-weight:500;
 	}
 }
 cursor {
@@ -128,83 +99,46 @@ cursor {
 }
 .main_nav {
 	width: 100%;
-	// height: 15vh;
-	// text-align: center;
-	// align-items: center;
+	height: auto;
  	position: absolute;
-	left: 0;
 	bottom: 0;
 	background-color: $white;
 	z-index: 25;
 	ul {
 		width: 80%;
 		position: relative;
-		left: 0;
 		transform: translate(12.5%, 0);
-		// margin-top: 20px;
-		// padding: .1rem;
 		display: inline-flex;
 		text-align: center;
 		list-style-type: none;
-		 align-items: center;
+		align-items: center;
 		justify-content: space-between;
-		// background-color: lightgreen;
 	}
-	// li {
-	// 	// padding: .2rem .25rem;
-	// 	background-color: lightsteelblue;
-	// }
 }
 
-.showcase {
-	border: .13rem $color_supernova_approx dashed;
-}
-
-#mandata {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 90vh;
-	width: 30vw;
-	text-align: left;
-	// visibility: hidden;
-	font-size: 1.5rem;
-	line-height: 2.5rem;
-	font-family: $font_4;
-	font-weight: 100;
-	color: $color_elephant_approx;
-	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: -2px 1px 5px $color_martini_approx;
-	background-color: $white;
-	overflow: scroll;
-	padding: 5px;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 5px;
-	z-index: 11;
-    // transition: 1s;
-	&.hidden{
-		visibility: hidden;
-	}
-	&.visible{
-		visibility: visible;
-	}
-}
+// start content //
 .toggle {
-	position: relative;
-	background-image: $url_1;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-top: 50px;
-	width: 15px;
-	height: 15px;
-	right: 0;
-	filter: invert(0);
-	font-size: 2rem;
-	cursor: pointer;
-	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-	// transition: 1s;
+	margin-left: 2rem;
+	cursor: pointer; 
 }
-#indexpage {
+.bottombox{
+	display: block;
+	height: 7vh;
+}
+hr{
+    margin-block-start:0.5em;
+    margin-block-end: 0.5em;
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.toTop{
+	float: right;
+	color: $color_martini_approx;
+}
+// indexpage
+.indexSearch {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -213,187 +147,148 @@ cursor {
 	text-align: left;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
-	font-family: $font_4;
 	font-weight: 100;
 	color: $color_elephant_approx;
-	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: -2px 1px 5px $color_martini_approx;
+	box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;
 	background-color: $white;
 	overflow: scroll;
-	padding: 5px 0 5px 10px;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 5px;
+	padding: 1rem;
 	z-index: 11;
-	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-	// transition: 1s;
-	&.hidden{
-		visibility: hidden;
-	}
-	&.visible{
-		visibility: visible;
-	}
 }
-.indexpage {
+.indexSearch--hidden{
+	display: none;
+}
+.indexSearch--visible{
+	visibility: visible;
+}
+.indexClick, .besturen  {
 	position: absolute;
 	top: 0;
 	height: 90vh;
 	width: 30vw;
-	text-align: left;
 	visibility: hidden;
-	font-size: 1.5rem;
 	line-height: 2.5rem;
-	font-family: $font_4;
-	font-weight: 100;
 	color: $color_elephant_approx;
 	background-color: $white;
 	overflow: scroll;
-	padding: 5px 10px;
-	border-radius: 5px;
 	z-index: 11;
 	&.hidden{
-		visibility: hidden;
+		display: none;
 	}
 	&.visible{
 		visibility: visible;
 	}
 	&.bar-left{
-		width: 38vw;
+		width: 40vw;
 		left: 0;
-		box-shadow: 2px 1px 5px $color_martini_approx;
+		box-shadow: 0.2rem 0.1rem 0.5rem $color_martini_approx;
 		direction: rtl;
 		.toggle {
-			position: relative;
-			background-image: $url_1;
-			background-repeat: no-repeat;
-			background-size: cover;
-			margin-top: 50px;
-			width: 15px;
-			height: 15px;
 			float: right;
-			filter: invert(0);
-			font-size: 2rem;
-			cursor: pointer;
-			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-			// transition: 1s;
+			cursor: pointer; 
+			margin-right: 2rem;
 		}
-		.head_cut {
-			margin: 70px 10px 60px 40px;
+		.au-o-box-left {
+			margin-left: 2rem;
 			direction: ltr;
 		}
 	}
 	&.bar-right{
 		right: 0;
-		box-shadow: -2px 1px 5px $color_martini_approx;	
+		width: 35vw;
+		box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;	
 	}
 }
-.besturen {
-	position: absolute;
-	top: 0;
-	height: 90vh;
-	text-align: left;
-	visibility: hidden;
-	font-size: 1.5rem;
-	line-height: 2.5rem;
-	font-family: $font_4;
-	font-weight: 100;
-	color: $color_elephant_approx;
-	background-color: $white;
-	overflow: auto;
-	padding: 5px 10px;
-	border-radius: 5px;
-	z-index: 11;
-	&.bar-left{
-		width: 38vw;
-		left: 0;
-		box-shadow: 2px 1px 5px $color_martini_approx;
-		direction: rtl;
-		.toggle {
-			position: relative;
-			background-image: $url_1;
-			background-repeat: no-repeat;
-			background-size: cover;
-			margin-top: 50px;
-			width: 15px;
-			height: 15px;
-			float: right;
-			filter: invert(0);
-			font-size: 2rem;
-			cursor: pointer;
-			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-			// transition: 1s;
-		}
-		.head_cut {
-			margin: 70px 10px 60px 40px;
-			direction: ltr;
-		}
-	}
-	&.bar-right{
-		width: 30vw;
-		right: 0;
-		box-shadow: -2px 1px 5px $color_martini_approx;	
-	}
-}
-#agendapunt {
+// besturen
+.besturenSearch {
 	position: absolute;
 	top: 0;
 	right: 0;
 	height: 90vh;
-	width: 50vw;
-	text-align: left;
-	font-size: 1.5rem;
+	width: 30vw;
 	line-height: 2.5rem;
-	font-family: $font_4;
-	font-weight: 100;
 	color: $color_elephant_approx;
-	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: -2px 1px 5px $color_martini_approx;
+	box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;
 	background-color: $white;
 	overflow: scroll;
-	padding: 5px 0 5px 10px;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 5px;
+	padding: 1rem;
 	z-index: 11;
-	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-	// transition: 1s;
-	&.hidden{
-		visibility: hidden;
+    &.hidden{
+		display: none;
 	}
 	&.visible{
 		visibility: visible;
 	}
-	.agendalist{
-		display: block;
-		ul{
-			text-align: left;
-		}
-	}
-	.accordion{
-		border: solid 0.1rem $color_lynch_approx;
-		margin-top: 2px;
-		padding: 10px;
-		p{
-			padding-top: 0.5rem;
-			line-height: 2.5rem;
-		}
-	}
 }
-.agenda {
+/* .besturen {
 	position: absolute;
 	top: 0;
+	height: 90vh;
+	visibility: hidden;
+	line-height: 2.5rem; 
+	color: $color_elephant_approx;
+	background-color: $white;
+	overflow: scroll;
+	z-index: 11;
+	&.hidden{
+		display: none;
+	}
+	&.visible{
+		visibility: visible;
+	}
+	&.bar-left{
+		width: 40vw;
+		left: 0;
+		box-shadow: 0.2rem 0.1rem 0.5rem $color_martini_approx;
+		direction: rtl;
+		.toggle {
+			float: right;
+			cursor: pointer; 
+			margin-right: 2rem;
+		}
+		.au-o-box-left {
+			margin-left: 2rem;
+			direction: ltr;
+		}
+	}
+	&.bar-right{
+		right: 0;
+		width: 35vw;
+		box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;	
+	}
+} */
+// agenda
+.agendaSearch, .besluitSearch, .archievenSearch {
+	position: absolute;
+	top: 0;
+	right: 0;
 	height: 90vh;
 	width: 48vw;
 	text-align: left;
-	visibility: hidden;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
-	font-family: $font_4;
 	font-weight: 100;
 	color: $color_elephant_approx;
+	box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;
 	background-color: $white;
 	overflow: scroll;
-	padding: 5px 10px;
-	border-radius: 5px;
+	padding: 1rem;
 	z-index: 11;
+	.au-card-no-border{
+		border-width: 0rem;
+		padding: 0rem;
+	}
+	.aanwezig{
+		line-height: 2.4rem;
+		font-size: 1.5rem;
+		padding: 1.5rem 0;
+	}
+	&.hidden{
+		display: none;
+	}
+	&.visible{
+		visibility: visible;
+	}
 	.agendalist{
 		display: block;
 		ul{
@@ -406,48 +301,93 @@ cursor {
 			line-height: 2.4rem;
 		}
 	}
-	.accordion{
-		border: solid 0.1rem $color_lynch_approx;
-		margin: 1rem 0;
-		padding: 15px;
-		.au-c-content {
-			margin-top: 10rem;
+}
+.agenda, .besluit, .archieven {
+	position: absolute;
+	top: 0;
+	height: 90vh;
+	width: 50vw;
+	visibility: hidden;
+	line-height: 2.5rem;
+	color: $color_elephant_approx;
+	background-color: $white;
+	overflow: scroll;
+	padding: 1rem;
+	z-index: 11;
+	.au-card-no-border{
+		border-width: 0rem;
+		padding: 0rem;
+	}
+	.agendalist{
+		display: block;
+		ul{
+			text-align: left;
 		}
-		p{
-			padding-top: 1rem;
-			line-height: 2.5rem;
+		li{
+			line-height: 2.4rem;
 		}
+		span{
+			line-height: 2.4rem;
+		}
+	}
+	.aanwezig{
+		line-height: 2.4rem;
+		font-size: 1.5rem;
+		padding: 1.5rem 0;
 	}
 	&.bar-left{
 		left: 0;
-		box-shadow: 2px 1px 5px $color_martini_approx;
+		box-shadow: 0.2rem 0.1rem 0.5rem $color_martini_approx;
 		direction: rtl;
 		.toggle {
-			position: relative;
-			background-image: $url_1;
-			background-repeat: no-repeat;
-			background-size: cover;
-			margin-top: 50px;
-			width: 15px;
-			height: 15px;
 			float: right;
-			filter: invert(0);
-			font-size: 2rem;
-			cursor: pointer;
-			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-			// transition: 1s;
+			cursor: pointer; 
+			margin-left: 0rem;
+			margin-right: 1.5rem;
 		}
-		.head_cut {
-			margin: 70px 10px 60px 20px;
+		.au-o-box-left {
+			margin-left: 1rem;
 			direction: ltr;
 		}
 	}
 	&.bar-right{
 		right: 0;
-		box-shadow: -2px 1px 5px $color_martini_approx;	
+		box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;	
+	}
+	.hidden{
+		display: none;
+	}
+	.visible{
+		visibility: visible;
 	}
 }
-#besluitSearch {
+// besluiten -- archieven
+.stemming{
+	display: inline-flex;
+	margin: 0 0.2rem;
+	align-items: center;
+	font-size: 1.5rem;
+	color: #364b4a;
+	line-height: 2.5rem;
+}
+.circle{
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	margin-right: 0.2rem;
+	line-height: 1rem;
+	justify-content: center;
+}
+.circle__green{
+	background-color: #8BAE00;
+}
+.circle__orange{
+	background-color: #FFC515;
+}
+.circle__red{
+	background-color: #D92626;
+}
+/* .besluitSearch {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -461,12 +401,10 @@ cursor {
 	font-weight: 100;
 	color: $color_elephant_approx;
 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: -2px 1px 5px $color_martini_approx;
+	box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;
 	background-color: $white;
 	overflow: scroll;
-	padding: 5px 0 5px 10px;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 5px;
+	padding: 1rem;
 	z-index: 11;
 	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 	// transition: 1s;
@@ -477,184 +415,60 @@ cursor {
 		visibility: visible;
 	}
 	.aanwezig{
-		line-height: 1rem;
-		font-size: 1.4rem;
-		padding: 2rem 0;
+		line-height: 2.4rem;
+		font-size: 1.5rem;
+		padding: 1.5rem 0;
 	}
-	.details{
-		margin: 0.5rem 0;
-	}
-	.details-list{
-		margin: 1rem 0;
-		padding-top: 1rem;
-	}
-	.accordion{
-		border: solid 0.1rem $color_lynch_approx;
-		margin-top: 2px;
-		padding: 10px;
-		.au-c-content > * + * {
-			margin-top: 0rem;
-		  }
-		p{
-			line-height: 2.5rem;
-			margin-top: 0.5px;
-		}
-	}
-	.stemming{
-		display: inline-flex;
-		margin: 0 0.1rem;
-		align-items: center;
-		font-size: 1.2rem;
-		color: #364b4a;
-		line-height: 2.5rem;
-	}
-	span.green{
-		background-color: #8BAE00;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1.2rem;
-		justify-content: center;
-	}
-	.orange{
-		background-color: #FFC515;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1rem;
-		justify-content: center;
-	}
-	.red{
-		background-color: #D92626;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1rem;
-		justify-content: center;
-	}
-}
-.besluit {
+} */
+/* .besluit {
 	position: absolute;
 	top: 0;
 	height: 90vh;
 	width: 48vw;
-	text-align: left;
 	visibility: hidden;
-	font-size: 1.5rem;
-	line-height: 2.5rem;
-	font-family: $font_4;
-	font-weight: 100;
 	color: $color_elephant_approx;
 	background-color: $white;
-	overflow: auto;
-	padding: 5px 10px;
-	border-radius: 5px;
+	overflow: scroll;
 	z-index: 11;
 	.aanwezig{
-		line-height: 1rem;
-		font-size: 1.4rem;
-		padding: 2rem 0;
-	}
-	.details{
-		margin: 0.5rem 0;
-	}
-	.details-list{
-		margin: 1rem 0;
-		padding-top: 1rem;
-	}
-	.accordion{
-		border: solid 0.1rem $color_lynch_approx;
-		margin-top: 2px;
-		padding: 10px;
-		.au-c-content > * + * {
-			margin-top: 0rem;
-		  }
-		p{
-			line-height: 2.5rem;
-			margin-top: 2px;
-		}
-	}
-	.stemming{
-		display: inline-flex;
-		margin: 0 0.1rem;
-		align-items: center;
-		font-size: 1.2rem;
-		color: #364b4a;
-		line-height: 2.5rem;
-	}
-	span.green{
-		background-color: #8BAE00;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1.2rem;
-		justify-content: center;
-	}
-	.orange{
-		background-color: #FFC515;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1rem;
-		justify-content: center;
-	}
-	.red{
-		background-color: #D92626;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1rem;
-		justify-content: center;
+		line-height: 2.4rem;
+		font-size: 1.5rem;
+		padding: 1.5rem 0;
 	}
 	&.bar-left{
 		left: 0;
-		box-shadow: 2px 1px 5px $color_martini_approx;
+		box-shadow: 0.2rem 0.1rem 0.5rem $color_martini_approx;
 		direction: rtl;
 		.toggle {
-			position: relative;
-			background-image: $url_1;
-			background-repeat: no-repeat;
-			background-size: cover;
-			margin-top: 50px;
-			width: 15px;
-			height: 15px;
 			float: right;
-			filter: invert(0);
-			font-size: 2rem;
-			cursor: pointer;
-			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-			// transition: 1s;
+			cursor: pointer; 
+			margin-right: 2rem;
 		}
-		.head_cut {
-			margin: 70px 10px 60px 20px;
+		.au-o-box-left {
+			margin-left: 2rem;
 			direction: ltr;
 		}
 	}
 	&.bar-right{
 		right: 0;
-		box-shadow: -2px 1px 5px $color_martini_approx;	
+		box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;	
 	}
-}
-#archievenSearch {
+} */
+/* // archieven
+.archievenSearch {
 	position: absolute;
 	top: 0;
 	right: 0;
 	height: 90vh;
-	width: 50vw;
+	width: 48vw;
 	text-align: left;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
-	font-family: $font_4;
+	// font-family: $font_4;
 	font-weight: 100;
 	color: $color_elephant_approx;
 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: -2px 1px 5px $color_martini_approx;
+	box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;
 	background-color: $white;
 	overflow: scroll;
 	padding: 5px 0 5px 10px;
@@ -663,78 +477,24 @@ cursor {
 	z-index: 11;
 	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
 	// transition: 1s;
+	.aanwezig{
+		line-height: 2.4rem;
+		font-size: 1.5rem;
+		padding: 1.5rem 0;
+	}
 	&.hidden{
-		visibility: hidden;
+		display: none;
 	}
 	&.visible{
 		visibility: visible;
 	}
-	.aanwezig{
-		line-height: 1rem;
-		font-size: 1.4rem;
-		padding: 2rem 0;
-	}
-	.details{
-		margin: 0.5rem 0;
-	}
-	.details-list{
-		margin: 1rem 0;
-		padding-top: 1rem;
-	}
-	.accordion{
-		border: solid 0.1rem $color_lynch_approx;
-		margin-top: 2px;
-		padding: 10px;
-		.au-c-content > * + * {
-			margin-top: 0rem;
-		  }
-		p{
-			line-height: 2.5rem;
-			margin-top: 0.5px;
-		}
-	}
-	.stemming{
-		display: inline-flex;
-		margin: 0 0.1rem;
-		align-items: center;
-		font-size: 1.2rem;
-		color: #364b4a;
-		line-height: 2.5rem;
-	}
-	span.green{
-		background-color: #8BAE00;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1.2rem;
-		justify-content: center;
-	}
-	.orange{
-		background-color: #FFC515;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1rem;
-		justify-content: center;
-	}
-	.red{
-		background-color: #D92626;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1rem;
-		justify-content: center;
-	}
-}
-.archieven {
+} */
+
+/* .archieven {
 	position: absolute;
 	top: 0;
 	height: 90vh;
-	width: 48vw;
-	text-align: left;
+	width: 50vw;
 	visibility: hidden;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
@@ -747,108 +507,127 @@ cursor {
 	border-radius: 5px;
 	z-index: 11;
 	.aanwezig{
-		line-height: 1rem;
-		font-size: 1.4rem;
-		padding: 2rem 0;
-	}
-	.details{
-		margin: 0.5rem 0;
-	}
-	.details-list{
-		margin: 1rem 0;
-		padding-top: 1rem;
-	}
-	.accordion{
-		border: solid 0.1rem $color_lynch_approx;
-		margin-top: 2px;
-		padding: 10px;
-		.au-c-content > * + * {
-			margin-top: 0rem;
-		  }
-		p{
-			line-height: 2.5rem;
-			margin-top: 2px;
-		}
-	}
-	.stemming{
-		display: inline-flex;
-		margin: 0 0.1rem;
-		align-items: center;
-		font-size: 1.2rem;
-		color: #364b4a;
-		line-height: 2.5rem;
-	}
-	span.green{
-		background-color: #8BAE00;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1.2rem;
-		justify-content: center;
-	}
-	.orange{
-		background-color: #FFC515;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1rem;
-		justify-content: center;
-	}
-	.red{
-		background-color: #D92626;
-		width: 0.7rem;
-		height: 0.7rem;
-		border-radius: 50%;
-		margin-right: 0.2rem;
-		line-height: 1rem;
-		justify-content: center;
-	}
+		line-height: 2.4rem;
+		font-size: 1.5rem;
+		padding: 1.5rem 0;
+	}	
 	&.bar-left{
 		left: 0;
-		box-shadow: 2px 1px 5px $color_martini_approx;
+		box-shadow: 0.2rem 0.1rem 0.5rem $color_martini_approx;
 		direction: rtl;
 		.toggle {
-			position: relative;
-			background-image: $url_1;
-			background-repeat: no-repeat;
-			background-size: cover;
-			margin-top: 50px;
-			width: 15px;
-			height: 15px;
 			float: right;
-			filter: invert(0);
-			font-size: 2rem;
-			cursor: pointer;
-			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-			// transition: 1s;
+			cursor: pointer; 
+			margin-right: 2rem;
 		}
-		.head_cut {
-			margin: 70px 10px 60px 20px;
+		.au-o-box-left {
+			margin-left: 2rem;
 			direction: ltr;
 		}
 	}
 	&.bar-right{
 		right: 0;
-		box-shadow: -2px 1px 5px $color_martini_approx;	
+		box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;	
 	}
-}
-hr{
-	margin: 0.2rem 0;
-}
-.head_cut {
-	margin: 5px 10px 60px;
-}
-br {
-	line-height: .2rem;
+	.hidden{
+		display: none;
+	}
+	.visible{
+		visibility: visible;
+	}
+} */
+.au-card_text-blue{
+	color: $au-blue-600;
 }
 
-/* 
-@media only screen and(max-width: 1000px) {
-	
+@media only screen and(max-width: 1920px) {
+	.bp-map {
+		width: 95%;
+	}
+	/* .main_nav {
+		width: 100%;
+		ul {
+			width: 70%;
+			transform: translate(25%, 0);
+		}
+	} */
 }
-@media only screen and(max-width: 600px) {
-	
+@media only screen and(max-width: 1440px) {
+	/* .main_nav {
+		width: 100%;
+		ul {
+			width: 80%;
+			transform: translate(12.5%, 0);
+		}
+	} */
 }
- */
+@media only screen and(max-width: 1200px) {
+}
+@media only screen and(max-width: 1024px) {
+
+}
+@media only screen and(max-width: 992px) {
+	.search{
+		width: 50%;
+	}
+	.au-c-form{
+		.au-c-toggle-switch {
+			width: 50%;
+		}
+	}
+}
+@media only screen and(max-width: 800px) {
+	.search{
+		margin-top: 2.4rem;
+		width: 60%;
+	}
+	.au-c-form{
+		margin-top: 1rem;
+		.au-c-toggle-switch {
+			padding: 1rem;
+			width: 60%;
+		}
+	}
+	.bp-map {
+		padding-top: 1rem;
+	}
+	.main_nav {
+		ul {
+			width: 90%;
+			transform: translate(5%, 0);
+		}
+	}
+}
+@media only screen and(max-width: 767px) {
+	.search{
+	 	position: absolute;
+		top: 3rem;
+		width: 100%;
+	}
+	.bp-map {
+		display: none;
+	}
+	.au-c-form {
+		display: none;
+	}
+	.main_nav {
+		display: none;
+	}
+	.au-u-nav-small{
+		position: absolute;
+		top: 13rem;
+	}
+	.nav{
+	width: 100%;
+	padding: 2.4rem;
+	font: 1em sans-serif;
+	}
+	.longtext{
+		font-size: 1.5rem;
+	}
+	.indexSearch, .besturenSearch, .agendaSearch, .besluitSearch, .archievenSearch{
+		width: 100vw;
+		height: 100vh;
+	}
+}
+

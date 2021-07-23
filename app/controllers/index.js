@@ -6,7 +6,6 @@ export default class IndexController extends Controller {
   @service map;
   @service searchBar;
   @tracked gemeente;
-  @tracked population;
   @tracked gemeente_search;
 
   get getGemeente() {
@@ -16,19 +15,9 @@ export default class IndexController extends Controller {
     } else {
       this.gemeente = this.map['gemeente'].name;
       console.log('has value', this.gemeente);
-      // d3.select(".indexpage").transition().style("visibility", "visible")
-      // // d3.select(".bp-map").transition().style("transform", "scale(.80)translate(-160px,0)")
+      // d3.select(".indexClick").transition().style("visibility", "visible")
+      // d3.select(".bp-map").transition().style("transform", "scale(.80)translate(-160px,0)")
       return this.gemeente
-    }
-  }
-
-  get getPopulation() {
-    if (!this.map['gemeente'].population) {
-      this.population = 'Roeselare'
-      return this.population.toLocaleString()
-    } else {
-      this.population = this.map['gemeente'].population;
-      return this.population.toLocaleString()
     }
   }
 
@@ -42,4 +31,5 @@ export default class IndexController extends Controller {
       return this.gemeente_search
     }
   }
+
 }

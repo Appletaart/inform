@@ -1,41 +1,26 @@
-import Route from '@ember/routing/route';
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
+import { action } from '@ember/object';
 class SPARQLQueryDispatcher {
-  constructor( endpoint ) {
-      this.endpoint = endpoint;
-  }
+    constructor( endpoint ) {
+        this.endpoint = endpoint;
+    }
 
-  async query( sparqlQuery ) {
-      const fullUrl = this.endpoint + '?query=' + encodeURIComponent( sparqlQuery );
-      const headers = { 'Accept': 'application/sparql-results+json,*/*;q=0.9' };
+    async query( sparqlQuery ) {
+        const fullUrl = this.endpoint + '?query=' + encodeURIComponent( sparqlQuery );
+        const headers = { 'Accept': 'application/sparql-results+json' };
 
-      const body = await fetch(fullUrl, { headers });
-    return await body.json();
-  }
+        const body = await fetch(fullUrl, { headers });
+        return await body.json();
+    }
 }
-export default class BesluitenRoute extends Route {
 
-  async model(){
-    /* let responses = await fetch('/api/besluiten.json');
-      let data_qa = await responses.json();
-      const datas_qa = [];
-      data_qa.results.bindings.forEach(e => {
-      datas_qa.push({
-      bestuurseenheidnaam: e.bestuurseenheidnaam.value,
-      bestuursclassificatie: e.bestuursclassificatie.value,
-      geplandeStart: e.geplandeStart.value,
-      location: e.location,
-      title: e.title,
-      description: e.description,
-      motivering: e.motivering,
-      nbPro: e.nbPro,
-      nbAnti: e.nbAnti,
-      nbNoVote: e.nbNoVote
-  })
-    }) */
-
-      const endpointUrl = 'https://openbelgium-2021.lblod.info/sparql';
-      const endpointUrl1 = 'https://qa.centrale-vindplaats.lblod.info/sparql';
+export default class ArchievenGemeenteComponent extends Component {
     
+    constructor(){
+        super(...arguments);
+        // met end-point
+      const endpointUrl = 'https://qa.centrale-vindplaats.lblod.info/sparql';
       const sparqlQuery = `
       PREFIX besluit: <http://data.vlaanderen.be/ns/besluit#>
       PREFIX bestuursorgaan:<http://data.vlaanderen.be/ns/besluit#Bestuursorgaan>
@@ -63,15 +48,6 @@ export default class BesluitenRoute extends Route {
         besluit:behandelt ?agendapunt .
         ?agendapunt a besluit:Agendapunt .
       OPTIONAL { ?zitting <http://www.w3.org/ns/prov#atLocation> ?location}
-      
-      BIND(day(now()) AS ?day)
-      BIND(IF(?day < 10, "-0", "-") AS ?day2)
-      BIND(month(now()) - 2 AS ?month)
-      BIND(IF(?month < 10, "-0", "-") AS ?month2) 
-      BIND(year(now()) AS ?year)
-      BIND(CONCAT(?year, ?month2, ?month, ?day2, ?day) as ?dayTofilter)
-      BIND(xsd:date(now()) AS ?time)
-      BIND(STRDT(?dayTofilter, xsd:date) AS ?filterDate)
 
       ?behandelingAgendapunt a besluit:BehandelingVanAgendapunt;
       terms:subject ?agendapunt;
@@ -109,31 +85,89 @@ export default class BesluitenRoute extends Route {
               foaf:familyName ?familyName .
       }
       BIND(CONCAT(?firstName, " ", ?familyName) as ?aanwezigen) 
-      FILTER (?geplandeStart > ?filterDate)
+
+      FILTER (?geplandeStart > "2021-02-01"^^xsd:date)
       }
       GROUP BY ?geplandeStart ?location ?nbPro ?nbAnti ?nbNoVote ?title ?description ?motivering ?bestuursclassificatie ?bestuurseenheidnaam
       ORDER BY DESC(?geplandeStart) ASC(?title)`;
-      // FILTER (?geplandeStart > "2021-01-01"^^xsd:date)
-    const results = []
-    const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl1 );
-    const getData = await queryDispatcher.query( sparqlQuery ).then(results)
-    const datas = []
-    getData.results.bindings.forEach(e => {
-    datas.push({
-    bestuurseenheidnaam: e.bestuurseenheidnaam.value,
-    bestuursclassificatie: e.bestuursclassificatie.value,
-    geplandeStart: e.geplandeStart.value,
-    location: e.location,
-    aanwezigenInfo: e.aanwezigenInfo.value,
-    count: e.count.value,
-    title: e.title,
-    description: e.description,
-    motivering: e.motivering,
-    nbPro: e.nbPro,
-    nbAnti: e.nbAnti,
-    nbNoVote: e.nbNoVote
-    })
-    })
-  return datas
-}
+      const results = []
+      const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl);
+      const getData = queryDispatcher.query( sparqlQuery ).then(results)
+      getData.then( results => { const realdata = [];
+      results.results.bindings.forEach(e => {
+      realdata.push({
+      bestuurseenheidnaam: e.bestuurseenheidnaam.value,
+      bestuursclassificatie: e.bestuursclassificatie.value,
+      geplandeStart: e.geplandeStart.value,
+      location: e.location,
+      aanwezigenInfo: e.aanwezigenInfo.value,
+      count: e.count.value,
+      title: e.title,
+      description: e.description,
+      motivering: e.motivering,
+      nbPro: e.nbPro,
+      nbAnti: e.nbAnti,
+      nbNoVote: e.nbNoVote,
+      details: e
+      })
+      })
+      this.datas_bestemmen = realdata
+      });
+    } // constructor
+    @tracked datas_bestemmen;
+
+
+    @tracked opened = false;
+    @tracked visible = "hidden";
+    @tracked open = false;
+    @tracked visibly = "hidden";
+    @tracked active;
+    @tracked month = [];
+    @tracked year = [];
+    @tracked bestuurseenheidnaam = this.args.bestuurseenheidnaam;
+    @tracked month = this.args.month;
+
+    @action toggleClose() {
+        this.visible = "hidden";
+        this.visibly = "hidden";
+    }
+
+    @action
+    onclickBtn(){
+      // this.opened = !this.opened;
+      const btn = document.getElementById("topBtn");
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    }
+
+    
+  @action
+  isOpen(newYear){
+    this.opened = !this.opened;
+    if(!this.opened){
+      // console.log("hello left", this.visible = "hidden");
+      return this.visible = "hidden";
+    }else{
+      this.year = newYear;
+      console.log(this.year.target.innerText);
+      // console.log("hello right", this.visible = "visible" );
+      return this.visible = "visible";
+    }
+  }
+
+
 }

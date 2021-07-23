@@ -1,0 +1,5 @@
+{{#each this.population as |p|}} {{!-- key="gemeente"  --}}
+{{#if (is-equal p.gemeente @name)}}
+ | Inwoners 2021: <span class="au-u-medium">{{number-format p.inwoner}}</span>
+{{/if}}
+{{/each}}
