@@ -9,6 +9,7 @@ This project is produced for Agentschap Binnenland Bestuur. Produced by Ember js
 <img width="90%" src="desktopbesturen.jpg">
 <img width="90%" src="desktopbesluiten.jpg">
 <img width="90%" src="desktopbesluiten1.jpg">
+<img width="90%" src="desktopbesluiten2.jpg">
 
 # Mobile friendly
 <img width="20%" src="mobile.jpg">
