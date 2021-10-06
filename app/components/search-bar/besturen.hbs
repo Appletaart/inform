@@ -18,13 +18,20 @@
   {{singleselect}}
 </PowerSelect>
 </div>
+
 {{!-- Besturen --}}
 <div class="besturenSearch au-u-regular {{this.identifier}}">
-<div class="bottombox"></div>
+<div class="bottomtop"></div>
 {{!-- template-lint-disable no-invalid-interactive --}}
 <AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
 <div class="au-o-box">
-<span class="au-u-h5 au-u-bold"> {{@get_Search}} </span><Object::Population  @name="{{@get_Search}}"/><br>
+<span class="au-u-h5 au-u-bold"> {{this.selected}} </span><Object::Population  @name="{{this.selected}}"/><br>
+
+{{!-- template-lint-disable no-arguments-for-html-elements --}}
+<SearchBar::Content::Bestuur
+@selected={{this.selected}} 
+ />
+{{!-- 
 {{#each @getBestuurSearch.een_burgemeester as | een_burgemeester|}}
 <p>{{een_burgemeester.voornaam}} {{een_burgemeester.achternaam}} {{een_burgemeester.functie}} <span class="au-u-medium">{{een_burgemeester.fractie.value}}</span></p>
 {{/each}}
@@ -43,7 +50,8 @@
 {{/each}}
 {{#each @getBestuurSearch.een_gr as |een_gr|}}
 <p>{{een_gr.voornaam}} {{een_gr.achternaam}} <span class="au-u-medium">{{een_gr.fractie.value}}</span></p>
-{{/each}}
+{{/each}} --}}
+
 </div> 
 <div class="bottombox"></div>
 </div>

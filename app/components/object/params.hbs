@@ -1,0 +1,31 @@
+{{!-- link to params --}}
+{{!-- <strong><LinkTo @route="testparams" @model="{{@eenheids}}" eenheids="{{@eenheids}}" >{{@selected}}</LinkTo></strong> --}}
+{{!-- template-lint-disable no-log --}}
+
+<div class="rentals au-u-margin-top au-u-margin-bottom">
+{{!-- <div class="au-c-form">
+  <ul class="radioBtn">
+    <li>
+      <AuControlCheckbox @label="Gemeenteraad" @name="ja-nee" @identifier="Gemeenteraad" @onChange={{this.onChange}} />
+    </li>
+    <li>
+      <AuControlCheckbox @label="Raad voor Maatschappelijk Welzijn" @name="ja-nee" @identifier="Raad voor Maatschappelijk Welzijn" @onChange={{this.onChange}} />
+    </li>
+  </ul>
+</div>
+<br> --}}
+<label>
+  <p>
+{{!--     <AuLabel for="input-block">Typ om titel te zoeken</AuLabel> --}}
+    <AuInput id="input-block" placeholder="Typ om de titel te zoeken" @width="block" @icon="search" @iconAlignment="right" @value={{this.query}} />
+  </p>
+</label>
+<br>
+<Object::Search @eenheids={{@eenheids}} @query={{this.query}} @radio={{this.radio}} as |search|>
+{{#each search as |searching|}}
+<Object::Filter @eenheids={{searching}}/>
+{{/each}}
+</Object::Search>
+</div>
+
+

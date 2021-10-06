@@ -10,8 +10,5 @@ Router.map(function () {
   this.route('besturen');
   this.route('agenda');
   this.route('besluiten');
-  this.route('archieven', function() {
-    this.route('gemeente', { path: '/:gemeente' });
-  });
-
+  this.route('archief');
 });

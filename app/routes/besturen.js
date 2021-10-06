@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-class SPARQLQueryDispatcher {
+/* class SPARQLQueryDispatcher {
     constructor( endpoint ) {
         this.endpoint = endpoint;
     }
@@ -11,10 +11,10 @@ class SPARQLQueryDispatcher {
         const body = await fetch(fullUrl, { headers });
         return await body.json();
     }
-}
+} */
 export default class BesturenRoute extends Route {
     
-    async model(){
+  /*   async model(){
         const endpointUrl = 'https://centrale-vindplaats.lblod.info/sparql';
         const sparqlQuery = `
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -85,5 +85,5 @@ export default class BesturenRoute extends Route {
         }) 
     
         return realdata;
-        }
+        } */
 }

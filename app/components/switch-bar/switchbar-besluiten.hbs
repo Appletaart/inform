@@ -1,163 +1,25 @@
-<div class="au-c-form">
+{{!-- <div class="au-c-form">
   <AuToggleSwitch 
-  @label="toggle om de resultaten op de rechterkaart te zien" @disabled={{false}} 
+  @label="Toon resultaatschem aan de linkerkant" @disabled={{false}} 
   @name="switch-left-right"
   @identifier={{this.identifier}}
   @checked={{this.checked}}
   @onChange={{this.onChange}}
   />
 </div>
-
+ --}}
+{{!-- Don't delete/hide this cause it would show unexpected bar / don't know the reason --}}
 <div class="indexClick au-u-regular {{this.identifier}}">
-<div class="bottombox"></div>
-{{!-- template-lint-disable no-invalid-interactive --}}
-<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
+<div class="bottomtop"></div>
+
+<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}}/>
 <div class="au-o-box au-o-box-left">
-<span class="au-u-h5 au-u-bold"> {{@getGemeente}}  </span><Object::Population  @name="{{@getGemeente}}"/><br>
-<hr/>
- content
+<span class="au-u-h5 au-u-bold"> {{@getGemeente}} </span>
 </div>
 <div class="bottombox"></div>
 </div> 
+{{!-- Don't delete/hide this cause it would show unexpected bar / don't know the reason --}}
 
-{{!-- Page besturen --}}
-<div class="besturen au-u-regular {{this.identifier}}">
-<div class="bottombox"></div>
-{{!-- template-lint-disable no-invalid-interactive --}}
-<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
-<div class="au-o-box au-o-box-left">
-<span class="au-u-h5 au-u-bold"> {{@getGemeente}}  </span><Object::Population  @name="{{@getGemeente}}"/><br>
-{{#each @getBestuur.een_burgemeester as | een_burgemeester|}}
-<p>{{een_burgemeester.voornaam}} {{een_burgemeester.achternaam}} {{een_burgemeester.functie}} <span class="au-u-medium">{{een_burgemeester.fractie.value}}</span></p>
-{{/each}}
-<hr>
-<span class="au-u-bold">College van Burgemeester en Schepenen</span><br>
-{{#each @getBestuur.een_schepenen as |een_schepenen|}}
-<p>{{een_schepenen.voornaam}} {{een_schepenen.achternaam}} {{een_schepenen.functie}} <span class="au-u-medium">{{een_schepenen.fractie.value}}</span></p>
-{{/each}}
-{{#each @getBestuur.een_tschepenen as |een_tschepenen|}}
-<p>{{een_tschepenen.voornaam}} {{een_tschepenen.achternaam}} {{een_tschepenen.functie}} <span class="au-u-medium">{{een_tschepenen.fractie.value}}</span></p>
-{{/each}}
-<hr>
-<span class="au-u-bold">Gemeenteraadsleden</span><br> 
-{{#each @getBestuur.een_voorZgr as |een_voorZgr|}}
-<p>{{een_voorZgr.voornaam}} {{een_voorZgr.achternaam}} {{een_voorZgr.functie}} <span class="au-u-medium">{{een_voorZgr.fractie.value}}</span></p>
-{{/each}}
-{{#each @getBestuur.een_gr as |een_gr|}}
-<p>{{een_gr.voornaam}} {{een_gr.achternaam}} <span class="au-u-medium">{{een_gr.fractie.value}}</span></p>
-{{/each}}
-</div>
-<div class="bottombox"></div> 
-</div>
 
-{{!-- Page agenda --}}
-<div class="agenda au-u-regular {{this.identifier}}">
-<div id="topAgenda" class="bottombox"></div>
-{{!-- template-lint-disable no-invalid-interactive --}}
-<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
-<div class="au-o-box au-o-box-left">
-<span class="au-u-h5 au-u-bold"> {{@getGemeente}}  </span><Object::Population  @name="{{@getGemeente}}"/><br>
-<hr/>
-<span class="au-u-h5 au-u-bold">Agenda</span><br>
-<ul class="agendalist">
-{{#each @getAgenda.groupAgenda as |geplande|}}
-<li>{{geplande.geplande_Date}} {{geplande.geplande_Time}} | {{geplande.location.value}}</li>
-{{/each}}
-</ul>
-<br>
-<span class="au-u-h5 au-u-bold">Agendalist</span><br>
-{{#each @getAgenda.groupAgenda as |geplande|}}
-<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="au-u-h6">{{geplande.geplande_Date}}</span> 
-<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="au-u-h6">{{geplande.geplande_Time}} | {{geplande.location.value}}</span><br>
-<AuCard @expandable={{true}} @flex={{true}} @divided={{true}} as |c|>
-  <c.header @badgeSkin="brand">
-   <AuHeading @level="6" @skin="6" class="au-card_text-blue">
-      {{geplande.bestuursclassificatie}} ({{geplande.details_Agenda.length}})
-    </AuHeading>
-  </c.header>
-  {{#each geplande.details_Agenda as | details|}}
-  <c.content>
-<p><span class="au-u-medium">{{details.title_agenda.value}}</span> <br> 
-{{#if details.description.value}}
-<span class="au-u-medium">Description:</span> {{details.description.value}} <br>
-{{/if}}
-</p>
-  </c.content>
-  {{/each}}
-</AuCard>
-<a href="#topAgenda" class="toTop"><AuIcon @icon="nav-up" @alignment="left" @size="large" @ariaHidden={{true}} /></a>
-<br>
-{{/each}}
-</div>
-<div class="bottombox"></div>
-</div>
 
-{{!-- Page besluiten --}}
-<div class="besluit au-u-regular {{this.identifier}}">
-<div id="topBesluit" class="bottombox"></div>
-{{!-- template-lint-disable no-invalid-interactive --}}
-<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
-<div class="au-o-box au-o-box-left">
-<span class="au-u-h5 au-u-bold"> {{@getGemeente}}  </span><Object::Population  @name="{{@getGemeente}}"/><br>
-<hr/>
-{{#each @getBesluiten as |geplande|}}
-<AuContent>
-<div class="aanwezig">
-<span class="au-u-bold">Zitting</span>
-<AuIcon @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Date}}</span> 
-<AuIcon @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{geplande.geplande_Time}} | {{geplande.location.value}}</span><br>
-{{#if (gt geplande.count 1)}}
-<span class="au-u-bold">Aanwezig {{geplande.count}} personen </span>
-{{/if}}
-{{geplande.aanwezigenInfo}}
-</div>
-</AuContent>
-<AuCard @expandable={{true}} @flex={{true}} @divided={{true}} as |c|>
-<c.header @badgeSkin="brand" >
-  <AuHeading @level="6" @skin="6" class="au-card_text-blue">
-    {{geplande.bestuursclassificatie}} ({{geplande.details.length}})
-  </AuHeading>
-</c.header>
-{{#each geplande.details as | details|}}
-<c.content>
-<p><br>
-<div class="stemming"><span class="circle circle__green"></span> {{details.nbPro.value}}</div> 
-<div class="stemming"><span class="circle circle__orange"></span> {{details.nbAnti.value}}</div>
-<div class="stemming"><span class="circle circle__red"> </span> {{details.nbNoVote.value}}</div>
-<span class="au-u-medium">{{details.title.value}}</span> <br>
-{{#if details.description.value}}
-<span class="au-u-medium">Description:</span> {{details.description.value}} <br>
-{{/if}}
-{{#if details.motivering.value}}
-<span class="au-u-medium">Motivering:</span> {{details.motivering.value}}
-{{/if}}
-</p>
-</c.content>
-{{/each}}
-</AuCard>
-<a href="#topBesluit" class="toTop"><AuIcon @icon="nav-up" @alignment="right" @size="large" @ariaHidden={{true}} /></a>
-<br>
-{{/each}}
-</div>
-<div class="bottombox"></div> 
-</div>
 
-{{!-- Page Archieven --}}
-<div class="archieven au-u-regular {{this.identifier}}">
-<div id="toTop" class="bottombox"></div>
-{{!-- template-lint-disable no-invalid-interactive --}}
-<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
-<div class="au-o-box au-o-box-left">
-<span class="au-u-h5 au-u-bold"> {{@getGemeente}}  </span><Object::Population  @name="{{@getGemeente}}"/><br>
-<hr/>
-<Archieven::Gemeente  
-@getArchieven={{@getArchieven}}
-@getGemeente={{@getGemeente}}
-@bestuurseenheidnaam={{@getGemeente}}
-@toggleClose={{@toggleClose}}
-@route="archieven.gemeente"
-@model={{@model}}
-/>
-</div>
-<div class="bottombox"></div>
-</div>

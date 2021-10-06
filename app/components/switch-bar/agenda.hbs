@@ -1,0 +1,27 @@
+<div class="agenda au-u-regular {{this.identifier}}">
+<div id="topAgenda" class="bottomtop"></div>
+{{!-- template-lint-disable no-invalid-interactive --}}
+<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
+<div class="au-c-form-switch">
+  <AuToggleSwitch 
+  @label="Switch resultaatschem links/recht" @disabled={{false}} 
+  @name="switch-left-right"
+  @identifier={{this.identifier}}
+  @checked={{this.checked}}
+  @onChange={{this.onChange}}
+  />
+</div>
+<div class="au-o-box au-o-box-left">
+<span class="au-u-h5 au-u-bold"> {{this.getGemeente}}  </span><Object::Population  @name="{{this.getGemeente}}"/><br>
+<hr/>
+
+<SwitchBar::Content::Agenda
+@selected={{this.selected}} 
+@agendalist={{this.agendalist}}
+@agenda={{this.agenda}}
+@getGemeente={{this.getGemeente}}
+/>
+
+</div>
+<div class="bottombox"></div>
+</div>

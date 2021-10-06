@@ -1,12 +1,7 @@
 {{page-title "Besluiten"}}
 {{!-- <Map /> --}}
-<SearchBar::Besluiten
-@get_Search={{this.get_Search}} 
-@getBesluitenSearch={{this.getBesluitenSearch}}
-/>
+<SearchBar::Besluiten/>
 <SwitchBar::SwitchbarBesluiten 
-@getGemeente={{this.getGemeente}} 
-@getPopulation={{this.getPopulation}}
-@getBesluiten={{this.getBesluiten}}
-/>
+@getGemeente={{this.getGemeente}} />
+<SwitchBar::Besluit />
 

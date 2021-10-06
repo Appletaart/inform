@@ -6,15 +6,11 @@
 {{!-- {{log this.getAgenda}} --}}
 {{!-- {{log this.client.fullName}} --}}
 {{!-- {{#if this.toggleClick}} --}}
-<SearchBar::Agenda
-@get_Search={{this.get_Search}} 
-@getAgendaSearch={{this.getAgendaSearch}}
-/>
+<SearchBar::Agenda />
+
 <SwitchBar::SwitchbarBesluiten  
-@getGemeente={{this.getGemeente}} 
-@getPopulation={{this.getPopulation}}
-@getAgenda={{this.getAgenda}}
-/>
+@getGemeente={{this.getGemeente}} />
+<SwitchBar::Agenda />
 
 {{!-- <div id="agenda" class="au-u-regular"> --}}
 {{!-- template-lint-disable no-invalid-interactive --}}

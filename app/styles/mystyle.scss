@@ -8,6 +8,7 @@ $color_cape_cod_approx1: #7f8d99;
 $gray: grey;
 $color_martini_approx: #999;
 
+
 //fonts
 $font_4: sans-serif;
 
@@ -19,30 +20,72 @@ $font_4: sans-serif;
 .au-c-main-header {
 	z-index: 25;
   }
+.autoload{
+	position:fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	// transform: translate(50%, 25%);
+}
 .search{
-	margin-top: 2.4rem;
-	width: 35%;
-	z-index: 10;
 	position: relative;
+	margin-top: 2.4rem;
+	width: 45%;
+	z-index: 10;
+	// background-color: aquamarine;
+}
+.hideInput{
+	display: none;
 }
 .au-c-form{
 	position: relative;
 	margin-top: 2rem;
 	.au-c-toggle-switch {
 		background-color: #f5f8fa;
-		padding: 1.2rem;
+		padding: 1.5rem;
 		width: 35%;
 		border-radius: 0.3rem;
 	}
 }
+.au-c-form-switch{
+	position: absolute;
+	top: 7%;
+	right: 5rem;
+	width: 40%;
+	//margin-top: 2rem;
+	.au-c-toggle-switch {
+		//background-color: #f5f8fa;
+		padding: 1rem;
+		width: 100%;
+		border-radius: 0.3rem;
+	}
+}
+.au-c-bs-switch{
+	position: absolute;
+	top: 6%;
+	right: 5rem;
+	width: 50%;
+	//margin-top: 2rem;
+	.au-c-toggle-switch {
+		//background-color: #f5f8fa;
+		padding: 0.8rem;
+		width: 100%;
+		border-radius: 0.3rem;
+	}
+}
+.au-d-component-block{
+	padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80vw;
+}
 .bp-map {
-	/* position: absolute;
-	top: 12rem;
-	width:fit-content; */
-	// for map under outlat
 	position: relative;
-	width: 100%; // 78% for besturen
+	width: 100%;
+	// margin-top: -1rem;
 	align-items: center;
+	// background-color: palevioletred;
 	z-index: 0;
 }
 .provinces {
@@ -58,7 +101,7 @@ $font_4: sans-serif;
 }
 path {
 	stroke: $white;
-	stroke-width: 0.05rem;
+	stroke-width: 0.08rem;
 }
 .legend, .legend_besluit{
 	stroke: #657d9a;
@@ -98,52 +141,69 @@ cursor {
 	cursor: pointer;
 }
 .main_nav {
+	position: fixed;
 	width: 100%;
-	height: auto;
- 	position: absolute;
 	bottom: 0;
+	z-index: 12;
 	background-color: $white;
-	z-index: 25;
 	ul {
 		width: 80%;
-		position: relative;
-		transform: translate(12.5%, 0);
-		display: inline-flex;
+		margin: auto;
+		display: flex;
 		text-align: center;
-		list-style-type: none;
 		align-items: center;
 		justify-content: space-between;
+		li{
+			text-align: center;
+		}
 	}
 }
-
 // start content //
 .toggle {
 	margin-left: 2rem;
 	cursor: pointer; 
 }
-.bottombox{
+.bottomtop{
 	display: block;
 	height: 7vh;
 }
+.bottombox{
+	display: block;
+	height: 20vh;
+}
 hr{
     margin-block-start:0.5em;
-    margin-block-end: 0.5em;
+    margin-block-end: 0.7em;
 	border: 0;
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
+.hr{
+	width: 30%;
+}
+.clear{
+	clear: right;
+}
 .toTop{
 	float: right;
 	color: $color_martini_approx;
+}
+.location{
+  width: 12px;
+  height: 12px;
+  filter: invert(50%);
+}
+.icon-filter{
+	filter: invert(50%);
 }
 // indexpage
 .indexSearch {
 	position: absolute;
 	top: 0;
 	right: 0;
-	height: 90vh;
-	width: 30vw;
+	height: 100vh;
+	width: 50vw;
 	text-align: left;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
@@ -161,17 +221,82 @@ hr{
 .indexSearch--visible{
 	visibility: visible;
 }
-.indexClick, .besturen  {
+.indexClick{
+	position: absolute;
+	visibility: hidden;
+}
+.radioBtn{
+	width: 100%;
+	display: inline-flex;
+	li{
+		/* width: 50%; */
+		text-align: center;
+	}
+	li:nth-child(1) {
+		width: 40%;
+	}
+	li:nth-child(2) {
+		width: 60%;
+	}
+}
+.testparams{
 	position: absolute;
 	top: 0;
-	height: 90vh;
-	width: 30vw;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+	text-align: left;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	font-weight: 100;
+	color: $color_elephant_approx;
+	box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;
+	background-color: $white;
+	overflow: scroll;
+	padding: 1rem;
+	z-index: 110;
+	.au-card-no-border{
+		border-width: 0rem;
+		padding: 0rem;
+	}
+	.aanwezig{
+		line-height: 2.4rem;
+		font-size: 1.5rem;
+		padding: 1.5rem 0;
+	}
+	&.hidden{
+		display: none;
+	}
+	&.visible{
+		visibility: visible;
+	}
+	.agendalist{
+		display: block;
+		ul{
+			text-align: left;
+		}
+		li{
+			line-height: 2.4rem;
+		}
+		span{
+			line-height: 2.4rem;
+		}
+	}
+}
+.besturen  {
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	width: 40vw;
 	visibility: hidden;
 	line-height: 2.5rem;
 	color: $color_elephant_approx;
 	background-color: $white;
 	overflow: scroll;
 	z-index: 11;
+	.au-c-button--tertiary{
+		padding: 0;
+	}
 	&.hidden{
 		display: none;
 	}
@@ -179,23 +304,22 @@ hr{
 		visibility: visible;
 	}
 	&.bar-left{
-		width: 40vw;
 		left: 0;
 		box-shadow: 0.2rem 0.1rem 0.5rem $color_martini_approx;
 		direction: rtl;
 		.toggle {
-			float: right;
+			// float: right;
 			cursor: pointer; 
 			margin-right: 2rem;
 		}
 		.au-o-box-left {
-			margin-left: 2rem;
+			margin-left: 1.5rem;
+			padding-right: 0rem;
 			direction: ltr;
 		}
 	}
 	&.bar-right{
 		right: 0;
-		width: 35vw;
 		box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;	
 	}
 }
@@ -204,8 +328,8 @@ hr{
 	position: absolute;
 	top: 0;
 	right: 0;
-	height: 90vh;
-	width: 30vw;
+	height: 100vh;
+	width: 40vw;
 	line-height: 2.5rem;
 	color: $color_elephant_approx;
 	box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;
@@ -213,6 +337,9 @@ hr{
 	overflow: scroll;
 	padding: 1rem;
 	z-index: 11;
+	.au-c-button--tertiary{
+		padding: 0;
+	}
     &.hidden{
 		display: none;
 	}
@@ -220,50 +347,13 @@ hr{
 		visibility: visible;
 	}
 }
-/* .besturen {
-	position: absolute;
-	top: 0;
-	height: 90vh;
-	visibility: hidden;
-	line-height: 2.5rem; 
-	color: $color_elephant_approx;
-	background-color: $white;
-	overflow: scroll;
-	z-index: 11;
-	&.hidden{
-		display: none;
-	}
-	&.visible{
-		visibility: visible;
-	}
-	&.bar-left{
-		width: 40vw;
-		left: 0;
-		box-shadow: 0.2rem 0.1rem 0.5rem $color_martini_approx;
-		direction: rtl;
-		.toggle {
-			float: right;
-			cursor: pointer; 
-			margin-right: 2rem;
-		}
-		.au-o-box-left {
-			margin-left: 2rem;
-			direction: ltr;
-		}
-	}
-	&.bar-right{
-		right: 0;
-		width: 35vw;
-		box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;	
-	}
-} */
 // agenda
 .agendaSearch, .besluitSearch, .archievenSearch {
 	position: absolute;
 	top: 0;
 	right: 0;
-	height: 90vh;
-	width: 48vw;
+	height: 100vh;
+	width: 50vw;
 	text-align: left;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
@@ -302,10 +392,15 @@ hr{
 		}
 	}
 }
-.agenda, .besluit, .archieven {
+.archief, .archievenSearch{
+	.au-c-content > * + * {
+		margin-top: 1rem;
+	}
+}
+.intropage, .agenda, .besluit, .archief, .archieven {
 	position: absolute;
 	top: 0;
-	height: 90vh;
+	height: 100vh;
 	width: 50vw;
 	visibility: hidden;
 	line-height: 2.5rem;
@@ -340,7 +435,7 @@ hr{
 		box-shadow: 0.2rem 0.1rem 0.5rem $color_martini_approx;
 		direction: rtl;
 		.toggle {
-			float: right;
+			// float: right;
 			cursor: pointer; 
 			margin-left: 0rem;
 			margin-right: 1.5rem;
@@ -362,6 +457,18 @@ hr{
 	}
 }
 // besluiten -- archieven
+.heeftstemming{
+	padding: 1rem 0;
+}
+.heeftstemmde{
+	margin: 0.3rem 0;
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+.highlight{
+	width: 100%;
+	padding-top: 0rem;
+}
 .stemming{
 	display: inline-flex;
 	margin: 0 0.2rem;
@@ -387,188 +494,48 @@ hr{
 .circle__red{
 	background-color: #D92626;
 }
-/* .besluitSearch {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 90vh;
-	width: 50vw;
-	text-align: left;
-	// visibility: hidden;
-	font-size: 1.5rem;
-	line-height: 2.5rem;
-	font-family: $font_4;
-	font-weight: 100;
-	color: $color_elephant_approx;
-	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;
-	background-color: $white;
-	overflow: scroll;
-	padding: 1rem;
-	z-index: 11;
-	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-	// transition: 1s;
-	&.hidden{
-		visibility: hidden;
-	}
-	&.visible{
-		visibility: visible;
-	}
-	.aanwezig{
-		line-height: 2.4rem;
-		font-size: 1.5rem;
-		padding: 1.5rem 0;
-	}
-} */
-/* .besluit {
-	position: absolute;
-	top: 0;
-	height: 90vh;
-	width: 48vw;
-	visibility: hidden;
-	color: $color_elephant_approx;
-	background-color: $white;
-	overflow: scroll;
-	z-index: 11;
-	.aanwezig{
-		line-height: 2.4rem;
-		font-size: 1.5rem;
-		padding: 1.5rem 0;
-	}
-	&.bar-left{
-		left: 0;
-		box-shadow: 0.2rem 0.1rem 0.5rem $color_martini_approx;
-		direction: rtl;
-		.toggle {
-			float: right;
-			cursor: pointer; 
-			margin-right: 2rem;
-		}
-		.au-o-box-left {
-			margin-left: 2rem;
-			direction: ltr;
-		}
-	}
-	&.bar-right{
-		right: 0;
-		box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;	
-	}
-} */
-/* // archieven
-.archievenSearch {
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 90vh;
-	width: 48vw;
-	text-align: left;
-	font-size: 1.5rem;
-	line-height: 2.5rem;
-	// font-family: $font_4;
-	font-weight: 100;
-	color: $color_elephant_approx;
-	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;
-	background-color: $white;
-	overflow: scroll;
-	padding: 5px 0 5px 10px;
-	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-	border-radius: 5px;
-	z-index: 11;
-	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-	// transition: 1s;
-	.aanwezig{
-		line-height: 2.4rem;
-		font-size: 1.5rem;
-		padding: 1.5rem 0;
-	}
-	&.hidden{
-		display: none;
-	}
-	&.visible{
-		visibility: visible;
-	}
-} */
-
-/* .archieven {
-	position: absolute;
-	top: 0;
-	height: 90vh;
-	width: 50vw;
-	visibility: hidden;
-	font-size: 1.5rem;
-	line-height: 2.5rem;
-	font-family: $font_4;
-	font-weight: 100;
-	color: $color_elephant_approx;
-	background-color: $white;
-	overflow: auto;
-	padding: 5px 10px;
-	border-radius: 5px;
-	z-index: 11;
-	.aanwezig{
-		line-height: 2.4rem;
-		font-size: 1.5rem;
-		padding: 1.5rem 0;
-	}	
-	&.bar-left{
-		left: 0;
-		box-shadow: 0.2rem 0.1rem 0.5rem $color_martini_approx;
-		direction: rtl;
-		.toggle {
-			float: right;
-			cursor: pointer; 
-			margin-right: 2rem;
-		}
-		.au-o-box-left {
-			margin-left: 2rem;
-			direction: ltr;
-		}
-	}
-	&.bar-right{
-		right: 0;
-		box-shadow: -0.2rem 0.1rem 0.5rem $color_martini_approx;	
-	}
-	.hidden{
-		display: none;
-	}
-	.visible{
-		visibility: visible;
-	}
-} */
 .au-card_text-blue{
 	color: $au-blue-600;
+	text-decoration-line: none;
+}
+.au-hl-blue{
+	color: $au-blue-700;
+	text-decoration-line: none;
+}
+.text-blue{
+	color: $au-blue-600;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+.text-grey{
+	color: $au-gray-600;
+	font-size: 1.5rem;
+}
+.hidevisible{
+	display: none;
+	
+}
+.au-c-modal-backdrop {
+    z-index: 14;
+}
+.au-c-modal {
+    z-index: 15;
 }
 
 @media only screen and(max-width: 1920px) {
-	.bp-map {
-		width: 95%;
-	}
-	/* .main_nav {
-		width: 100%;
-		ul {
-			width: 70%;
-			transform: translate(25%, 0);
-		}
-	} */
 }
 @media only screen and(max-width: 1440px) {
-	/* .main_nav {
-		width: 100%;
-		ul {
-			width: 80%;
-			transform: translate(12.5%, 0);
-		}
-	} */
 }
 @media only screen and(max-width: 1200px) {
 }
 @media only screen and(max-width: 1024px) {
-
+	.search{
+		width: 55%;
+	}
 }
 @media only screen and(max-width: 992px) {
-	.search{
-		width: 50%;
+	.bp-map {
+		padding-top: 3rem;
 	}
 	.au-c-form{
 		.au-c-toggle-switch {
@@ -578,8 +545,8 @@ hr{
 }
 @media only screen and(max-width: 800px) {
 	.search{
-		margin-top: 2.4rem;
-		width: 60%;
+		margin-top: 4.8rem;
+		width: 100%;
 	}
 	.au-c-form{
 		margin-top: 1rem;
@@ -587,9 +554,6 @@ hr{
 			padding: 1rem;
 			width: 60%;
 		}
-	}
-	.bp-map {
-		padding-top: 1rem;
 	}
 	.main_nav {
 		ul {
@@ -599,9 +563,13 @@ hr{
 	}
 }
 @media only screen and(max-width: 767px) {
+	.au-d-component-block{
+	max-width: 100vw;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+	}
 	.search{
-	 	position: absolute;
-		top: 3rem;
+		margin: 3rem auto 1.8rem auto;
 		width: 100%;
 	}
 	.bp-map {
@@ -613,9 +581,8 @@ hr{
 	.main_nav {
 		display: none;
 	}
-	.au-u-nav-small{
-		position: absolute;
-		top: 13rem;
+	.bgNav{
+		display: none;
 	}
 	.nav{
 	width: 100%;
@@ -623,6 +590,7 @@ hr{
 	font: 1em sans-serif;
 	}
 	.longtext{
+		display: inline-flex;
 		font-size: 1.5rem;
 	}
 	.indexSearch, .besturenSearch, .agendaSearch, .besluitSearch, .archievenSearch{
@@ -630,4 +598,36 @@ hr{
 		height: 100vh;
 	}
 }
-
+@media only screen and(max-width: 376px) {
+	.longtext{
+		font-size: 1.2rem;
+	}
+}
+@media screen and (min-height: 600px) and /* (max-width: 1024px), */ (max-width: 1440px) {
+	.bp-map {
+		transform: scale(0.80) translate(-0%, -22%);
+		}
+}
+@media screen and (min-height: 600px) and (max-width: 1280px) {
+	.bp-map {
+		transform: scale(0.95) translate(0, -5%);
+		}
+	.au-c-card--fill{
+		height: auto;
+	}
+}
+@media screen and (min-height: 600px) and (max-width: 1024px) {
+	.bp-map {
+		transform: scale(1)/*  translate(0, 5%) */;
+		}
+}
+@media screen and (min-height: 700px) and /* (max-width: 1024px), */ (max-width: 1440px) {
+	.bp-map {
+		transform: scale(0.95) translate(-0%, -10%);
+		}
+}
+@media screen and (min-height: 700px) and (max-width: 1024px) {
+	.bp-map {
+		transform: translate(0%, 5%);
+		}
+}

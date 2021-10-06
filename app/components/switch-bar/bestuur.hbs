@@ -1,0 +1,28 @@
+<div class="besturen au-u-regular {{this.identifier}}">
+<div class="bottomtop"></div>
+<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
+<div class="au-c-bs-switch">
+  <AuToggleSwitch 
+  @label="Switch resultaatschem links/recht  " @disabled={{false}} 
+  @name="switch-left-right"
+  @identifier={{this.identifier}}
+  @checked={{this.checked}}
+  @onChange={{this.onChange}}
+  />
+</div>
+<div class="au-o-box au-o-box-left">
+<span class="au-u-h5 au-u-bold"> {{this.getGemeente}}  </span><Object::Population  @name="{{this.getGemeente}}"/><br>
+
+<SwitchBar::Content::Bestuur 
+@selected={{this.selected}} 
+@mandataris={{this.mandataris}}
+@bestuur={{this.bestuur}}
+@getGemeente={{this.getGemeente}}
+@hidevisible={{this.hidevisible}}
+@beleid={{this.beleid}}
+/>
+
+
+</div>
+<div class="bottombox"></div> 
+</div>

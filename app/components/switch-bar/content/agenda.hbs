@@ -1,0 +1,53 @@
+{{#if @getGemeente}}
+<p class="hideInput" >{{@getGemeente}}
+{{@agenda}}</p>
+{{/if}}
+{{!-- {{log @agendalist}} --}}
+{{#if (not @agendalist) }}
+<AuLoader />
+{{else if @agendalist.groupAgenda}}
+<span class="au-u-h5 au-u-bold">Agenda</span><br>
+<ul class="agendalist">
+{{#each @agendalist.groupAgenda as |geplande|}}
+<li>{{set-date geplande.geplandeStart}} {{set-time geplande.geplandeStart}} <img class="location" src="assets/svg/location.svg" alt="location" /> {{geplande.location.value}}</li>
+{{/each}}
+</ul>
+<br>
+<span class="au-u-h5 au-u-bold">Agendalijst</span><br>
+{{#each @agendalist.groupAgenda as |geplande|}}
+<AuIcon class="icon-filter" @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="au-u-h6">{{set-date geplande.geplandeStart}}</span> 
+<AuIcon class="icon-filter" @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="au-u-h6">{{set-time geplande.geplandeStart}} <img class="location" src="assets/svg/location.svg" alt="location" /> {{geplande.location.value}}</span><br>
+<br>
+{{#each geplande.classy as |classy|}}
+<AuCard class="clear" @expandable={{true}} @flex={{true}} @divided={{true}} as |c|>
+  <c.header @badgeSkin="brand">
+   <AuHeading @level="6" @skin="6" class="au-card_text-blue">
+      {{classy.bestuursclassificatie}} ({{classy.details.length}})
+    </AuHeading>
+  </c.header>
+  {{#each classy.details as | details|}}
+  <c.content>
+<p>
+<AuIcon class="au-card_text-blue" @icon="check" @alignment="left" @size="large" @ariaHidden={{true}} /><span class="au-u-medium">{{details.title_agenda.value}}</span> <br> 
+{{#if (gt details.description.value.length 1)}}
+{{#if (not-eq details.title_agenda.value.length details.description.value.length)}}
+{{!-- <span class="au-u-medium">Description:</span>  --}}{{details.description.value}} <br>
+{{/if}}
+{{/if}}
+</p>
+  </c.content>
+  {{/each}}
+</AuCard>
+<a href="#topAgenda" class="toTop"><AuIcon @icon="nav-up" @alignment="left" @size="large" @ariaHidden={{true}} /></a>
+<br>
+{{/each}}
+{{!-- <a href="#topAgenda" class="toTop"><AuIcon @icon="nav-up" @alignment="left" @size="large" @ariaHidden={{true}} /></a>
+<br> --}}
+{{/each}}
+
+
+{{else}}
+<AuPill @skin="action">
+  <AuIcon @icon="alert-triangle" @alignment="left" @size="medium" @ariaHidden={{true}} /> Geen beschikbaar informatie
+</AuPill>
+{{/if}}

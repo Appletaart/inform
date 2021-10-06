@@ -9,7 +9,10 @@ module.exports = function (defaults) {
         'node_modules/@appuniversum/appuniversum',
         'node_modules/@appuniversum/ember-appuniversum/app/styles'
       ]
-    }
+    }/* ,
+    fingerprint: {
+      prepend: 'https://applepanithi.com/'
+    } */
   });
 
   app.import('bower_components/d3/d3.js');

@@ -1,4 +1,20 @@
-<Main>
+<AuMainHeader class="mainHeader" @brandLink="https://www.vlaanderen.be/nl" @homeRoute="index" @appTitle="Data Vlaanderen/lokaalbeslist" >
+<AuLink @route="digitaal.vlaanderen@vlaanderen.be" @skin="secondary" {{on "click" (fn (mut this.popup) true)}}>
+<AuIcon @icon="question-circle" @alignment="left" @size="medium" @ariaHidden={{true}} />
+Contacteer ons
+</AuLink>
+<AuModal 
+@modalTitle="Contacteer ons" 
+@modalOpen={{this.popup}} 
+@closeModal={{fn (mut this.popup) false}} as |Modal| >
+  <Modal.Body>    
+   <strong class="au-card_text-blue">Stuur een mail naar</strong> 
+   <p>digitaal.vlaanderen@vlaanderen.be</p>
+  </Modal.Body>
+</AuModal>
+</AuMainHeader>
+<div class="au-d-component-block" >
 {{outlet}}
 <Map />
-</Main>
+</div>
+<MainNav />

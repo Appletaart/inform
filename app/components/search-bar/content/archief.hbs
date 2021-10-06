@@ -1,0 +1,126 @@
+{{#if @selected}}
+<p class="hideInput" >{{this.get_Search}}</p>
+{{this.archiefSearch}}
+{{/if}}
+
+{{#if (not this.eenheids) }}
+<AuLoader />
+{{else if this.eenheids.stemming_years}}
+
+
+<AuAccordion class="au-u-margin-top au-u-margin-bottom" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Zoeken op jaar" @buttonWidth="block" >
+
+<div class="au-u-regular">
+{{#each this.eenheids.stemming_years as |groupAanwezige|}}
+<AuCard @expandable={{true}} @flex={{true}} @divided={{true}} as |c|>
+  <c.header @badgeSkin="brand" >
+    <AuHeading @level="6" @skin="6" class="au-card_text-blue">
+      {{groupAanwezige.geplande_Year}}
+    </AuHeading>
+  </c.header>
+{{!-- Dit head voor year --}}
+{{#each this.eenheids.stemming_months as | details|}}
+{{#if (is-equal groupAanwezige.geplande_Year details.geplande_Year)}}
+<c.content>
+<AuCard class="au-card-no-border" @expandable={{true}} @flex={{true}} @divided={{true}} as |c|>
+  <c.header @badgeSkin="brand" >
+    <AuHeading @level="6" @skin="6" class="au-card_text-blue">
+      {{details.geplande_Month}} {{details.geplande_Year}} 
+    </AuHeading>
+  </c.header>
+{{!-- Dit head voor month --}}
+{{!-- start from besluit --}}
+{{#each this.eenheids.groupStemming as |group_geplande|}}
+{{#if (is-equal details.geplande_Year group_geplande.geplande_Year)}}
+{{#if (is-equal details.geplande_Month group_geplande.geplande_Month)}}
+<c.content>
+<div class="aanwezig">
+<span class="au-u-bold">Zitting</span>
+<AuIcon class="icon-filter" @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{set-date group_geplande.geplandeStart}}</span> 
+<AuIcon class="icon-filter" @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{set-time group_geplande.geplandeStart}} <img class="location" src="assets/svg/location.svg" alt="location" /> {{group_geplande.location.value}}</span><br>
+</div>
+{{#each group_geplande.details_classificatie as |geplande|}}
+{{#if (gt group_geplande.aanwezigBijstart.length 1)}}
+<AuContent>
+<span class="au-u-bold">Aanwezig bij start : </span>
+{{#each group_geplande.aanwezigBijstart as |info|}}
+{{#if (is-equal info.bestuursclassificatieBijStart geplande.bestuursclassificatie)}}
+<span class="au-u-medium">{{info.bestuursfunctieBijStart}}</span>
+{{#if (gt info.countBijStart 1)}}
+<span class="au-u-medium"> {{info.countBijStart}} personen</span>
+{{/if}}
+<span class="au-u-medium">{{info.bestuursfunctie}}:</span> {{info.aanwezigenBijStart}}
+{{/if}}
+{{/each}}
+</AuContent>
+<br>
+{{/if}}
+<AuCard class="clear" @expandable={{true}} @flex={{true}} @divided={{true}} as |c|>
+<c.header @badgeSkin="brand" >
+  <AuHeading @level="6" @skin="6" class="au-card_text-blue">
+    {{geplande.bestuursclassificatie}} ({{geplande.details.length}})
+  </AuHeading>
+</c.header>
+{{#each geplande.details as | details|}}
+<c.content>
+{{#if (gt details.title.length 1)}}
+<p>
+
+<AuIcon class="au-card_text-blue" @icon="check" @alignment="left" @size="large" @ariaHidden={{true}} /><span class="au-u-medium">{{details.title}}</span> <br>
+{{#if details.nbPro.value}}
+<div class="stemming"><span class="circle circle__green"></span> {{details.nbPro.value}}</div> 
+<div class="stemming"><span class="circle circle__orange"></span> {{details.nbNoVote.value}}</div>
+<div class="stemming"><span class="circle circle__red"> </span> {{details.nbAnti.value}}</div>
+{{/if}}
+{{#if (gt details.voorstanders.value.length 1)}}
+<AuAccordion @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Stemming">
+<div class="heeftstemming highlight">
+<p class="heeftstemmde"><AuPill @skin="success">voor:</AuPill> {{details.voorstanders.value}}</p>
+<p class="heeftstemmde"><AuPill @skin="warning">onthouding:</AuPill> {{details.onthouders.value}}</p>
+<p class="heeftstemmde"><AuPill @skin="error">tegen:</AuPill> {{details.tegenstanders.value}}</p>
+</div>
+</AuAccordion>
+{{/if}}
+{{#if (not-eq details.title.length details.description.length)}}
+{{details.description.value}}<br>
+
+{{/if}}
+{{#if details.motivering.value}}
+<span class="au-u-medium">Motivering:</span> {{details.motivering.value}}
+{{/if}}
+</p>
+{{/if}}
+</c.content>
+{{/each}}
+</AuCard>
+
+<a href="#topArchief"class="toTop"><AuIcon @icon="nav-up" @alignment="right" @size="large" @ariaHidden={{true}} /></a>
+<br>
+{{/each}}
+
+</c.content>
+{{/if}}
+{{/if}}
+{{/each}}
+{{!-- end from besluit --}}
+</AuCard>
+</c.content>
+{{/if}}
+{{/each}}
+</AuCard>
+<br>
+{{/each}}
+</div>
+</AuAccordion>
+<AuAccordion class="au-u-margin-top au-u-margin-bottom au-gray-700" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Zoeken op titel" @buttonWidth="block" >
+<Object::Params 
+@selected={{@selected}}
+@eenheids={{this.eenheids.groupStemming}}
+/>
+</AuAccordion>
+
+{{else}}
+<AuPill @skin="action">
+  <AuIcon @icon="alert-triangle" @alignment="left" @size="medium" @ariaHidden={{true}} /> Geen beschikbaar informatie
+</AuPill>
+{{/if}}

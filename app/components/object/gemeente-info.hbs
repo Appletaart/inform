@@ -1,0 +1,14 @@
+{{#each this.info as |p|}}
+{{#if (is-equal p.gemeente @name)}}
+<div class="au-o-box--flush au-u-margin-top-small">
+{{#if (gt p.website.length 1)}}
+<a class="au-u-medium au-card_text-blue" href="{{p.website}}" target="_blank" rel="noopener noreferrer">Website van {{p.gemeente-stad}} {{p.gemeente}}</a><br>
+{{/if}}
+{{#if (gt p.deelgemeenten.length 1)}}
+deelgemeente: <span class="au-u-medium">{{p.deelgemeenten}}</span>
+<br>
+{{/if}}
+{{!-- {{yield}} --}}
+</div>
+{{/if}}
+{{/each}}

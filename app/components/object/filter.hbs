@@ -1,0 +1,52 @@
+{{!-- template-lint-disable no-log --}}
+{{!-- {{#if (not @eenheids) }}
+<AuLoader />
+{{else if @eenheids.details_classificatie}} --}}
+<div class="au-u-regular">
+{{!-- start from besluit --}}
+{{!-- {{#each @eenheids.details_classificatie as |geplande|}} 
+{{#each @eenheids.details as | details|}}--}}
+{{#if (gt @eenheids.title.length 1)}}
+<p>
+<AuIcon class="au-card_text-blue" @icon="check" @alignment="left" @size="large" @ariaHidden={{true}} /><span class="au-u-medium">{{@eenheids.title}}</span><br>
+{{#if @eenheids.nbPro.value}}
+<div class="stemming"><span class="circle circle__green"></span> {{@eenheids.nbPro.value}}</div> 
+<div class="stemming"><span class="circle circle__orange"></span> {{@eenheids.nbAnti.value}}</div>
+<div class="stemming"><span class="circle circle__red"> </span> {{@eenheids.nbNoVote.value}}</div>
+{{/if}}
+{{#if (gt @eenheids.voorstanders.value.length 1)}}
+<AuAccordion class="heeftstemming highlight" @accordionIconOpen="nav-down" @accordionIconClosed="nav-right" @accordionButtonLabel="Stemming">
+<div class="heeftstemming">
+<p class="heeftstemmde"><AuPill @skin="success">voor:</AuPill> {{@eenheids.voorstanders.value}}</p>
+<p class="heeftstemmde"><AuPill @skin="error">tegen:</AuPill> {{@eenheids.tegenstanders.value}}</p>
+<p class="heeftstemmde"><AuPill @skin="warning">onthouding:</AuPill> {{@eenheids.onthouders.value}}</p>
+</div>
+</AuAccordion>
+{{/if}}
+{{#if (not-eq @eenheids.title.length @eenheids.description.value.length)}}
+{{@eenheids.description.value}}<br>
+{{/if}}
+{{#if @eenheids.motivering.value}}
+<span class="au-u-medium">Motivering:</span> {{@eenheids.motivering.value}}
+{{/if}}
+<AuIcon class="icon-filter" @icon="calendar" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{set-date @eenheids.geplandeStart}}</span> 
+<AuIcon class="icon-filter" @icon="info-circle" @alignment="left" @size="medium" @ariaHidden={{true}} /><span class="">{{set-time @eenheids.geplandeStart}}
+</span><span class="au-card_text-blue au-u-medium">| {{@eenheids.bestuursclassificatie}}</span> 
+<br>
+<br>
+</p>
+{{/if}}
+{{!--
+{{/each}}
+
+<a href="#topBesluit"class="toTop"><AuIcon @icon="nav-up" @alignment="right" @size="large" @ariaHidden={{true}} /></a>
+<br>
+ {{/each}} 
+ <br>
+ --}}
+</div>
+{{!-- {{else}}
+<AuPill @skin="action">
+  <AuIcon @icon="alert-triangle" @alignment="left" @size="medium" @ariaHidden={{true}} /> Geen beschikbaar informatie
+</AuPill>
+{{/if}} --}}

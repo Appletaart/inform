@@ -1,0 +1,67 @@
+<div class="main_nav">
+<ul class="au-o-region">
+  <li class="au-c-navigation__item">
+    <AuNavigationLink @linkRoute="besturen">
+      | Samenstelling<br>
+        College van Burgemeester en Schepenen<br>
+        Gemeenteraad
+    </AuNavigationLink>
+  </li>
+  <li class="au-c-navigation__item">
+    <AuNavigationLink @linkRoute="agenda">
+      | Agenda
+    </AuNavigationLink>
+  </li>
+  <li class="au-c-navigation__item">
+    <AuNavigationLink @linkRoute="besluiten">
+      | Besluiten
+    </AuNavigationLink>
+  </li>
+  <li class="au-c-navigation__item" >
+    <AuNavigationLink @linkRoute="archief">
+      | Archief besluiten
+    </AuNavigationLink>
+  </li>
+</ul>
+</div>
+<div class="au-u-hidden-from@small au-u-nav-small">
+<div class="nav">
+  <AuButton class="longtext" @width="block" @size="large">
+   Kies een onderwerp en een gemeente voor het begin
+  </AuButton>
+  <br>
+  <hr>
+  <br>
+  <AuButtonGroup>
+  <LinkTo @route="besturen" ><AuButton class="longtext" @width="block" @skin="secondary" @size="large">
+   Samenstelling College van Burgemeester Schepenen en Gemeenteraad
+  </AuButton></LinkTo>
+  <LinkTo @route="agenda" ><AuButton @width="block" @skin="secondary" @size="large" >
+    Agenda
+  </AuButton></LinkTo>
+  <LinkTo @route="besluiten" ><AuButton @width="block" @skin="secondary" @size="large" >
+     Besluiten<AuLoader />
+  </AuButton></LinkTo>
+  <LinkTo @route="archief" ><AuButton @width="block" @skin="secondary" @size="large" >
+     Archief besluiten
+  </AuButton></LinkTo>
+</AuButtonGroup>
+</div>
+ <AuMainFooter>
+  <AuHeading @level="3" @skin="4">
+    Gelinkt-notuleren.lblod.info is een officiële website van de Vlaamse overheid
+  </AuHeading>
+  <AuContent @skin="small">
+    <p>Uitgegeven door <a class="au-c-link" href="https://www.vlaanderen.be/organisaties/administratieve-diensten-van-de-vlaamse-overheid/beleidsdomein-kanselarij-en-bestuur/agentschap-binnenlands-bestuur">Agentschap Binnenlands Bestuur</a></p>
+    <ul class="au-c-list-horizontal">
+      <li class="au-c-list-horizontal__item">
+        <AuLink @route="index" @skin="secondary">Disclaimer</AuLink>
+      </li>
+      <li class="au-c-list-horizontal__item">
+        <AuLink @route="index" @skin="secondary">Cookieverklaring</AuLink>
+      </li>
+    </ul>
+  </AuContent>
+</AuMainFooter>
+
+</div>

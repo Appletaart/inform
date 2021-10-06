@@ -1,0 +1,74 @@
+{{#if @getGemeente}}
+<p class="hideInput" >{{@getGemeente}} 
+{{@bestuur}}</p>
+{{/if}}
+{{!-- template-lint-disable no-log --}}
+
+{{#if (not @mandataris) }}
+<AuLoader />
+{{else if @mandataris.een_burgemeester}}
+<hr>
+
+<span class="au-u-bold">College van Burgemeester en Schepenen</span><br>
+{{#each @mandataris.een_burgemeester as |een_burgemeester|}}
+<p>
+{{#if (gt een_burgemeester.beleidsdomeins.length 1)}}
+<AuAccordion @accordionIconOpen="nav-down" @accordionButtonLabel="{{een_burgemeester.voornaam}} {{een_burgemeester.achternaam}}, {{een_burgemeester.functie}}, {{een_burgemeester.fractie.value}}">
+<span class="text-grey">{{een_burgemeester.beleidsdomeins}}</span>
+</AuAccordion>
+{{else}}
+{{een_burgemeester.voornaam}} {{een_burgemeester.achternaam}}, <span class="au-u-bold">{{een_burgemeester.functie}}</span>, <span class="au-u-medium">{{een_burgemeester.fractie.value}}</span>
+{{/if}}
+</p>
+{{/each}}
+{{#each @mandataris.een_schepenen as |een_schepenen|}}
+<p>
+{{#if (gt een_schepenen.beleidsdomeins.length 1)}}
+<AuAccordion @accordionIconOpen="nav-down" @accordionButtonLabel="{{een_schepenen.voornaam}} {{een_schepenen.achternaam}}, {{een_schepenen.functie}}, {{een_schepenen.fractie.value}}">
+   <span class="text-grey">{{een_schepenen.beleidsdomeins}}</span>
+</AuAccordion>
+{{else}}
+{{een_schepenen.voornaam}} {{een_schepenen.achternaam}}, <span class="au-u-bold">{{een_schepenen.functie}}</span>, <span class="au-u-medium">{{een_schepenen.fractie.value}}</span>
+{{/if}}
+</p> 
+{{/each}}
+{{#each @mandataris.een_tschepenen as |een_tschepenen|}}
+<p>
+{{#if (gt een_tschepenen.beleidsdomeins.length 1)}}
+<AuAccordion @accordionIconOpen="nav-down" @accordionButtonLabel="{{een_tschepenen.voornaam}} {{een_tschepenen.achternaam}}, {{een_tschepenen.functie}}, {{een_tschepenen.fractie.value}}">
+   <span class="text-grey">{{een_tschepenen.beleidsdomeins}}</span>
+</AuAccordion>
+{{else}}
+{{een_tschepenen.voornaam}} {{een_tschepenen.achternaam}}, <span class="au-u-bold">{{een_tschepenen.functie}}</span>, <span class="au-u-medium">{{een_tschepenen.fractie.value}}</span>
+{{/if}}
+</p>
+{{/each}}
+<hr>
+<strong class="au-u-bold">Gemeenteraadsleden | Lid van de Raad voor Maatschappelijk Welzijn</strong><br> 
+{{#each @mandataris.een_voorZgr as |een_voorZgr|}}
+<p>{{een_voorZgr.voornaam}} {{een_voorZgr.achternaam}}, <span class="au-u-bold">Voorzitter</span>, <span class="au-u-medium">{{een_voorZgr.fractie.value}}</span></p>
+{{/each}}
+{{#each @mandataris.een_gr as |een_gr|}}
+<p>{{een_gr.voornaam}} {{een_gr.achternaam}}, <span class="au-u-medium">{{een_gr.fractie.value}}</span></p>
+{{/each}}
+<hr>
+<strong class="au-u-bold">Lid van het Vast Bureau</strong><br>
+{{#each @mandataris.een_vlvb as |een_vlvb|}}
+<p>{{een_vlvb.voornaam}} {{een_vlvb.achternaam}}, <span class="au-u-bold">Voorzitter</span>, <span class="au-u-medium">{{een_vlvb.fractie.value}}</span></p>
+{{/each}}
+{{#each @mandataris.een_lvb as |een_lvb|}}
+<p>{{een_lvb.voornaam}} {{een_lvb.achternaam}}, <span class="au-u-medium">{{een_lvb.fractie.value}}</span></p>
+{{/each}}
+<hr>
+<strong class="au-u-bold">Bijzonder Comité voor de Sociale Dienst</strong><br>
+{{#each @mandataris.een_vbcsd as |een_vbcsd|}}
+<p>{{een_vbcsd.voornaam}} {{een_vbcsd.achternaam}}, <span class="au-u-bold">Voorzitter</span>, <span class="au-u-medium">{{een_vbcsd.fractie.value}}</span></p>
+{{/each}}
+{{#each @mandataris.een_bcsd as |een_bcsd|}}
+<p>{{een_bcsd.voornaam}} {{een_bcsd.achternaam}}, <span class="au-u-medium">{{een_bcsd.fractie.value}}</span></p>
+{{/each}}
+{{else}}
+<AuPill @skin="action">
+  <AuIcon @icon="alert-triangle" @alignment="left" @size="medium" @ariaHidden={{true}} /> Geen beschikbaar informatie
+</AuPill>
+{{/if}}

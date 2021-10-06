@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-class SPARQLQueryDispatcher {
+/* class SPARQLQueryDispatcher {
   constructor( endpoint ) {
       this.endpoint = endpoint;
   }
@@ -11,10 +11,10 @@ class SPARQLQueryDispatcher {
       const body = await fetch(fullUrl, { headers });
     return await body.json();
   }
-}
+} */
 export default class AgendaRoute extends Route {
-  async model(){
-               /*  let response = await fetch('/api/agenda.json');
+  /*  async model(){
+               let response = await fetch('/api/agenda.json');
                 let datas = await response.json(); 
                 const data = [];
                 datas.results.bindings.forEach(e => {
@@ -29,7 +29,7 @@ export default class AgendaRoute extends Route {
                     title_before_agendapunt: e.title_before_agendapunt,
                     description: e.description
                 })
-                }) */
+                }) 
                 const endpointUrl1 = 'https://openbelgium-2021.lblod.info/sparql';
                 const endpointUrl = 'https://qa.centrale-vindplaats.lblod.info/sparql';
                 const sparqlQuery = `
@@ -47,6 +47,7 @@ export default class AgendaRoute extends Route {
                 PREFIX ext: <http://mu.semte.ch/vocabularies/ext/>
                 PREFIX classificatie: <http://data.vlaanderen.be/ns/besluit#classificatie>
                 PREFIX concept: <http://www.w3.org/2004/02/skos/core#Concept>
+                PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                 
                 SELECT DISTINCT ?geplandeStart ?location ?title_agenda ?description ?bestuursclassificatie ?bestuurseenheidnaam WHERE {
                   ?zitting a besluit:Zitting .
@@ -65,20 +66,20 @@ export default class AgendaRoute extends Route {
 
                   ?zitting besluit:behandelt ?agendapunt.
                   ?agendapunt a besluit:Agendapunt .
-                  ?agendapunt terms:title ?title_agenda .
+                  ?agendapunt terms:title ?title .
+	                BIND(str(?title) AS ?title_agenda)
                    OPTIONAL { ?agendapunt terms:description ?description .
                    ?agendapunt besluit:geplandOpenbaar ?OpenbaarOfNiet .
                   BIND (IF(?openbaarOfNiet = 1, "Openbaar", "Openbaar niet") as ?geplandOpenbaar)
                  }
                   ?zitting besluit:isGehoudenDoor ?bo .
-                  ?bo skos:prefLabel ?bestuursorgaan .
                   ?bo besluit:classificatie ?classificatie.
                   ?classificatie skos:prefLabel ?bestuursclassificatie .
                   ?bo besluit:bestuurt ?s .
                   ?s a besluit:Bestuurseenheid .
                   ?s besluit:werkingsgebied [rdfs:label ?bestuurseenheidnaam]
                   
-                  FILTER (?geplandeStart > ?filterDate) 
+                  FILTER (?geplandeStart > ?filterDate)
                 }
                 ORDER BY DESC(?geplandeStart) ASC(?title_agenda)
               `;
@@ -99,5 +100,5 @@ export default class AgendaRoute extends Route {
                   })
               })  
               return realdata;        
-    }
+    }*/
 }

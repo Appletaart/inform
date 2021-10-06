@@ -1,0 +1,25 @@
+<div class="intropage au-u-regular {{this.identifier}}">
+<div class="bottomtop"></div>
+<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
+<div class="au-c-form-switch">
+  <AuToggleSwitch 
+  @label="Switch resultaatschem links/recht" @disabled={{false}} 
+  @name="switch-left-right"
+  @identifier={{this.identifier}}
+  @checked={{this.checked}}
+  @onChange={{this.onChange}}
+  />
+</div>
+<div class="au-o-box au-o-box-left">
+<span class="au-u-h5 au-u-bold"> {{this.getGemeente}} </span><Object::Population  @name="{{this.getGemeente}}"/><br>
+<hr/>
+<Object::GemeenteInfo @name="{{this.selected}}" />
+<div class="au-o-box--flush au-u-margin-top-small">
+De inwoners van de gemeente verkozen de gemeenteraadsleden uit hun gemeente. De gemeenteraad vertegenwoordigt haar inwoners bij het nemen van besluiten. Deze app geeft inzicht in wat de gemeenteraad en het college van burgemeester en schepenen - als vertegenwoordigers van haar inwoners - in elke gemeente beslissen.
+De gemeenteraad bestaat, in <span class="au-u-medium">{{this.selected}}</span> uit <span class="au-u-medium"><Object::Info  @name="{{this.selected}}"/></span> leden.<br>
+</div>
+<SwitchBar::Content::Intropage />
+
+</div>
+<div class="bottombox"></div>
+</div>

@@ -11,24 +11,28 @@
   @noMatchesMessage="Geen resultaten"
   @searchMessage="Typ om te zoeken"
   @identifier={{this.identifier}}
-  @options={{this.singleselects}}
+  @options={{this.searchBesluit}}
   @selected={{this.selected}}
   @onChange={{this.onChange}}
-  @placeholder="Gemeente" as |singleselect|>
+  @placeholder="Besluiten beschikbaar" as |singleselect|>
   {{singleselect}}
 </PowerSelect>
 </div>
 
 
 <div class="besluitSearch au-u-regular {{this.identifier}}">
-<div id="topBesluiten" class="bottombox"></div>
+<div id="topBesluiten" class="bottomtop"></div>
 {{!-- template-lint-disable no-invalid-interactive --}}
 <AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
 <div class="au-o-box">
-<span class="au-u-h5 au-u-bold"> {{@get_Search}}   </span><Object::Population  @name="{{@get_Search}}"/><br>
+<span class="au-u-h5 au-u-bold"> {{this.selected}}   </span><Object::Population  @name="{{this.selected}}"/><br>
 <hr/>
 
-{{#each @getBesluitenSearch as |geplande|}}
+<SearchBar::Content::Besluit
+@selected={{this.selected}} 
+/>
+
+{{!-- {{#each @getBesluitenSearch as |geplande|}}
 <AuContent>
 <div class="aanwezig">
 <span class="au-u-bold">Zitting</span>
@@ -66,6 +70,8 @@
 <a href="#topBesluiten" class="toTop"><AuIcon @icon="nav-up" @alignment="right" @size="large" @ariaHidden={{true}} /></a>
 <br>
 {{/each}}
+
+ --}}
 </div>
 <div class="bottombox"></div> 
 </div>

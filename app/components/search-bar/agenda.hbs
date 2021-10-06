@@ -9,23 +9,60 @@
   @searchEnabled={{true}}
   @loadingMessage="Aan het laden..."
   @noMatchesMessage="Geen resultaten"
-  @searchMessage="Typ om te zoeken"
+  @searchPlaceholder="Typ om te zoeken"
   @identifier={{this.identifier}}
-  @options={{this.singleselects}}
-  @selected={{this.selected}}
-  @onChange={{this.onChange}}
-  @placeholder="Gemeente" as |singleselect|>
-  {{singleselect}}
+  @options={{this.searchAgenda}}
+  @selected={{this.selected.bestuurseenheidnaam}}
+  @searchField="bestuurseenheidnaam"
+  @placeholder="Agenda beschikbaar" 
+  @onChange={{this.onChange}} as |selected|>
+  <strong>{{selected.bestuurseenheidnaam}}</strong> ({{selected.geplande_Date}})
 </PowerSelect>
 </div>
 {{!-- Agenda --}}
 <div class="agendaSearch au-u-regular {{this.identifier}}">
-<div id="topAgendap" class="bottombox"></div>
+<div id="topAgendap" class="bottomtop"></div>
 {{!-- template-lint-disable no-invalid-interactive --}}
 <AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
 <div class="au-o-box">
-<span class="au-u-h5 au-u-bold"> {{@get_Search}}   </span><Object::Population  @name="{{@get_Search}}"/><br>
+<span class="au-u-h5 au-u-bold"> {{this.selected}} </span><Object::Population  @name="{{this.selected}}"/><br>
 <hr/>
+<SearchBar::Content::Agenda
+@selected={{this.selected}}
+/>
+{{!-- template-lint-disable no-log --}}
+{{!-- {{this.searchAgenda}} --}}
+{{!-- 
+<ul>
+{{#each this.singleselects as |options|}}
+<li><strong>{{options.groupName}}</strong>
+<ol>
+{{#each options.options as |product|}}
+<li>{{product}}
+{{#each this.searchAgenda as |item|}}
+{{#if (eq product item)}}
+<strong> | data avaliable {{item}}</strong>  
+{{/if}}
+{{/each}}
+</li>
+{{/each}}
+</ol>
+</li>
+{{/each}}
+</ul>
+ --}}
+{{!-- {{#each this.hasAgenda as |item|}}
+{{#if (eq @options item.bestuurseenheidnaam.value)}}
+<strong> | data avaliable {{item.bestuurseenheidnaam.value}}</strong>  
+{{/if}}
+{{/each}} --}}
+
+
+
+
+
+
+{{!-- 
 <span class="au-u-h5 au-u-bold">Agenda</span><br>
 <ul class="agendalist">
 {{#each @getAgendaSearch.groupAgenda as |geplande|}}
@@ -56,6 +93,8 @@
 <a href="#topAgendap" class="toTop"><AuIcon @icon="nav-up" @size="large" @ariaHidden={{true}} /></a>
 <br>
 {{/each}}
+ --}}
+
 </div>
 <div class="bottombox"></div>
 </div>

@@ -1,0 +1,41 @@
+<div class="search">
+<AuLabel for="input-block">Ontdek wat onze vertegenwoordigers voor ons beslissen.</AuLabel>
+<PowerSelect
+  @width="block"
+  title="kie gemeente" 
+  @icon="search"
+  @allowClear={{true}}
+  @disabled={{this.disabled}}
+  @searchEnabled={{true}}
+  @loadingMessage="Aan het laden..."
+  @noMatchesMessage="Geen resultaten"
+  @searchMessage="Typ om te zoeken"
+  @identifier={{this.identifier}}
+  @options={{this.singleselects}}
+  @selected={{this.selected}}
+  @onChange={{this.onChange}}
+  @placeholder="Gemeente" as |singleselect|>
+  {{singleselect}}
+</PowerSelect>
+</div>
+
+
+<div class="archievenSearch au-u-regular {{this.identifier}}">
+<div id="topArchief" class="bottomtop"></div>
+{{!-- template-lint-disable no-invalid-interactive --}}
+<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
+<div class="au-o-box">
+<span class="au-u-h5 au-u-bold"> {{this.selected}} </span><Object::Population  @name="{{this.selected}}"/><br>
+<hr/>
+<AuHeading class="au-hl-blue" @level="5" @skin="5">
+<AuBadge @icon="info-circle" @skin="brand" @size="small" /> 
+Archieven van Gemeenteraad en Raad voor Maatschappelijk Welzijn
+</AuHeading>
+<hr class="hr">
+<SearchBar::Content::Archief 
+@selected={{this.selected}} 
+/>
+
+</div>
+<div class="bottombox"></div> 
+</div>

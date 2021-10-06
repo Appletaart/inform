@@ -4,7 +4,7 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'inform-project',
     environment,
-    rootURL: '/',
+    rootURL: '/', //'/lokaalbesluit/'
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -45,6 +45,8 @@ module.exports = function (environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV.rootURL = '/'; // '/lokaalbesluit/'
+    // https://applepanithi.com/lokaalbesluit/index.html
   }
 
   return ENV;

@@ -1,59 +1,21 @@
 import Controller from '@ember/controller';
 import { tracked } from '@glimmer/tracking';
-import { action } from '@ember/object';
 import { inject as service } from '@ember/service';
-/*import { computed, set } from '@ember/object';
- class title_agenda{
-  @tracked title_agenda;
-  constructor(getAgenda){
-    this.title_agenda = getAgenda.groupAgenda.title_agenda;
-  }
-}
-class Person {
-  constructor() {
-    this.firstName = 'Betty';
-    this.lastName = 'Jones';
-  }
-
-  @computed('firstName', 'lastName')
-  get fullName() {
-    return `${this.firstName} ${this.lastName}`;
-  }
-}
-let client = new Person();
-client.fullName; // 'Betty Jones'
-set(client, 'lastName', 'Fuller');
-// console.log(client.fullName); */
 export default class AgendaController extends Controller {
-    @service map; // yes
-    @service searchBar;
-    @tracked gemeente_search;
-    @tracked gemeente;
-    
-    get get_Search(){
-      if(!this.searchBar.gemeente_search){
-        this.gemeente_search = "Gent"
-        return this.gemeente_search 
-      }else{
-        this.gemeente_search = this.searchBar.gemeente_search;
-        console.log('has value', this.searchBar.gemeente_search);
-        return this.gemeente_search
-      }
-    }
+  @service map; // yes
+  @tracked gemeente;
 
-    
-    get getGemeente() {
-      if (!this.map['gemeente'].name) {
-        this.gemeente = 'Roeselare'
-        return this.gemeente
-      } else {
-        this.gemeente = this.map['gemeente'].name;
-        console.log('has value', this.map['gemeente'].name);
-        d3.select(".agenda").transition().style("visibility", "visible");
-        return this.gemeente
-      }
+  get getGemeente() {
+    if (!this.map['gemeente'].name) {
+      this.gemeente = 'Roeselare'
+      return this.gemeente
+    } else {
+      this.gemeente = this.map['gemeente'].name;
+      d3.select(".agenda").transition().style("visibility", "visible");
+      return this.gemeente
     }
-  
+  }
+  /* 
       get getAgenda() {
         const bestuurseenheids = d3.group(this.model, d => d.bestuurseenheidnaam);     
         const een_bestuurseenheid = []
@@ -134,5 +96,5 @@ export default class AgendaController extends Controller {
       }// end get bestuurseenheid
       return {groupAgenda}
     }// eind getAgendaSearch
-
+ */
 }

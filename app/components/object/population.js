@@ -6,7 +6,7 @@ import { decimalFormat } from 'ember-helper-locale-number/helpers/decimal-format
 export default class ObjectPopulationComponent extends Component {
     constructor(){
         super(...arguments);
-        fetch('api/population2021.json').then(
+        fetch('assets/api/population2021.json').then(
         response => response.json().then((data,error) => {
         if(error){
         console.log(error)

@@ -1,0 +1,5 @@
+{{#each this.population as |p|}}
+{{#if (is-equal p.gemeente @name)}}
+{{gemeenteraadsleden p.inwoner}}
+{{/if}}
+{{/each}}

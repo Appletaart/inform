@@ -1,0 +1,33 @@
+{{!-- Page besluiten --}}
+<div class="archief au-u-regular {{this.identifier}}">
+<div id="topArchiefs" class="bottomtop"></div>
+{{!-- template-lint-disable no-invalid-interactive --}}
+<AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
+<div class="au-c-form-switch">
+<AuToggleSwitch 
+@label="Switch resultaatschem links/recht" @disabled={{false}} 
+@name="switch-left-right"
+@identifier={{this.identifier}}
+@checked={{this.checked}}
+@onChange={{this.onChange}}
+/>
+</div>
+<div class="au-o-box au-o-box-left">
+<span class="au-u-h5 au-u-bold"> {{this.getGemeente}}</span><Object::Population  @name="{{this.getGemeente}}{{@queryPara}}"/><br>
+<hr/>
+<AuHeading class="au-hl-blue" @level="5" @skin="5">
+<AuBadge @icon="info-circle" @skin="brand" @size="small" /> 
+Archieven van Gemeenteraad en Raad voor Maatschappelijk Welzijn
+</AuHeading>
+<hr class="hr">
+
+<SwitchBar::Content::Archief 
+@selected={{this.selected}} 
+@eenheids={{this.eenheids}}
+@getGemeente={{this.getGemeente}}
+@archief={{this.archief}}
+/>
+
+</div>
+<div class="bottombox"></div> 
+</div>
