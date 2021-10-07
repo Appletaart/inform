@@ -39,12 +39,9 @@ export default class SearchBarContentBestuurComponent extends Component {
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX mandaat: <http://data.vlaanderen.be/ns/mandaat#>
-        PREFIX mandataris: <http://data.vlaanderen.be/ns/mandaat#Mandataris>
         PREFIX besluit: <http://data.vlaanderen.be/ns/besluit#>
         PREFIX bevat: <http://www.w3.org/ns/org#hasPost>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-        PREFIX bestuurseenheid: <https://data.vlaanderen.be/ns/besluit#Bestuurseenheid>
-        PREFIX bestuursorgaan: <http://data.vlaanderen.be/ns/besluit#Bestuursorgaan>
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         
         SELECT DISTINCT ?start ?eind ?achternaam ?voornaam ?fractie ?bestuursfunctie ?bestuursclassificatie (GROUP_CONCAT(DISTINCT ?beleidsdomein; separator = " , ") AS ?beleidsdomeins) WHERE {
@@ -52,11 +49,11 @@ export default class SearchBarContentBestuurComponent extends Component {
             ?mandataris a mandaat:Mandataris .
             ?mandataris mandaat:start ?start.
             OPTIONAL {?mandataris mandaat:einde ?eind.}
-            OPTIONAL {?mandataris <http://data.vlaanderen.be/ns/mandaat#rangorde> ?rangorde.}
-            OPTIONAL {?mandataris <http://data.vlaanderen.be/ns/mandaat#beleidsdomein> ?beleid.
+            OPTIONAL {?mandataris mandaat:rangorde ?rangorde.}
+            OPTIONAL {?mandataris mandaat:beleidsdomein ?beleid.
                         ?beleid skos:prefLabel ?beleidsdomein.}
             
-            ?mandataris <http://data.vlaanderen.be/ns/mandaat#isBestuurlijkeAliasVan> ?person .
+            ?mandataris mandaat:isBestuurlijkeAliasVan ?person .
             ?person a <http://www.w3.org/ns/person#Person> .
             ?person <http://xmlns.com/foaf/0.1/familyName> ?achternaam .
             ?person <http://data.vlaanderen.be/ns/persoon#gebruikteVoornaam> ?voornaam.
@@ -67,15 +64,15 @@ export default class SearchBarContentBestuurComponent extends Component {
             
             OPTIONAL {?mandataris <http://www.w3.org/ns/org#hasMembership> ?lid .
                 ?lid <http://www.w3.org/ns/org#organisation> ?o.
-                ?o a <http://data.vlaanderen.be/ns/mandaat#Fractie>.
+                ?o a mandaat:Fractie .
                     ?o <https://www.w3.org/ns/regorg#legalName> ?fractie.}
             
             ?mandataris <http://www.w3.org/ns/org#holds> ?manda .
-            ?manda a <http://data.vlaanderen.be/ns/mandaat#Mandaat> .
+            ?manda a mandaat:Mandaat .
             ?specializationInTime <http://www.w3.org/ns/org#hasPost> ?manda.
             ?manda <http://www.w3.org/ns/org#role> ?bo .
             ?bo <http://www.w3.org/2004/02/skos/core#prefLabel> ?bestuursorgaanTijd .
-            ?specializationInTime <http://data.vlaanderen.be/ns/mandaat#isTijdspecialisatieVan> ?boo  .
+            ?specializationInTime mandaat:isTijdspecialisatieVan ?boo  .
             ?boo <http://www.w3.org/2004/02/skos/core#prefLabel> ?bestuursorgaan .
             ?boo besluit:classificatie ?classificatie.
             ?classificatie skos:prefLabel ?bestuursclassificatie .

@@ -50,11 +50,10 @@ $font_4: sans-serif;
 .au-c-form-switch{
 	position: absolute;
 	top: 7%;
-	right: 5rem;
-	width: 40%;
+	right: 0rem;
+	width: 45%;
 	//margin-top: 2rem;
 	.au-c-toggle-switch {
-		//background-color: #f5f8fa;
 		padding: 1rem;
 		width: 100%;
 		border-radius: 0.3rem;
@@ -63,14 +62,17 @@ $font_4: sans-serif;
 .au-c-bs-switch{
 	position: absolute;
 	top: 6%;
-	right: 5rem;
-	width: 50%;
+	right: 0rem;
+	width: 55%;
 	//margin-top: 2rem;
 	.au-c-toggle-switch {
 		//background-color: #f5f8fa;
 		padding: 0.8rem;
 		width: 100%;
 		border-radius: 0.3rem;
+	}
+	.au-c-toggle-switch__label{
+		margin-right: 0.6rem;
 	}
 }
 .au-d-component-block{
@@ -314,8 +316,11 @@ hr{
 		}
 		.au-o-box-left {
 			margin-left: 1.5rem;
-			padding-right: 0rem;
+			padding-right: 1.5rem;
 			direction: ltr;
+		}
+		.au-c-bs-switch{
+			right: 5rem;
 		}
 	}
 	&.bar-right{
@@ -444,6 +449,10 @@ hr{
 			margin-left: 1rem;
 			direction: ltr;
 		}
+		.au-c-form-switch{
+			right: 5rem;
+		}
+	
 	}
 	&.bar-right{
 		right: 0;
@@ -527,11 +536,24 @@ hr{
 @media only screen and(max-width: 1440px) {
 }
 @media only screen and(max-width: 1200px) {
+	.au-c-bs-switch{
+		width: 70%;
+	}
+	.au-c-form-switch{
+		width: 55%;
+	}
 }
 @media only screen and(max-width: 1024px) {
 	.search{
 		width: 55%;
 	}
+	.au-c-bs-switch {
+		width: 75%;
+	}
+	.au-c-form-switch{
+		width: 65%;
+	}
+
 }
 @media only screen and(max-width: 992px) {
 	.bp-map {
@@ -542,11 +564,20 @@ hr{
 			width: 50%;
 		}
 	}
+	.besturen, .besturenSearch{
+		width: 45vw;
+	}
+	.au-c-form-switch{
+		width: 70%;
+	}
 }
 @media only screen and(max-width: 800px) {
 	.search{
 		margin-top: 4.8rem;
 		width: 100%;
+	}
+	.au-c-bs-switch, .au-c-form-switch{
+		width: 85%;
 	}
 	.au-c-form{
 		margin-top: 1rem;
@@ -560,6 +591,9 @@ hr{
 			width: 90%;
 			transform: translate(5%, 0);
 		}
+	}
+	.besturen, .besturenSearch{
+		width: 50vw;
 	}
 }
 @media only screen and(max-width: 767px) {
@@ -593,7 +627,7 @@ hr{
 		display: inline-flex;
 		font-size: 1.5rem;
 	}
-	.indexSearch, .besturenSearch, .agendaSearch, .besluitSearch, .archievenSearch{
+	.indexSearch, .besturenSearch, .agendaSearch, .besluitSearch, .archievenSearch,.intropage, .agenda, .besluit, .archief, .archieven{
 		width: 100vw;
 		height: 100vh;
 	}
@@ -621,13 +655,15 @@ hr{
 		transform: scale(1)/*  translate(0, 5%) */;
 		}
 }
-@media screen and (min-height: 700px) and /* (max-width: 1024px), */ (max-width: 1440px) {
+@media screen and (min-height: 700px) and (max-width: 1440px) {
 	.bp-map {
-		transform: scale(0.95) translate(-0%, -10%);
+		transform: scale(0.95) translate(-0%, -5%);
 		}
+		
 }
 @media screen and (min-height: 700px) and (max-width: 1024px) {
 	.bp-map {
 		transform: translate(0%, 5%);
 		}
+	
 }

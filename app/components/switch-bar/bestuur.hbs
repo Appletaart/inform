@@ -1,6 +1,7 @@
 <div class="besturen au-u-regular {{this.identifier}}">
 <div class="bottomtop"></div>
 <AuIcon class="toggle" @icon="cross" @alignment="left" @size="large" @ariaHidden={{true}} {{on "click" this.toggleClose}}/>
+
 <div class="au-c-bs-switch">
   <AuToggleSwitch 
   @label="Switch resultaatschem links/recht  " @disabled={{false}} 
@@ -10,6 +11,7 @@
   @onChange={{this.onChange}}
   />
 </div>
+
 <div class="au-o-box au-o-box-left">
 <span class="au-u-h5 au-u-bold"> {{this.getGemeente}}  </span><Object::Population  @name="{{this.getGemeente}}"/><br>
 
