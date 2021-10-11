@@ -2,7 +2,7 @@
 $white: white;
 $color_alto_approx: #ddd;
 $color_elephant_approx: #0e2b3c;
-$color_lynch_approx: #657d9a;
+$color_lynch_approx: #4b6586;
 $color_cape_cod_approx: #364b4a;
 $color_cape_cod_approx1: #7f8d99;
 $gray: grey;
@@ -106,7 +106,7 @@ path {
 	stroke-width: 0.08rem;
 }
 .legend, .legend_besluit{
-	stroke: #657d9a;
+	stroke: $color_lynch_approx;
 	stroke-width: 0.1rem;
 }
 .text_legend{
