@@ -71,7 +71,7 @@ export default class SwitchBarBestuurComponent extends Component {
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         
-        SELECT DISTINCT ?start ?eind ?achternaam ?voornaam ?fractie ?bestuursfunctie ?bestuursclassificatie (GROUP_CONCAT(DISTINCT ?beleidsdomein; separator = " , ") AS ?beleidsdomeins) WHERE {
+        SELECT DISTINCT ?start ?eind ?achternaam ?voornaam ?fractie ?bestuursfunctie ?bestuursclassificatie (GROUP_CONCAT(DISTINCT ?beleidsdomein; separator = ", ") AS ?beleidsdomeins) WHERE {
 
             ?mandataris a mandaat:Mandataris .
             ?mandataris mandaat:start ?start.
